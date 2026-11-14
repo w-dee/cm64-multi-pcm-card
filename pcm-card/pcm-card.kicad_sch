@@ -1,0 +1,580 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "51d4e0fb-db60-4775-a659-621d7488ba8b")
+	(paper "A3")
+	(title_block
+  (title "CM-64 multi PCM card - schematic overview")
+  (date "2026-11-01")
+  (rev "A0-review")
+  (company "CM-64 Multi PCM Card")
+  (comment 1 "SCHEMATIC ONLY / prototype: timing, mechanics and native ERC require review")
+)
+	(lib_symbols)
+	(text "22 symbol instances\nDouble-click to open"
+  (exclude_from_sim no)
+  (at 25 56 0)
+  (effects
+    (font
+      (size 1 1)
+    )
+    (justify left top)
+  )
+  (uuid "1d4f466c-4c6d-5b0f-b85c-fa98d028a5ce")
+)
+	(text "12 symbol instances\nDouble-click to open"
+  (exclude_from_sim no)
+  (at 25 104 0)
+  (effects
+    (font
+      (size 1 1)
+    )
+    (justify left top)
+  )
+  (uuid "20be8b02-39b2-5c92-b86b-3c9ad54bbce2")
+)
+	(text "17 symbol instances\nDouble-click to open"
+  (exclude_from_sim no)
+  (at 285 152 0)
+  (effects
+    (font
+      (size 1 1)
+    )
+    (justify left top)
+  )
+  (uuid "20de0510-f888-57d8-8f27-f40ad970860e")
+)
+	(text "7 symbol instances\nDouble-click to open"
+  (exclude_from_sim no)
+  (at 155 56 0)
+  (effects
+    (font
+      (size 1 1)
+    )
+    (justify left top)
+  )
+  (uuid "23346b9d-0c53-5e25-b22a-78e2f7bab107")
+)
+	(text "44 symbol instances\nDouble-click to open"
+  (exclude_from_sim no)
+  (at 155 152 0)
+  (effects
+    (font
+      (size 1 1)
+    )
+    (justify left top)
+  )
+  (uuid "30cc6813-74db-5f73-b56f-56bb4db950a4")
+)
+	(text "10 symbol instances\nDouble-click to open"
+  (exclude_from_sim no)
+  (at 25 152 0)
+  (effects
+    (font
+      (size 1 1)
+    )
+    (justify left top)
+  )
+  (uuid "34b606f2-b88a-5fc6-8311-4b00918aa9e8")
+)
+	(text "14 symbol instances\nDouble-click to open"
+  (exclude_from_sim no)
+  (at 285 56 0)
+  (effects
+    (font
+      (size 1 1)
+    )
+    (justify left top)
+  )
+  (uuid "47d34034-3e79-5b9a-a2a4-ff609d2361f6")
+)
+	(text "25 symbol instances\nDouble-click to open"
+  (exclude_from_sim no)
+  (at 285 104 0)
+  (effects
+    (font
+      (size 1 1)
+    )
+    (justify left top)
+  )
+  (uuid "51f9d8e0-8658-5b52-9611-2b1a7a2e92d8")
+)
+	(text "2026-11-01 semantic-review revision: schematic updated; PCB synchronization and layout are pending user work."
+  (exclude_from_sim no)
+  (at 15 25 0)
+  (effects
+    (font
+      (size 1.3 1.3)
+    )
+    (justify left top)
+  )
+  (uuid "652a5c0e-8c94-58a5-8176-ac445906797b")
+)
+	(text "OPERATING RULES\nRemove card from CM-64 for USB programming.\nNever insert, remove, change bank, or switch host power during programming.\nChange SW1 only with all power off.\nReturn NOR to read-array mode and verify data before disconnecting USB."
+		(exclude_from_sim no)
+		(at 205 201 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+			)
+			(justify left top)
+		)
+		(uuid "6e84ec07-fbb5-5ddf-a5cc-e39696a6e61a")
+	)
+	(text "64 Mbit parallel NOR / 16 x 512 KiB banks / RP2040 USB programmer"
+		(exclude_from_sim no)
+		(at 15 16 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left top)
+		)
+		(uuid "6e99a252-9c4f-5621-a950-76bd935bb31c")
+	)
+	(text "READ BEFORE PCB FABRICATION\nCard edge is provisional: 34 contacts / 1.50 mm pitch, not a verified SN-U110 mechanical specification.\nConfirm flash sourcing (C2944625 was out of stock), host timing, host power budget and component heights.\nNative KiCad ERC and fabrication/assembly review remain required. See README_JA.md and verification_report.md."
+		(exclude_from_sim no)
+		(at 20 247 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left top)
+		)
+		(uuid "96ce4bfe-ee50-563f-bfcd-e828c5a14b88")
+	)
+	(text "MODES\nHOST only: PLAY, MCU held in reset.\nUSB only: PROGRAM standby; MCU_ARM explicitly enables the programmer.\nHOST + USB: PLAY priority, hardware write inhibit.\nNo power: all off."
+		(exclude_from_sim no)
+		(at 20 201 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+			)
+			(justify left top)
+		)
+		(uuid "a19d5664-d146-5c8a-9068-c1853882e5cd")
+	)
+	(text "19 symbol instances\nDouble-click to open"
+  (exclude_from_sim no)
+  (at 155 104 0)
+  (effects
+    (font
+      (size 1 1)
+    )
+    (justify left top)
+  )
+  (uuid "abd66422-a967-54a9-9dfe-f73c221b0093")
+)
+	(sheet
+		(at 20 143)
+		(size 115 28)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "0f74f593-1386-521a-a039-1cf6e6d3d60d")
+		(property "Sheetname" "Card and USB ESD protection"
+			(at 20 141.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "07_protection.kicad_sch"
+			(at 20 172.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 20 95)
+		(size 115 28)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "141449f4-d9cc-5007-9601-a472636c7321")
+		(property "Sheetname" "Data isolation / read and write strobes"
+			(at 20 93.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "04_data_control.kicad_sch"
+			(at 20 124.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 280 95)
+		(size 115 28)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "421e4c7d-4323-5809-9d65-589f1739244c")
+		(property "Sheetname" "Power ORing / 3.3V / USB-C"
+			(at 280 93.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "06_power_usb.kicad_sch"
+			(at 280 124.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 150 143)
+		(size 115 28)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "4c5a1fdd-8a53-540a-b918-12c0d5f7df39")
+		(property "Sheetname" "Decoupling / test access"
+			(at 150 141.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "08_decoupling.kicad_sch"
+			(at 150 172.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 150 47)
+		(size 115 28)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "69a34b26-843f-5bdc-9af3-eaa8e2d2010a")
+		(property "Sheetname" "Card connector / 64Mbit parallel NOR"
+			(at 150 45.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "02_flash_card.kicad_sch"
+			(at 150 76.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 280 47)
+		(size 115 28)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "7371fe09-b951-539c-9172-4439d96aaadd")
+		(property "Sheetname" "Address ownership / bank selection"
+			(at 280 45.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "03_address.kicad_sch"
+			(at 280 76.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 150 95)
+		(size 115 28)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "8d7f872d-1ebb-5c11-ae7b-0bfa1c85aa98")
+		(property "Sheetname" "Hardware permissions / reset / dead time"
+			(at 150 93.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "05_mode.kicad_sch"
+			(at 150 124.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 280 143)
+		(size 115 28)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "8ffeab7a-5fe5-5dc8-9941-7153a2ba80da")
+		(property "Sheetname" "Idle-bus bias / unplugged-host defaults"
+			(at 280 141.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "09_bus_bias.kicad_sch"
+			(at 280 172.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 20 47)
+		(size 115 28)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "9e4726d8-47c3-537f-8d65-fe21647db3b1")
+		(property "Sheetname" "RP2040 / USB programmer"
+			(at 20 45.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "01_mcu.kicad_sch"
+			(at 20 76.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

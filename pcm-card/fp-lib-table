@@ -1,0 +1,10 @@
+(fp_lib_table
+  (version 7)
+  (lib
+    (name "PCM_Card")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/PCM_Card.pretty")
+    (options "")
+    (descr "Placement prototype footprints; card-edge geometry provisional")
+  )
+)

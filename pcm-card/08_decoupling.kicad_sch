@@ -1,0 +1,10695 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "7498de2d-3071-5e95-b3e0-61e56f316024")
+	(paper "A3")
+	(title_block
+		(title "Decoupling / test access")
+		(date "2026-10-30")
+		(rev "A0-placement")
+		(company "CM-64 Multi PCM Card")
+		(comment 1 "SCHEMATIC ONLY / prototype: timing, mechanics and native ERC require review")
+	)
+	(lib_symbols
+		(symbol "PCM_Card:C_100n"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0 8 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "CC0603KRX7R9BB104"
+				(at 0 5 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" "PCM_Card:C_0603_1608Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" "100nF 50V X7R 10%, 1608 metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "C_100n_1_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -0.635 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 -1.8) (xy -0.635 1.8)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -1.8) (xy 0.635 1.8)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_Card:C_10u"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0 8 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "CL10A106KP8NNNC"
+				(at 0 5 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" "PCM_Card:C_0603_1608Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C19702.html"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" "10uF 10V X5R 10%, 1608 metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "C_10u_1_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -0.635 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 -1.8) (xy -0.635 1.8)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -1.8) (xy 0.635 1.8)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_Card:C_1u"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0 8 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "CL10A105KB8NNNC"
+				(at 0 5 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" "PCM_Card:C_0603_1608Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C15849.html"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" "1uF 50V X5R 10%, 1608 metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "C_1u_1_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -0.635 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 -1.8) (xy -0.635 1.8)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -1.8) (xy 0.635 1.8)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_Card:TEST"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 8 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" "PCM_Card:TestPoint_1mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" "Copper-only test point; no component to assemble"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "TEST_1_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "All R/C: metric1608 (imperial0603). Place each bypass capacitor at the indicated supply pin/group."
+		(exclude_from_sim no)
+		(at 15 18 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+			)
+			(justify left top)
+		)
+		(uuid "014cf28a-f660-5dd8-95ee-a0efebb95ded")
+	)
+	(text "SWD test points are copper only. Add ground vias beside QFN exposed pad and each fast-logic bypass capacitor.\nEffective MLCC capacitance under DC bias and TLV755P thermal margin must be checked during layout review."
+		(exclude_from_sim no)
+		(at 15 270 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left top)
+		)
+		(uuid "085007d0-e853-50d2-b7f1-059e4845f92a")
+	)
+	(text "U19 supply"
+		(exclude_from_sim no)
+		(at 129 218 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "09354aa1-7710-5235-abcb-0b4ce21abd62")
+	)
+	(text "U15 supply"
+		(exclude_from_sim no)
+		(at 129 194 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "0b0049b8-696b-5be5-bbb4-8bb72e00e496")
+	)
+	(text "U12 supply"
+		(exclude_from_sim no)
+		(at 229 170 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "11f85d54-0981-5098-8b28-aaff8cf03743")
+	)
+	(text "U3 IOVDD pin42"
+		(exclude_from_sim no)
+		(at 329 74 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "156b08e0-bb85-58c6-be59-cf5a269e725b")
+	)
+	(text "U5 supply"
+		(exclude_from_sim no)
+		(at 329 122 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "19662419-430f-5159-90c7-d60d86259c6d")
+	)
+	(text "U10 supply"
+		(exclude_from_sim no)
+		(at 29 170 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "2570e3d5-dff9-5ec2-ab59-4a41382fb56e")
+	)
+	(text "U3 IOVDD pin10"
+		(exclude_from_sim no)
+		(at 229 50 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "29a3062f-e591-5687-b3e2-f34e6653dc36")
+	)
+	(text "U6 supply"
+		(exclude_from_sim no)
+		(at 29 146 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "2f12f09f-6a1b-5834-8ffa-44c14c2cc5f0")
+	)
+	(text "U17 supply"
+		(exclude_from_sim no)
+		(at 329 194 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "30b4ebfd-970e-560f-8f08-559e38f6db20")
+	)
+	(text "U3 VREG_IN pin44"
+		(exclude_from_sim no)
+		(at 129 74 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "31a21502-d570-512d-96f7-0bfd4650f9fb")
+	)
+	(text "U18 supply"
+		(exclude_from_sim no)
+		(at 29 218 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "4f9ac02c-a3e4-50a6-a3bd-a2cdb97d4c11")
+	)
+	(text "U16 supply"
+		(exclude_from_sim no)
+		(at 229 194 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "50ea6e8c-8ef2-50f4-b067-e10c345c1d40")
+	)
+	(text "U3 DVDD pin23"
+		(exclude_from_sim no)
+		(at 329 98 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "5e8b2e83-2a97-5090-96b3-3b855b7843f4")
+	)
+	(text "U7 supply"
+		(exclude_from_sim no)
+		(at 129 146 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "697334cb-a888-5d85-b39f-a6f332fdb217")
+	)
+	(text "RP2040 bulk"
+		(exclude_from_sim no)
+		(at 29 122 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "6d25cf52-1a72-538c-975f-db5462961021")
+	)
+	(text "U8 supply"
+		(exclude_from_sim no)
+		(at 229 146 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "6fae182c-3dad-5ba7-9b01-db162fe6acdf")
+	)
+	(text "U9 supply"
+		(exclude_from_sim no)
+		(at 329 146 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "75b035a9-aa03-5317-8b34-2fa083db563e")
+	)
+	(text "U11 supply"
+		(exclude_from_sim no)
+		(at 129 170 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "8e36fdd7-a09e-5843-960a-1953323610fc")
+	)
+	(text "U3 IOVDD pin49"
+		(exclude_from_sim no)
+		(at 29 98 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "90a1e78b-cc75-5278-afe9-885727d84e21")
+	)
+	(text "U3 VREG_VOUT pin45"
+		(exclude_from_sim no)
+		(at 329 50 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "988acdb5-3c57-546c-b639-afb4a47251fe")
+	)
+	(text "U4 supply"
+		(exclude_from_sim no)
+		(at 229 122 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "9ae7c3f0-bb96-54b2-9d80-f8e3d3672b8e")
+	)
+	(text "U23 supply"
+		(exclude_from_sim no)
+		(at 229 218 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "9b880ba7-949b-50fa-85a2-818761e8953d")
+	)
+	(text "U3 IOVDD pin1"
+		(exclude_from_sim no)
+		(at 129 50 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "a77ce732-ca7f-5aad-8441-0b210dd7f8a4")
+	)
+	(text "U2 QSPI"
+		(exclude_from_sim no)
+		(at 29 50 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "b889876e-9007-56b4-9b9e-1e4bbbfd3176")
+	)
+	(text "U13 supply"
+		(exclude_from_sim no)
+		(at 329 170 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "be929e1d-534d-5f24-a16b-d178850ba001")
+	)
+	(text "U3 IOVDD pin22"
+		(exclude_from_sim no)
+		(at 29 74 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "c073a0dc-e680-59e2-a643-8792c0f8bc0f")
+	)
+	(text "U3 ADC_AVDD pin43"
+		(exclude_from_sim no)
+		(at 129 98 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "c368e6ca-0988-5b9c-b84d-1c71b5cd092b")
+	)
+	(text "U3 DVDD pin50"
+		(exclude_from_sim no)
+		(at 129 122 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "c5aa02bc-e997-5a88-85d6-c3f11c01b706")
+	)
+	(text "U3 IOVDD pin33"
+		(exclude_from_sim no)
+		(at 229 74 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "cc7257d5-c730-5528-9fbb-c571b720b8de")
+	)
+	(text "U14 supply"
+		(exclude_from_sim no)
+		(at 29 194 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "d3170d41-d63a-5a80-90dc-396400081cd7")
+	)
+	(text "U3 USB_VDD pin48"
+		(exclude_from_sim no)
+		(at 229 98 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "d717f556-b40d-5b70-aff9-f7b641c8bf9e")
+	)
+	(text "U11 VCCB pins23/24"
+		(exclude_from_sim no)
+		(at 329 218 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "f775dacf-9c04-5ff2-8af1-73ac7568db89")
+	)
+	(wire
+		(pts
+			(xy 364.49 162.56) (xy 369.57 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ec07ba5-6a2a-5167-a8d2-7a39551e78e0")
+	)
+	(wire
+		(pts
+			(xy 346.71 250.19) (xy 341.63 250.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ec26e40-a5cd-5fc2-a372-aae8333e4be8")
+	)
+	(wire
+		(pts
+			(xy 165.1 67.31) (xy 170.18 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "121f8449-9231-59ac-82bb-b0901d2c3771")
+	)
+	(wire
+		(pts
+			(xy 165.1 210.82) (xy 170.18 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17e86b0a-9881-5b22-a4c7-b7fb3fd4fa72")
+	)
+	(wire
+		(pts
+			(xy 265.43 43.18) (xy 270.51 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19e0a92f-cc6f-5c55-934e-dc6d9cc2da4e")
+	)
+	(wire
+		(pts
+			(xy 218.44 250.19) (xy 213.36 250.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cfa871c-da1c-564b-8b42-b4630190b73f")
+	)
+	(wire
+		(pts
+			(xy 364.49 43.18) (xy 369.57 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e29c403-6b8f-5e8c-a47b-13142346aaca")
+	)
+	(wire
+		(pts
+			(xy 354.33 210.82) (xy 349.25 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ebc5ed2-bb66-5648-84ae-bff1c8997d5a")
+	)
+	(wire
+		(pts
+			(xy 64.77 91.44) (xy 69.85 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2259d58b-c16a-570f-8c0b-2adbfcd35c7b")
+	)
+	(wire
+		(pts
+			(xy 154.94 115.57) (xy 149.86 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22e093ea-b127-5361-b71d-7b35acac1a38")
+	)
+	(wire
+		(pts
+			(xy 354.33 91.44) (xy 349.25 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27a8577e-7b5b-50a8-9342-72c46b04e624")
+	)
+	(wire
+		(pts
+			(xy 186.69 250.19) (xy 181.61 250.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "281d5d8a-1920-5a7e-85e5-99b5e84e3cd9")
+	)
+	(wire
+		(pts
+			(xy 354.33 115.57) (xy 349.25 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2eba31b7-2a18-542f-ade2-a539b8f42639")
+	)
+	(wire
+		(pts
+			(xy 64.77 67.31) (xy 69.85 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2fb41753-a7b0-5168-9111-88add593eacb")
+	)
+	(wire
+		(pts
+			(xy 153.67 250.19) (xy 148.59 250.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "319c8662-ea0d-5ba7-ad2e-5e8d837b83e6")
+	)
+	(wire
+		(pts
+			(xy 64.77 115.57) (xy 69.85 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32b72ef7-c381-5836-a0c1-502c6daaa76e")
+	)
+	(wire
+		(pts
+			(xy 154.94 138.43) (xy 149.86 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "338c9976-04cd-5538-8093-b719ae55ef96")
+	)
+	(wire
+		(pts
+			(xy 54.61 91.44) (xy 49.53 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "345e088c-12c6-5050-b5af-a3a90cec4628")
+	)
+	(wire
+		(pts
+			(xy 364.49 115.57) (xy 369.57 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37b6a262-f28f-57fa-b512-4b12567ff41f")
+	)
+	(wire
+		(pts
+			(xy 54.61 138.43) (xy 49.53 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a12c05e-4aa2-55e1-aed0-022f6acd9aa2")
+	)
+	(wire
+		(pts
+			(xy 354.33 43.18) (xy 349.25 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41c644e2-ebf2-51e2-840a-f751bc3d9d0a")
+	)
+	(wire
+		(pts
+			(xy 265.43 138.43) (xy 270.51 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45ebf53a-9f20-5283-b38f-619e2af78670")
+	)
+	(wire
+		(pts
+			(xy 265.43 210.82) (xy 270.51 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4703583f-8489-50ef-b354-d17ea5c64058")
+	)
+	(wire
+		(pts
+			(xy 54.61 210.82) (xy 49.53 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f95fe9a-30b0-564f-ad73-433dc0d68c01")
+	)
+	(wire
+		(pts
+			(xy 354.33 186.69) (xy 349.25 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e6f01fd-2173-538a-9bdf-76e82b38a543")
+	)
+	(wire
+		(pts
+			(xy 265.43 186.69) (xy 270.51 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6289c115-949b-53b6-b287-687f468c71c0")
+	)
+	(wire
+		(pts
+			(xy 165.1 162.56) (xy 170.18 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "631e1050-5c22-5a9c-b00e-da1dab999102")
+	)
+	(wire
+		(pts
+			(xy 165.1 138.43) (xy 170.18 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63e3db53-11e5-57d9-87e4-e04198b256eb")
+	)
+	(wire
+		(pts
+			(xy 154.94 91.44) (xy 149.86 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "640563ed-c839-5967-b7d3-31c63fd16bb2")
+	)
+	(wire
+		(pts
+			(xy 364.49 91.44) (xy 369.57 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a0141a6-4205-50fb-978d-ec1ef44cbdf2")
+	)
+	(wire
+		(pts
+			(xy 265.43 91.44) (xy 270.51 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b87f57d-bc06-5571-8d03-053313131967")
+	)
+	(wire
+		(pts
+			(xy 255.27 186.69) (xy 250.19 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bb8bb5a-94fe-5572-9bc2-996f3f52be9e")
+	)
+	(wire
+		(pts
+			(xy 255.27 210.82) (xy 250.19 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74f8967f-8ca3-5056-95bc-029777a11d09")
+	)
+	(wire
+		(pts
+			(xy 54.61 67.31) (xy 49.53 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b55bfb7-66f4-542b-ad98-25ef241ca020")
+	)
+	(wire
+		(pts
+			(xy 364.49 67.31) (xy 369.57 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b6797cc-ee93-5a6b-9c45-47e9aac597c5")
+	)
+	(wire
+		(pts
+			(xy 313.69 250.19) (xy 308.61 250.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bba148b-9aff-5003-ac53-a54b56a9ff76")
+	)
+	(wire
+		(pts
+			(xy 255.27 67.31) (xy 250.19 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bdc9db5-1154-5b38-ba89-9f57fb5c25fa")
+	)
+	(wire
+		(pts
+			(xy 354.33 162.56) (xy 349.25 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c103e35-6c25-5931-8b19-82dac12c8cd7")
+	)
+	(wire
+		(pts
+			(xy 354.33 67.31) (xy 349.25 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7dd52043-d09c-5035-805b-859b594b25f2")
+	)
+	(wire
+		(pts
+			(xy 154.94 210.82) (xy 149.86 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86d82e5e-0507-5d8a-9faf-c0fdaecfbc56")
+	)
+	(wire
+		(pts
+			(xy 255.27 43.18) (xy 250.19 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91fa3af5-697f-509d-b500-a1389f953c3b")
+	)
+	(wire
+		(pts
+			(xy 121.92 250.19) (xy 116.84 250.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96b9c1ba-8eb2-5347-a123-706466a2bbaf")
+	)
+	(wire
+		(pts
+			(xy 265.43 162.56) (xy 270.51 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c0f8751-2bb9-5368-81b3-419bedb43548")
+	)
+	(wire
+		(pts
+			(xy 165.1 43.18) (xy 170.18 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f28907f-a21b-5735-bdb4-aa928d0e3477")
+	)
+	(wire
+		(pts
+			(xy 255.27 115.57) (xy 250.19 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a061b32d-752d-51cd-8e91-9feabb6f5aff")
+	)
+	(wire
+		(pts
+			(xy 54.61 186.69) (xy 49.53 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a274a03c-5361-5832-a413-878b3d8e2f8e")
+	)
+	(wire
+		(pts
+			(xy 154.94 67.31) (xy 149.86 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2addbff-c470-5177-a987-7773c06efa79")
+	)
+	(wire
+		(pts
+			(xy 90.17 250.19) (xy 85.09 250.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a31c6dfc-6e1b-5c14-8870-0895f23b2a8d")
+	)
+	(wire
+		(pts
+			(xy 265.43 67.31) (xy 270.51 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a55057fc-37d1-5a99-974f-e5b057ccd0b7")
+	)
+	(wire
+		(pts
+			(xy 54.61 115.57) (xy 49.53 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a751da42-fe6e-51df-8138-a53208ed1e71")
+	)
+	(wire
+		(pts
+			(xy 64.77 210.82) (xy 69.85 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a832f784-bfe9-54f3-83d1-a6f9dec0adc0")
+	)
+	(wire
+		(pts
+			(xy 364.49 210.82) (xy 369.57 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac90ac64-e7ad-5ebc-b9b8-099e452d55d9")
+	)
+	(wire
+		(pts
+			(xy 54.61 43.18) (xy 49.53 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afe4fca2-714b-55fb-a8b1-dfd9b91904f2")
+	)
+	(wire
+		(pts
+			(xy 165.1 186.69) (xy 170.18 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b620cde6-7753-5a01-a229-12f9ad2d04b8")
+	)
+	(wire
+		(pts
+			(xy 281.94 250.19) (xy 276.86 250.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b80dccbf-901d-540e-8296-344f696989be")
+	)
+	(wire
+		(pts
+			(xy 255.27 91.44) (xy 250.19 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bafbfbaa-af74-5fcb-abe4-2f58f6713ffb")
+	)
+	(wire
+		(pts
+			(xy 26.67 250.19) (xy 21.59 250.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "beae4b59-8352-5501-bce3-82c88b8beb28")
+	)
+	(wire
+		(pts
+			(xy 364.49 186.69) (xy 369.57 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0ae651e-78bf-5d76-bf16-4dd9e6881f75")
+	)
+	(wire
+		(pts
+			(xy 64.77 186.69) (xy 69.85 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3796eb4-e106-5ead-a29a-fb0f2214ce1c")
+	)
+	(wire
+		(pts
+			(xy 154.94 186.69) (xy 149.86 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c47ba5c6-8e13-5a82-a053-2a66763a06a4")
+	)
+	(wire
+		(pts
+			(xy 165.1 91.44) (xy 170.18 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb4852e0-d82b-5369-82b3-1e49b4e5a0e3")
+	)
+	(wire
+		(pts
+			(xy 378.46 250.19) (xy 373.38 250.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d39c5dd0-3556-5077-a1c3-e2337d37c7b7")
+	)
+	(wire
+		(pts
+			(xy 265.43 115.57) (xy 270.51 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7ba30cd-ab24-5119-af7e-6f7f9f246477")
+	)
+	(wire
+		(pts
+			(xy 354.33 138.43) (xy 349.25 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db3000f7-4494-5f63-a4ef-22d6e33866b2")
+	)
+	(wire
+		(pts
+			(xy 255.27 138.43) (xy 250.19 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd85223f-61cf-5363-8c58-b0c0420f12ac")
+	)
+	(wire
+		(pts
+			(xy 64.77 138.43) (xy 69.85 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e27dcd27-6026-57ab-ab6f-e2728a88f0ee")
+	)
+	(wire
+		(pts
+			(xy 64.77 162.56) (xy 69.85 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2fc98a2-ee50-5040-884c-12327ce9baf0")
+	)
+	(wire
+		(pts
+			(xy 64.77 43.18) (xy 69.85 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e92cbc2e-cd5f-5bac-ba22-92dcc5323b59")
+	)
+	(wire
+		(pts
+			(xy 165.1 115.57) (xy 170.18 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edc81fd9-ce96-5ada-b385-c3b261dd29aa")
+	)
+	(wire
+		(pts
+			(xy 154.94 162.56) (xy 149.86 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0e94343-6eb8-56d3-b511-eee9a11fa730")
+	)
+	(wire
+		(pts
+			(xy 154.94 43.18) (xy 149.86 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f29bdcd9-3afc-5280-b705-d560497d5d5b")
+	)
+	(wire
+		(pts
+			(xy 250.19 250.19) (xy 245.11 250.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f50d6dc6-f052-55ae-84e7-d4e7d7b4b131")
+	)
+	(wire
+		(pts
+			(xy 364.49 138.43) (xy 369.57 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5a94360-10f8-5ff7-b5c4-0392d707fd02")
+	)
+	(wire
+		(pts
+			(xy 58.42 250.19) (xy 53.34 250.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7172501-34ff-5c3e-897a-72e031d89a32")
+	)
+	(wire
+		(pts
+			(xy 255.27 162.56) (xy 250.19 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f87d46b6-2667-5092-8b08-f36551fc0dd5")
+	)
+	(wire
+		(pts
+			(xy 54.61 162.56) (xy 49.53 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd897b30-a711-584d-8193-f898ec908ad6")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 369.57 91.44 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "0f768014-452f-5b72-9d91-954108f38ae5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 369.57 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 69.85 67.31 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "0fc54d6b-f6c4-5a69-98dd-680e505c18ef")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 69.85 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 69.85 115.57 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "1730afe9-b576-5e6b-a8d6-1c92172b68ac")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 69.85 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 170.18 91.44 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "1845ec1f-f8b5-52c4-ab58-74af3b85be15")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 170.18 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 270.51 186.69 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "1f50781e-0a91-5d9d-9899-3ce63095189a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 270.51 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 270.51 115.57 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "258a0eaf-3078-5c22-9d46-a06aeee313a4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 270.51 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 250.19 67.31 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "26a6be35-ed99-5798-a32e-8bca8b4091dd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 250.19 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 149.86 162.56 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "2b7bdfba-f009-50d9-9893-1843267f6413")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 149.86 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 250.19 138.43 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "2c13d9f9-b7b9-551d-a703-2bd2b8edb4b1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 250.19 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 250.19 43.18 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "2cf83fbf-11ea-59ff-b396-4a856a85f38c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 250.19 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 369.57 210.82 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "2fbf60ed-405f-5e56-bdfe-335a6e5de79c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 369.57 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 250.19 186.69 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "2fe65d93-b2a4-5d55-a8c0-b2c50e39dd16")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 250.19 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 170.18 210.82 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "3170c7e7-509e-569c-8a18-74124382026b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 170.18 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "VREG_1V1"
+		(shape passive)
+		(at 349.25 43.18 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "33866448-6be9-56e1-a485-5ca644b6b1c8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 349.25 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "PROG_EN_N"
+		(shape passive)
+		(at 276.86 250.19 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "33b904f0-e19b-5eaf-84b0-d5b926b98eaa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 276.86 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 349.25 186.69 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "3c453731-4b91-5962-8e00-7e7b0a92b0e1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 349.25 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_5V"
+		(shape passive)
+		(at 349.25 210.82 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "40b177a4-b858-5d0a-a6d8-9917ef5f6c26")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 349.25 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 369.57 43.18 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "435884ee-a9a9-5aa6-9e9c-cd7e33393faf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 369.57 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 69.85 186.69 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "49c6baee-7989-5e09-b545-b106fbe33383")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 69.85 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 149.86 138.43 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "4c2a1e0d-cc7e-523b-bcb5-e172b0f98369")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 149.86 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 170.18 67.31 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "4fb5894f-7dd3-5a7d-a601-15eeec48ec64")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 170.18 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 49.53 91.44 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "560815c2-20a5-5c60-a650-2f5a71f08462")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 49.53 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 149.86 67.31 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "5676b18a-50ee-5964-9d89-6aef28e398ad")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 149.86 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 349.25 115.57 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "5907d21c-d6db-5914-836c-b8ceff0b5ead")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 349.25 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 369.57 186.69 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "5a4bbef6-6837-535c-8277-92fda8825f72")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 369.57 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 250.19 210.82 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "5b2ee9a8-2320-59c6-92d3-57b2716784d9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 250.19 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "VREG_1V1"
+		(shape passive)
+		(at 149.86 115.57 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "69522eb3-6655-524c-badc-cd30506b9133")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 149.86 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 49.53 43.18 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "6f123484-f867-568d-9b99-1d166b314cbf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 49.53 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 270.51 67.31 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "6f3ebba1-0e0f-5863-9acd-32b159a0b24f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 270.51 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 349.25 162.56 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "6fc324a6-478e-5a17-87e9-21cbf76d2d9e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 349.25 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 270.51 43.18 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "709da3bb-b64b-573c-a7bf-47ebb6296e66")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 270.51 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 369.57 67.31 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "710f8700-cab2-56f2-a993-e75d9105ce70")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 369.57 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "SWCLK"
+		(shape passive)
+		(at 148.59 250.19 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "76127b30-dfb0-5af1-9756-13de70e46757")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 148.59 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 149.86 91.44 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "762eb3ed-a093-5b8e-8228-aff1fab475f3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 149.86 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "SWDIO"
+		(shape passive)
+		(at 181.61 250.19 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "7bdab624-a1f6-544b-b4b4-15340686f6ad")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 181.61 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "MCU_RUN"
+		(shape passive)
+		(at 213.36 250.19 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "815a397b-9b68-5b65-9e4e-88a7c6bf932d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 213.36 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 170.18 43.18 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "81635436-73ab-5d9a-958f-29bd3add0dbf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 170.18 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 250.19 162.56 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "820615da-a0e5-5452-932b-53981643dd40")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 250.19 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 250.19 91.44 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "852ccb29-6dc6-5336-8fb4-e9f3052322f9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 250.19 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 49.53 67.31 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "86e79038-27bf-54fc-a595-3d9a98cf9e68")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 49.53 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "PLAY_EN_N"
+		(shape passive)
+		(at 245.11 250.19 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "8bc76a1e-8742-5c45-bd06-65b08192bcac")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 245.11 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 170.18 186.69 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "924b7aaa-0748-535a-b953-979f07e3729e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 170.18 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 149.86 43.18 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "93bbac75-22e0-5d15-a904-477331b8b56a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 149.86 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 149.86 186.69 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "96d8907e-e682-5d6d-8365-588dac55729b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 149.86 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "SYS_READY"
+		(shape passive)
+		(at 116.84 250.19 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "a877a2c5-fb34-58d4-972c-0650d12dafea")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 116.84 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 69.85 138.43 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "aca64d4f-2027-5860-bd81-d580f4718a15")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 69.85 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 250.19 115.57 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "ad55bacd-7854-5666-bc26-ae5d4ff1173b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 250.19 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "FLASH_CE_N"
+		(shape passive)
+		(at 308.61 250.19 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "b427dfe9-beeb-5358-9d51-ef9cff5e5491")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 308.61 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 170.18 115.57 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "b840741f-88f1-5f35-84a4-3b703625bb46")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 170.18 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 369.57 115.57 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "c03a3c35-5f48-513c-bf61-67b38abeade5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 369.57 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 149.86 210.82 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "c0dd8f1a-df49-552e-b6d2-3ef2ae19e3b6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 149.86 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 369.57 162.56 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "c1648244-b7ad-58fe-bc29-1962a0c4625e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 369.57 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 349.25 138.43 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "c4030de1-475f-5730-b3b8-0273a7fd89b2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 349.25 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "FLASH_OE_N"
+		(shape passive)
+		(at 341.63 250.19 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "c456a514-c71a-5b4a-b48c-fdcc825383ea")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 341.63 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 49.53 162.56 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "c59a169c-f629-5128-a61c-6d15dcd07d40")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 49.53 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 270.51 138.43 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "c5ecfca1-434b-5f48-931d-175908e0d197")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 270.51 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 49.53 210.82 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "c83a99ae-f5b9-5406-8780-ec29e39dee07")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 49.53 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 49.53 186.69 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "cb34baf2-b634-5ef3-bc56-355e25cb22f9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 49.53 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 69.85 210.82 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "cf09ecd1-aa5f-570b-bcad-e1656932ede6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 69.85 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 21.59 250.19 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "d161e217-479f-5c01-be5a-58ab5743f6b9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 21.59 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 49.53 138.43 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "d7054e64-56f7-55d8-be2a-5823cce6d8a4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 49.53 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 349.25 67.31 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "daedc2a1-9f5e-57bf-81e1-85b6c21e6b11")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 349.25 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 270.51 162.56 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "dc1fbb8e-959d-5b38-bec2-07f82b9ef008")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 270.51 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 69.85 91.44 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "de69203c-f06d-5f43-a46d-adaff8c766f3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 69.85 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 270.51 91.44 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "e2751d90-7a78-56b1-a796-0ef6a165f923")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 270.51 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 69.85 43.18 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "e643bc94-0268-5055-b3b6-502ebad22caf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 69.85 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 270.51 210.82 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "ee32a4aa-9ac2-5d87-be99-6d7abf98a3f0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 270.51 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 53.34 250.19 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "ef318280-4391-5968-840c-65e11955eb87")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 53.34 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "FLASH_WE_N"
+		(shape passive)
+		(at 373.38 250.19 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "efc10e34-eab8-589c-ad44-fbd2c7de30ab")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 373.38 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 49.53 115.57 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "f6e027ad-3227-5def-88fa-337fb02ba9cf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 49.53 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 170.18 162.56 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "f864a8ed-88a4-5e17-819b-a96e6ec13c57")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 170.18 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "VREG_1V1"
+		(shape passive)
+		(at 349.25 91.44 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "f8e012e8-fe87-5f78-ac54-612fe221e438")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 349.25 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 170.18 138.43 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "f9e967b4-f0ba-561a-9d1d-1cb50825665d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 170.18 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 69.85 162.56 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "faa5cd4d-2e2b-599b-8056-0ff47a8d1568")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 69.85 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 369.57 138.43 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "fbbd5817-893f-5dbb-8855-b29b7872c286")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 369.57 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "SYS_5V"
+		(shape passive)
+		(at 85.09 250.19 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "fbdf13cc-df6f-57d5-b31f-5c258a09cde3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 85.09 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:C_100n")
+		(at 160.02 162.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "025d8126-be22-5f5d-a3e3-404cf17aa262")
+		(property "Reference" "C33"
+			(at 160.02 159.56 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 160.02 165.66 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:C_0603_1608Metric"
+			(at 160.02 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+			(at 160.02 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100nF 50V X7R 10%, 1608 metric"
+			(at 160.02 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 160.02 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 160.02 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 160.02 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C14663"
+			(at 160.02 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 160.02 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 160.02 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 160.02 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at U11 supply"
+			(at 160.02 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3933665a-3c89-520a-b32b-20dd33c67c33")
+		)
+		(pin "2"
+			(uuid "9231737f-c41c-5b9c-8ef2-6449ec31fc23")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "C33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:TEST")
+		(at 254 250.19 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "0b31c982-c532-52ff-8db2-429d8fee87bf")
+		(property "Reference" "TP8"
+			(at 254 246.72 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "PLAY_EN_N"
+			(at 254 253.86 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:TestPoint_1mm"
+			(at 254 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Copper-only test point; no component to assemble"
+			(at 254 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 254 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "TestPoint"
+			(at 254 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 254 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 254 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" ""
+			(at 254 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "COPPER_ONLY"
+			(at 254 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "NOT_REQUIRED"
+			(at 254 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" ""
+			(at 254 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "18dbf499-03d3-58cf-8583-3999912c420c")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "TP8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:C_100n")
+		(at 359.41 210.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "168460fd-c81a-54cf-9b8b-3aca5e0b051f")
+		(property "Reference" "C43"
+			(at 359.41 207.82 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 359.41 213.92 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:C_0603_1608Metric"
+			(at 359.41 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+			(at 359.41 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100nF 50V X7R 10%, 1608 metric"
+			(at 359.41 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 359.41 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 359.41 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 359.41 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C14663"
+			(at 359.41 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 359.41 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 359.41 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 359.41 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at U11 VCCB pins23/24"
+			(at 359.41 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1e8187cd-d3fc-5dcb-b605-e9b331e4d832")
+		)
+		(pin "2"
+			(uuid "95bac326-3358-57d5-8cee-dd5f12ddf606")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "C43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:C_100n")
+		(at 160.02 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1911ea20-b18c-4a7d-90ac-8431dd991a49")
+		(property "Reference" "C14"
+			(at 160.02 88.44 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 160.02 94.54 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:C_0603_1608Metric"
+			(at 160.02 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+			(at 160.02 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100nF 50V X7R 10%, 1608 metric"
+			(at 160.02 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 160.02 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 160.02 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 160.02 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C14663"
+			(at 160.02 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 160.02 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 160.02 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 160.02 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at U3 ADC_AVDD pin43"
+			(at 160.02 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a67f5c9f-a150-58e9-9028-6ca6922ef510")
+		)
+		(pin "2"
+			(uuid "036ac2f2-3a95-5f0b-a1ab-335364b4b6da")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:TEST")
+		(at 125.73 250.19 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "1ce83f3c-a220-5131-8457-2d854848e585")
+		(property "Reference" "TP4"
+			(at 125.73 246.72 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "SYS_READY"
+			(at 125.73 253.86 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:TestPoint_1mm"
+			(at 125.73 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Copper-only test point; no component to assemble"
+			(at 125.73 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 125.73 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "TestPoint"
+			(at 125.73 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 125.73 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 125.73 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" ""
+			(at 125.73 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "COPPER_ONLY"
+			(at 125.73 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "NOT_REQUIRED"
+			(at 125.73 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" ""
+			(at 125.73 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "63e33e9c-b6e9-5f98-82c1-7473728ae265")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "TP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:C_100n")
+		(at 59.69 186.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "23d01b4a-7e3b-56b4-83ca-a76158ecda88")
+		(property "Reference" "C36"
+			(at 59.69 183.69 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 59.69 189.79 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:C_0603_1608Metric"
+			(at 59.69 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+			(at 59.69 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100nF 50V X7R 10%, 1608 metric"
+			(at 59.69 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 59.69 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 59.69 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 59.69 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C14663"
+			(at 59.69 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 59.69 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 59.69 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 59.69 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at U14 supply"
+			(at 59.69 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a08ed6bd-2df9-53cc-8525-78239b33758c")
+		)
+		(pin "2"
+			(uuid "61e8687e-a03f-5d48-b3e5-03ca810e3aa7")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "C36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:C_100n")
+		(at 160.02 115.57 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "252e84e3-eda8-5d35-a441-e4770fce6165")
+		(property "Reference" "C25"
+			(at 160.02 112.57 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 160.02 118.67 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:C_0603_1608Metric"
+			(at 160.02 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+			(at 160.02 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100nF 50V X7R 10%, 1608 metric"
+			(at 160.02 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 160.02 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 160.02 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 160.02 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C14663"
+			(at 160.02 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 160.02 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 160.02 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 160.02 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at U3 DVDD pin50"
+			(at 160.02 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2c929bb2-d190-58d6-8b79-f5881df49229")
+		)
+		(pin "2"
+			(uuid "3a0ecee4-8ef4-58a2-9194-0b857e5509b8")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "C25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:C_100n")
+		(at 59.69 162.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "25574ab3-3f61-5b93-a581-08433601e983")
+		(property "Reference" "C32"
+			(at 59.69 159.56 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 59.69 165.66 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:C_0603_1608Metric"
+			(at 59.69 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+			(at 59.69 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100nF 50V X7R 10%, 1608 metric"
+			(at 59.69 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 59.69 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 59.69 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 59.69 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C14663"
+			(at 59.69 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 59.69 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 59.69 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 59.69 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at U10 supply"
+			(at 59.69 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fa607ba8-b179-5f17-a677-d63b234939eb")
+		)
+		(pin "2"
+			(uuid "d09f6719-c191-51d2-95d6-2ae98babf715")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "C32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:C_100n")
+		(at 359.41 138.43 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2c3c0f50-f7d3-5c65-97cf-42003da94289")
+		(property "Reference" "C31"
+			(at 359.41 135.43 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 359.41 141.53 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:C_0603_1608Metric"
+			(at 359.41 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+			(at 359.41 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100nF 50V X7R 10%, 1608 metric"
+			(at 359.41 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 359.41 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 359.41 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 359.41 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C14663"
+			(at 359.41 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 359.41 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 359.41 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 359.41 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at U9 supply"
+			(at 359.41 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "073086df-a898-5c8c-9275-8d6b7f18f073")
+		)
+		(pin "2"
+			(uuid "61f9c1ac-c47a-50f5-99d2-3b1643956d40")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "C31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:TEST")
+		(at 222.25 250.19 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "2cfcbc3f-2e8c-5e29-8a6e-bf11d5755f4d")
+		(property "Reference" "TP7"
+			(at 222.25 246.72 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "MCU_RUN"
+			(at 222.25 253.86 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:TestPoint_1mm"
+			(at 222.25 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 222.25 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Copper-only test point; no component to assemble"
+			(at 222.25 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 222.25 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "TestPoint"
+			(at 222.25 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 222.25 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 222.25 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" ""
+			(at 222.25 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "COPPER_ONLY"
+			(at 222.25 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "NOT_REQUIRED"
+			(at 222.25 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" ""
+			(at 222.25 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "257c7aca-030e-530b-a90b-fff694108441")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "TP7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:C_100n")
+		(at 260.35 210.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "392d7780-9bd1-5836-8259-55c2e5f61685")
+		(property "Reference" "C42"
+			(at 260.35 207.82 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 260.35 213.92 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:C_0603_1608Metric"
+			(at 260.35 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+			(at 260.35 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100nF 50V X7R 10%, 1608 metric"
+			(at 260.35 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 260.35 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 260.35 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 260.35 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C14663"
+			(at 260.35 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 260.35 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 260.35 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 260.35 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at U23 supply"
+			(at 260.35 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "67fe2f75-633c-5a47-8cb3-6c788ca7308d")
+		)
+		(pin "2"
+			(uuid "f54d3dab-22ba-5904-a248-6360fa04b02d")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "C42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:C_100n")
+		(at 359.41 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "40c22efe-5818-4d9f-b49b-64e55be04043")
+		(property "Reference" "C16"
+			(at 359.41 88.44 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 359.41 94.54 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:C_0603_1608Metric"
+			(at 359.41 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+			(at 359.41 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100nF 50V X7R 10%, 1608 metric"
+			(at 359.41 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 359.41 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 359.41 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 359.41 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C14663"
+			(at 359.41 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 359.41 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 359.41 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 359.41 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at U3 DVDD pin23"
+			(at 359.41 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b047ecea-69e9-5fde-8fe8-d45d798d22de")
+		)
+		(pin "2"
+			(uuid "d5953db0-c1de-5bee-89a3-8d38eb9af3e1")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:TEST")
+		(at 157.48 250.19 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "4ab3aad6-e655-5a9c-881e-fbf7c53e8593")
+		(property "Reference" "TP5"
+			(at 157.48 246.72 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "SWCLK"
+			(at 157.48 253.86 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:TestPoint_1mm"
+			(at 157.48 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Copper-only test point; no component to assemble"
+			(at 157.48 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 157.48 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "TestPoint"
+			(at 157.48 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 157.48 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 157.48 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" ""
+			(at 157.48 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "COPPER_ONLY"
+			(at 157.48 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "NOT_REQUIRED"
+			(at 157.48 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" ""
+			(at 157.48 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7240e06d-a453-5dd4-9186-585dc670aa22")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:C_100n")
+		(at 359.41 115.57 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4c791ce3-c3c8-5644-986f-6afc9641518d")
+		(property "Reference" "C27"
+			(at 359.41 112.57 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 359.41 118.67 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:C_0603_1608Metric"
+			(at 359.41 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+			(at 359.41 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100nF 50V X7R 10%, 1608 metric"
+			(at 359.41 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 359.41 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 359.41 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 359.41 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C14663"
+			(at 359.41 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 359.41 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 359.41 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 359.41 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at U5 supply"
+			(at 359.41 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ee24dfff-cac3-5b5a-915b-694e174c6864")
+		)
+		(pin "2"
+			(uuid "de06e251-bb72-51e3-83c8-d46103159ca2")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "C27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:C_100n")
+		(at 260.35 43.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4f27c6db-c240-4228-9f8b-cd6810efbb57")
+		(property "Reference" "C7"
+			(at 260.35 40.18 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 260.35 46.28 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:C_0603_1608Metric"
+			(at 260.35 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+			(at 260.35 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100nF 50V X7R 10%, 1608 metric"
+			(at 260.35 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 260.35 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 260.35 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 260.35 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C14663"
+			(at 260.35 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 260.35 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 260.35 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 260.35 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at U3 IOVDD pin10"
+			(at 260.35 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2b507b9a-330e-5591-92cb-4894d51b9540")
+		)
+		(pin "2"
+			(uuid "77416aa7-ec24-5f00-adc4-c5af88b5dbb2")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:C_100n")
+		(at 260.35 138.43 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5322baf7-15d7-57ab-bcc6-bff70b2966b9")
+		(property "Reference" "C30"
+			(at 260.35 135.43 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 260.35 141.53 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:C_0603_1608Metric"
+			(at 260.35 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+			(at 260.35 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100nF 50V X7R 10%, 1608 metric"
+			(at 260.35 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 260.35 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 260.35 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 260.35 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C14663"
+			(at 260.35 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 260.35 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 260.35 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 260.35 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at U8 supply"
+			(at 260.35 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "acff4992-e8c3-5a13-a526-8afc62509510")
+		)
+		(pin "2"
+			(uuid "efddc682-7a51-53c9-8d4c-f7b1485341bf")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "C30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:C_100n")
+		(at 59.69 43.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5addf69b-abdc-48af-a64a-cb9ee78ed874")
+		(property "Reference" "C5"
+			(at 59.69 40.18 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 59.69 46.28 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:C_0603_1608Metric"
+			(at 59.69 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+			(at 59.69 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100nF 50V X7R 10%, 1608 metric"
+			(at 59.69 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 59.69 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 59.69 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 59.69 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C14663"
+			(at 59.69 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 59.69 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 59.69 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 59.69 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at U2 QSPI"
+			(at 59.69 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ad2e81d1-5df4-55f7-9439-3689b5b3a5fe")
+		)
+		(pin "2"
+			(uuid "c22a7547-ec3a-56bc-b705-7be8a072dd0d")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:TEST")
+		(at 93.98 250.19 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "5c33c1df-9957-52d6-b3e6-122540c52cad")
+		(property "Reference" "TP3"
+			(at 93.98 246.72 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "SYS_5V"
+			(at 93.98 253.86 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:TestPoint_1mm"
+			(at 93.98 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Copper-only test point; no component to assemble"
+			(at 93.98 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 93.98 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "TestPoint"
+			(at 93.98 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 93.98 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 93.98 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" ""
+			(at 93.98 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "COPPER_ONLY"
+			(at 93.98 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "NOT_REQUIRED"
+			(at 93.98 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" ""
+			(at 93.98 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "94efa4b9-0579-548e-8292-e7cdf4d0b3e5")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:C_1u")
+		(at 160.02 67.31 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5f9ca0e4-47d0-41da-b1d0-fd25462dc7ad")
+		(property "Reference" "C10"
+			(at 160.02 64.31 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "1u"
+			(at 160.02 70.41 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:C_0603_1608Metric"
+			(at 160.02 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C15849.html"
+			(at 160.02 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "1uF 50V X5R 10%, 1608 metric"
+			(at 160.02 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 160.02 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "CL10A105KB8NNNC"
+			(at 160.02 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C15849"
+			(at 160.02 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C15849"
+			(at 160.02 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C15849"
+			(at 160.02 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 160.02 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 160.02 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at U3 VREG_IN pin44"
+			(at 160.02 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4abb2299-428f-53f5-8ea1-11ce2aecf194")
+		)
+		(pin "2"
+			(uuid "3535e08b-4205-5f4d-9589-30bdbbf285aa")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:C_100n")
+		(at 359.41 162.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6271b54b-b5cf-5a8a-8e4b-82ede2895f3e")
+		(property "Reference" "C35"
+			(at 359.41 159.56 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 359.41 165.66 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:C_0603_1608Metric"
+			(at 359.41 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+			(at 359.41 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100nF 50V X7R 10%, 1608 metric"
+			(at 359.41 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 359.41 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 359.41 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 359.41 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C14663"
+			(at 359.41 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 359.41 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 359.41 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 359.41 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at U13 supply"
+			(at 359.41 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c6e2983d-7e90-51cd-a201-545a311570fe")
+		)
+		(pin "2"
+			(uuid "6f178c89-7077-5d45-add8-cc91be6fdd2b")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "C35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:C_100n")
+		(at 160.02 186.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "633191dd-4c9e-579b-b740-1b7bccf7d21a")
+		(property "Reference" "C37"
+			(at 160.02 183.69 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 160.02 189.79 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:C_0603_1608Metric"
+			(at 160.02 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+			(at 160.02 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100nF 50V X7R 10%, 1608 metric"
+			(at 160.02 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 160.02 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 160.02 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 160.02 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C14663"
+			(at 160.02 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 160.02 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 160.02 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 160.02 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at U15 supply"
+			(at 160.02 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9f78e713-5df3-520c-89de-e449b07b6a8d")
+		)
+		(pin "2"
+			(uuid "8bf8a430-0b0e-5eaa-acfa-e57d1c81cd2b")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "C37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:C_100n")
+		(at 260.35 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6e84998c-d7b5-463f-bfd5-816d90dcd7e4")
+		(property "Reference" "C15"
+			(at 260.35 88.44 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 260.35 94.54 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:C_0603_1608Metric"
+			(at 260.35 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+			(at 260.35 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100nF 50V X7R 10%, 1608 metric"
+			(at 260.35 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 260.35 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 260.35 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 260.35 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C14663"
+			(at 260.35 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 260.35 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 260.35 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 260.35 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at U3 USB_VDD pin48"
+			(at 260.35 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "91f310b8-7016-55a1-9dfe-c537ba1633c7")
+		)
+		(pin "2"
+			(uuid "8ddeb094-15b0-537e-b3a1-ac32b7dbf4c4")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:TEST")
+		(at 350.52 250.19 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "6f1ff0e4-d134-58c6-9ec0-b64ed12c3464")
+		(property "Reference" "TP11"
+			(at 350.52 246.72 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "FLASH_OE_N"
+			(at 350.52 253.86 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:TestPoint_1mm"
+			(at 350.52 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 350.52 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Copper-only test point; no component to assemble"
+			(at 350.52 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 350.52 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "TestPoint"
+			(at 350.52 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 350.52 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 350.52 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" ""
+			(at 350.52 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "COPPER_ONLY"
+			(at 350.52 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "NOT_REQUIRED"
+			(at 350.52 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" ""
+			(at 350.52 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a665abcf-3711-5169-90e2-994f23845f73")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "TP11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:TEST")
+		(at 285.75 250.19 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "73ac51b8-81ad-558a-aa1c-9c5641ae6feb")
+		(property "Reference" "TP9"
+			(at 285.75 246.72 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "PROG_EN_N"
+			(at 285.75 253.86 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:TestPoint_1mm"
+			(at 285.75 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 285.75 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Copper-only test point; no component to assemble"
+			(at 285.75 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 285.75 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "TestPoint"
+			(at 285.75 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 285.75 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 285.75 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" ""
+			(at 285.75 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "COPPER_ONLY"
+			(at 285.75 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "NOT_REQUIRED"
+			(at 285.75 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" ""
+			(at 285.75 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9b758dfb-7faf-5320-9910-deaa3d4e8a74")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "TP9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:C_100n")
+		(at 59.69 138.43 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "762728a4-9ed7-57ef-be3c-6b6e706f7854")
+		(property "Reference" "C28"
+			(at 59.69 135.43 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 59.69 141.53 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:C_0603_1608Metric"
+			(at 59.69 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+			(at 59.69 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100nF 50V X7R 10%, 1608 metric"
+			(at 59.69 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 59.69 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 59.69 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 59.69 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C14663"
+			(at 59.69 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 59.69 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 59.69 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 59.69 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at U6 supply"
+			(at 59.69 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d52a07fe-a1a6-5931-9b9a-ec81e1438dd7")
+		)
+		(pin "2"
+			(uuid "60f1294a-11fe-57d0-9fa8-0db3eaa129a0")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "C28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:TEST")
+		(at 317.5 250.19 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "77546220-8287-5306-8605-4109bccdcc77")
+		(property "Reference" "TP10"
+			(at 317.5 246.72 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "FLASH_CE_N"
+			(at 317.5 253.86 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:TestPoint_1mm"
+			(at 317.5 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 317.5 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Copper-only test point; no component to assemble"
+			(at 317.5 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 317.5 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "TestPoint"
+			(at 317.5 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 317.5 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 317.5 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" ""
+			(at 317.5 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "COPPER_ONLY"
+			(at 317.5 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "NOT_REQUIRED"
+			(at 317.5 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" ""
+			(at 317.5 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3aa8f285-c0eb-58f3-adec-4662106586da")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "TP10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:C_100n")
+		(at 59.69 210.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "78d43441-dbe1-566b-85fc-d1d482a0124f")
+		(property "Reference" "C40"
+			(at 59.69 207.82 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 59.69 213.92 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:C_0603_1608Metric"
+			(at 59.69 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+			(at 59.69 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100nF 50V X7R 10%, 1608 metric"
+			(at 59.69 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 59.69 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 59.69 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 59.69 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C14663"
+			(at 59.69 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 59.69 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 59.69 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 59.69 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at U18 supply"
+			(at 59.69 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "84c2b815-c3ee-5194-b0d3-73eb62a57ecc")
+		)
+		(pin "2"
+			(uuid "ecdd4c98-d4e9-5744-b6e4-779ead737709")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "C40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:C_100n")
+		(at 260.35 162.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "79617815-089c-5976-bf6f-0bffdfd7cda6")
+		(property "Reference" "C34"
+			(at 260.35 159.56 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 260.35 165.66 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:C_0603_1608Metric"
+			(at 260.35 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+			(at 260.35 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100nF 50V X7R 10%, 1608 metric"
+			(at 260.35 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 260.35 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 260.35 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 260.35 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C14663"
+			(at 260.35 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 260.35 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 260.35 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 260.35 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at U12 supply"
+			(at 260.35 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "28219bce-4ad2-5be5-bc69-a425a76e152d")
+		)
+		(pin "2"
+			(uuid "abc85be6-adc7-5b23-ae41-5616bd462bed")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "C34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:TEST")
+		(at 30.48 250.19 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "8671de6d-fa88-511c-abf8-01b30201749a")
+		(property "Reference" "TP1"
+			(at 30.48 246.72 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 30.48 253.86 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:TestPoint_1mm"
+			(at 30.48 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Copper-only test point; no component to assemble"
+			(at 30.48 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 30.48 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "TestPoint"
+			(at 30.48 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 30.48 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 30.48 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" ""
+			(at 30.48 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "COPPER_ONLY"
+			(at 30.48 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "NOT_REQUIRED"
+			(at 30.48 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" ""
+			(at 30.48 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9159f72a-0ebe-51ee-ad9f-3fb2af002287")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:C_100n")
+		(at 260.35 67.31 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8ac97f55-3e4f-4fcb-a52a-650cde6696a1")
+		(property "Reference" "C11"
+			(at 260.35 64.31 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 260.35 70.41 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:C_0603_1608Metric"
+			(at 260.35 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+			(at 260.35 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100nF 50V X7R 10%, 1608 metric"
+			(at 260.35 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 260.35 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 260.35 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 260.35 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C14663"
+			(at 260.35 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 260.35 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 260.35 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 260.35 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at U3 IOVDD pin33"
+			(at 260.35 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b00f3fe3-2785-5098-a157-1a676ddef1cb")
+		)
+		(pin "2"
+			(uuid "fb47167d-dc2e-56c4-89cd-cb5537a2aa11")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:C_100n")
+		(at 359.41 186.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "913647ee-f4e1-563e-9a3e-d0a30681b862")
+		(property "Reference" "C39"
+			(at 359.41 183.69 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 359.41 189.79 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:C_0603_1608Metric"
+			(at 359.41 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+			(at 359.41 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100nF 50V X7R 10%, 1608 metric"
+			(at 359.41 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 359.41 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 359.41 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 359.41 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C14663"
+			(at 359.41 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 359.41 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 359.41 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 359.41 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at U17 supply"
+			(at 359.41 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a1ca5cac-1e09-59fd-b69f-3c952d4686f4")
+		)
+		(pin "2"
+			(uuid "da02305c-4b85-501b-baec-970c869628c7")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "C39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:C_100n")
+		(at 359.41 67.31 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "984849c2-baa9-48b1-8428-94922e1356be")
+		(property "Reference" "C12"
+			(at 359.41 64.31 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 359.41 70.41 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:C_0603_1608Metric"
+			(at 359.41 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+			(at 359.41 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100nF 50V X7R 10%, 1608 metric"
+			(at 359.41 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 359.41 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 359.41 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 359.41 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C14663"
+			(at 359.41 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 359.41 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 359.41 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 359.41 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at U3 IOVDD pin42"
+			(at 359.41 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7efaaf12-38bc-590a-8fd8-27186d48459a")
+		)
+		(pin "2"
+			(uuid "50f2fcb2-1460-5efc-af83-e8738b27fe9d")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:C_100n")
+		(at 59.69 67.31 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "989f8f37-34e2-4a45-aaa8-e4edb113e669")
+		(property "Reference" "C9"
+			(at 59.69 64.31 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 59.69 70.41 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:C_0603_1608Metric"
+			(at 59.69 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+			(at 59.69 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100nF 50V X7R 10%, 1608 metric"
+			(at 59.69 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 59.69 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 59.69 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 59.69 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C14663"
+			(at 59.69 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 59.69 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 59.69 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 59.69 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at U3 IOVDD pin22"
+			(at 59.69 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "143f7750-ce1a-5143-b18f-cea36005b58b")
+		)
+		(pin "2"
+			(uuid "a4a124aa-2752-5ad9-bd5a-1ad6043ba743")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:C_1u")
+		(at 359.41 43.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9ac6299b-736f-4ad8-98a2-67cd958950a2")
+		(property "Reference" "C8"
+			(at 359.41 40.18 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "1u"
+			(at 359.41 46.28 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:C_0603_1608Metric"
+			(at 359.41 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C15849.html"
+			(at 359.41 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "1uF 50V X5R 10%, 1608 metric"
+			(at 359.41 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 359.41 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "CL10A105KB8NNNC"
+			(at 359.41 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C15849"
+			(at 359.41 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C15849"
+			(at 359.41 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C15849"
+			(at 359.41 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 359.41 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 359.41 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at U3 VREG_VOUT pin45"
+			(at 359.41 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "843b04be-8d59-5da6-98b5-e4aaaadecfef")
+		)
+		(pin "2"
+			(uuid "eeb847dd-0925-59e4-9a2e-e72b9c913487")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:C_100n")
+		(at 160.02 210.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a0376a9e-1bf1-55eb-b4ff-7da0d738f8c6")
+		(property "Reference" "C41"
+			(at 160.02 207.82 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 160.02 213.92 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:C_0603_1608Metric"
+			(at 160.02 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+			(at 160.02 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100nF 50V X7R 10%, 1608 metric"
+			(at 160.02 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 160.02 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 160.02 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 160.02 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C14663"
+			(at 160.02 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 160.02 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 160.02 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 160.02 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at U19 supply"
+			(at 160.02 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f8a13083-a400-56eb-b976-a5bf14dbf968")
+		)
+		(pin "2"
+			(uuid "ca855c89-dcf9-5d2f-952d-db8b576b1420")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "C41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:C_100n")
+		(at 160.02 138.43 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "adf32b74-a679-5b18-80e3-4b1588c49b32")
+		(property "Reference" "C29"
+			(at 160.02 135.43 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 160.02 141.53 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:C_0603_1608Metric"
+			(at 160.02 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+			(at 160.02 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100nF 50V X7R 10%, 1608 metric"
+			(at 160.02 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 160.02 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 160.02 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 160.02 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C14663"
+			(at 160.02 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 160.02 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 160.02 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 160.02 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at U7 supply"
+			(at 160.02 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8cbdc5b2-359e-5a06-80d4-a5eef7729c67")
+		)
+		(pin "2"
+			(uuid "ce8fcb0b-b46a-5430-8f1a-28e8252a634e")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "C29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:C_100n")
+		(at 260.35 115.57 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ae9af10e-ee5a-5cbd-8f21-9ecbc79e6f13")
+		(property "Reference" "C26"
+			(at 260.35 112.57 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 260.35 118.67 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:C_0603_1608Metric"
+			(at 260.35 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+			(at 260.35 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100nF 50V X7R 10%, 1608 metric"
+			(at 260.35 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 260.35 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 260.35 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 260.35 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C14663"
+			(at 260.35 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 260.35 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 260.35 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 260.35 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at U4 supply"
+			(at 260.35 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1ed63698-9c63-5cf4-af13-c065ce5ee17e")
+		)
+		(pin "2"
+			(uuid "ff7abf80-09c1-51f8-a93a-2c6e314cff39")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "C26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:C_10u")
+		(at 59.69 115.57 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b00e7610-9502-4b80-bd19-1aaa529908b8")
+		(property "Reference" "C17"
+			(at 59.69 112.57 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "10u"
+			(at 59.69 118.67 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:C_0603_1608Metric"
+			(at 59.69 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C19702.html"
+			(at 59.69 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "10uF 10V X5R 10%, 1608 metric"
+			(at 59.69 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 59.69 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "CL10A106KP8NNNC"
+			(at 59.69 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C19702"
+			(at 59.69 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C19702"
+			(at 59.69 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C19702"
+			(at 59.69 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 59.69 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 59.69 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at RP2040 bulk"
+			(at 59.69 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "02468cff-7636-52ea-9ba0-bd32ee4e347f")
+		)
+		(pin "2"
+			(uuid "2794255c-d023-538d-a019-ddf5194811d9")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "C17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:C_100n")
+		(at 260.35 186.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b2de144e-38a5-5e40-a834-1a860c83671c")
+		(property "Reference" "C38"
+			(at 260.35 183.69 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 260.35 189.79 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:C_0603_1608Metric"
+			(at 260.35 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+			(at 260.35 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100nF 50V X7R 10%, 1608 metric"
+			(at 260.35 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 260.35 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 260.35 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 260.35 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C14663"
+			(at 260.35 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 260.35 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 260.35 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 260.35 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at U16 supply"
+			(at 260.35 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f25373f3-7e76-58fd-8b47-d0871c070e6a")
+		)
+		(pin "2"
+			(uuid "61c80324-c096-5f9f-9130-1352e2020e26")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "C38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:C_100n")
+		(at 59.69 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e5081c7f-2a59-4cd4-abe1-f36c8bcf7851")
+		(property "Reference" "C13"
+			(at 59.69 88.44 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 59.69 94.54 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:C_0603_1608Metric"
+			(at 59.69 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+			(at 59.69 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100nF 50V X7R 10%, 1608 metric"
+			(at 59.69 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 59.69 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 59.69 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 59.69 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C14663"
+			(at 59.69 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 59.69 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 59.69 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 59.69 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at U3 IOVDD pin49"
+			(at 59.69 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2cf3998e-3864-5ecc-8318-82a6a85faca5")
+		)
+		(pin "2"
+			(uuid "2763f0f8-2aa4-58bd-914a-ca13574d9082")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:TEST")
+		(at 190.5 250.19 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "ebd25e57-88b2-5227-9c4b-ee1a9204fa1b")
+		(property "Reference" "TP6"
+			(at 190.5 246.72 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "SWDIO"
+			(at 190.5 253.86 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:TestPoint_1mm"
+			(at 190.5 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Copper-only test point; no component to assemble"
+			(at 190.5 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 190.5 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "TestPoint"
+			(at 190.5 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 190.5 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 190.5 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" ""
+			(at 190.5 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "COPPER_ONLY"
+			(at 190.5 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "NOT_REQUIRED"
+			(at 190.5 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" ""
+			(at 190.5 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ed20f963-c886-5815-b812-8ddd1f123f17")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:C_100n")
+		(at 160.02 43.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f4607f9d-40b8-4d94-b9fa-feabea6e0eca")
+		(property "Reference" "C6"
+			(at 160.02 40.18 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 160.02 46.28 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:C_0603_1608Metric"
+			(at 160.02 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+			(at 160.02 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100nF 50V X7R 10%, 1608 metric"
+			(at 160.02 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 160.02 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 160.02 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 160.02 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C14663"
+			(at 160.02 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 160.02 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 160.02 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 160.02 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at U3 IOVDD pin1"
+			(at 160.02 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "de41c704-9e9e-5990-bc1e-fc981dff9997")
+		)
+		(pin "2"
+			(uuid "64d220d2-ea0a-53b6-9109-327f42525104")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:TEST")
+		(at 382.27 250.19 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "fc6a4716-52ec-5ed5-8212-33be7da10efd")
+		(property "Reference" "TP12"
+			(at 382.27 246.72 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "FLASH_WE_N"
+			(at 382.27 253.86 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:TestPoint_1mm"
+			(at 382.27 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 382.27 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Copper-only test point; no component to assemble"
+			(at 382.27 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 382.27 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "TestPoint"
+			(at 382.27 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 382.27 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 382.27 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" ""
+			(at 382.27 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "COPPER_ONLY"
+			(at 382.27 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "NOT_REQUIRED"
+			(at 382.27 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" ""
+			(at 382.27 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "90118844-e52a-56a7-a616-b07f87f7d56d")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "TP12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:TEST")
+		(at 62.23 250.19 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "fef4e1af-bbd6-5a67-a772-97b9d5fbdc8a")
+		(property "Reference" "TP2"
+			(at 62.23 246.72 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "V3V3"
+			(at 62.23 253.86 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:TestPoint_1mm"
+			(at 62.23 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 62.23 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Copper-only test point; no component to assemble"
+			(at 62.23 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 62.23 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "TestPoint"
+			(at 62.23 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 62.23 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 62.23 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" ""
+			(at 62.23 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "COPPER_ONLY"
+			(at 62.23 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "NOT_REQUIRED"
+			(at 62.23 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" ""
+			(at 62.23 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ae7460d6-ac97-5380-9f2f-4c57e837f5e1")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/4c5a1fdd-8a53-540a-b918-12c0d5f7df39"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+)

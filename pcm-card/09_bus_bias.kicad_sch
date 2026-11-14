@@ -1,0 +1,8219 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "69c424da-7d54-5873-ad96-c2e789bb1540")
+	(paper "A3")
+	(title_block
+		(title "Idle-bus bias / unplugged-host defaults")
+		(date "2026-10-30")
+		(rev "A0-placement")
+		(company "CM-64 Multi PCM Card")
+		(comment 1 "SCHEMATIC ONLY / prototype: timing, mechanics and native ERC require review")
+	)
+	(lib_symbols
+		(symbol "PCM_Card:RN_4x100k"
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "RN"
+				(at 0 13.97 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "4x100k"
+				(at 0 11.43 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" "PCM_Card:Yageo_YC164_4x0603"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-YC164-FR-07100KL_C110374.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" "4 isolated 100k ohm resistors, 1%, 62.5mW each, 50V, convex 0603x4"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "RN_4x100k_1_1"
+				(rectangle
+					(start -3.81 10.16)
+					(end 3.81 -10.16)
+					(stroke
+						(width 0.1524)
+						(type dash)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -2.54 8.636)
+					(end 2.54 6.604)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -2.54 3.556)
+					(end 2.54 1.524)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -2.54 -1.524)
+					(end 2.54 -3.556)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -2.54 -6.604)
+					(end 2.54 -8.636)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -7.62 7.62 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 2.54 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -2.54 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -7.62 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 7.62 180)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -7.62 180)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_Card:R_100k"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0 8 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "0603WAF1003T5E"
+				(at 0 5 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" "PCM_Card:R_0603_1608Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C25803.html"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" "100k ohm, 1%, 0.1W, 1608 metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "R_100k_1_1"
+				(rectangle
+					(start -2.54 1.016)
+					(end 2.54 -1.016)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_Card:R_10k"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0 8 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "0603WAF1002T5E"
+				(at 0 5 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" "PCM_Card:R_0603_1608Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C25804.html"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" "10k ohm, 1%, 0.1W, 1608 metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "R_10k_1_1"
+				(rectangle
+					(start -2.54 1.016)
+					(end 2.54 -1.016)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "59 bus pull-downs: RN1..RN15, 4x100k isolated arrays (YAGEO YC164-FR-07100KL / C110374)."
+		(exclude_from_sim no)
+		(at 15 18 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+			)
+			(justify left top)
+		)
+		(uuid "97ff6fb2-7633-59a0-a300-11a9eabc16d2")
+	)
+	(text "Pin pairs: 1-5, 2-6, 3-7, 4-8. RN11 pins 4 and 8 are spare / NC. R98 remains a HOST_5V pull-up.\n100k loads: 50uA at 5V, 33uA at 3.3V. Do not substitute a common-pin resistor network."
+		(exclude_from_sim no)
+		(at 130 268 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left top)
+		)
+		(uuid "a22f2654-c221-5b3d-8115-a545e7d7277b")
+	)
+	(no_connect
+		(at 191.77 172.72)
+		(uuid "432ba61c-35bb-4f90-9858-98d5266d2a9b")
+	)
+	(no_connect
+		(at 207.01 172.72)
+		(uuid "a3015452-da51-4d8d-8954-f08d710c9d43")
+	)
+	(wire
+		(pts
+			(xy 207.01 116.84) (xy 214.63 116.84)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "015545a3-e438-4da8-a049-51abb33cf752")
+	)
+	(wire
+		(pts
+			(xy 194.31 252.73) (xy 189.23 252.73)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "0de385cf-e400-5578-86b5-1380134ca766")
+	)
+	(wire
+		(pts
+			(xy 77.47 81.28) (xy 85.09 81.28)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "0f1b8977-ddde-409f-b101-0872ebda23f6")
+	)
+	(wire
+		(pts
+			(xy 207.01 208.28) (xy 214.63 208.28)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "0f33f67d-3fb3-4637-8873-830d70619953")
+	)
+	(wire
+		(pts
+			(xy 207.01 213.36) (xy 214.63 213.36)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "0ff6cb7c-fccd-43fd-ae63-253fdc697664")
+	)
+	(wire
+		(pts
+			(xy 321.31 40.64) (xy 313.69 40.64)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "1036b61b-26e2-41f6-9305-9720de962834")
+	)
+	(wire
+		(pts
+			(xy 77.47 172.72) (xy 85.09 172.72)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "11241503-aca4-4fac-9f40-2c61d86e648a")
+	)
+	(wire
+		(pts
+			(xy 336.55 213.36) (xy 344.17 213.36)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "16a7a812-771f-4d08-9e19-f12402772701")
+	)
+	(wire
+		(pts
+			(xy 336.55 203.2) (xy 344.17 203.2)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "1d737b3b-1ac3-45c4-ab27-0d2f0028e77e")
+	)
+	(wire
+		(pts
+			(xy 336.55 162.56) (xy 344.17 162.56)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "1ddeca0d-9766-4604-bf55-3718769ad070")
+	)
+	(wire
+		(pts
+			(xy 207.01 81.28) (xy 214.63 81.28)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "1f1b7520-3312-4424-b27f-c70130e932fb")
+	)
+	(wire
+		(pts
+			(xy 207.01 203.2) (xy 214.63 203.2)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "1f2beb02-71bc-4555-bdfd-f355d7fc3aba")
+	)
+	(wire
+		(pts
+			(xy 191.77 86.36) (xy 184.15 86.36)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "230c3585-97cb-4636-ae3c-a4a79b2801ee")
+	)
+	(wire
+		(pts
+			(xy 207.01 162.56) (xy 214.63 162.56)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "23e06d52-4311-4497-bd78-c5f999b31d9b")
+	)
+	(wire
+		(pts
+			(xy 62.23 76.2) (xy 54.61 76.2)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "2866379c-220e-46dc-8c48-aeffab0ad0bc")
+	)
+	(wire
+		(pts
+			(xy 321.31 86.36) (xy 313.69 86.36)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "29a55790-9eea-4d09-a4e1-3c298f0ac6ca")
+	)
+	(wire
+		(pts
+			(xy 77.47 157.48) (xy 85.09 157.48)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "2a2bca02-a346-412a-b4a2-6148d51c0565")
+	)
+	(wire
+		(pts
+			(xy 62.23 162.56) (xy 54.61 162.56)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "2e54887f-7df6-4a72-ae72-beaf3f660389")
+	)
+	(wire
+		(pts
+			(xy 64.77 262.89) (xy 69.85 262.89)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "34097430-a3cb-53e5-924b-d8dbcbdb14f5")
+	)
+	(wire
+		(pts
+			(xy 321.31 172.72) (xy 313.69 172.72)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "34bc91a9-b2e6-42be-996b-6a4ad2b3d1ac")
+	)
+	(wire
+		(pts
+			(xy 321.31 167.64) (xy 313.69 167.64)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "36f03aaf-2512-48f4-ae66-5230c222b6f2")
+	)
+	(wire
+		(pts
+			(xy 62.23 127) (xy 54.61 127)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "39c2e56f-5899-4940-90a9-9eb51bcd55dd")
+	)
+	(wire
+		(pts
+			(xy 77.47 198.12) (xy 85.09 198.12)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "3b0ef54a-74c5-4d8c-a51a-d0cc11ffb4ad")
+	)
+	(wire
+		(pts
+			(xy 336.55 172.72) (xy 344.17 172.72)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "3c0aae4e-f985-484d-98de-476ee895787d")
+	)
+	(wire
+		(pts
+			(xy 191.77 116.84) (xy 184.15 116.84)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "3c47f28a-31e6-4e7c-b986-15110ff7a0c2")
+	)
+	(wire
+		(pts
+			(xy 77.47 40.64) (xy 85.09 40.64)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "3caa27b6-3af3-4977-80ee-f5f767af1118")
+	)
+	(wire
+		(pts
+			(xy 191.77 45.72) (xy 184.15 45.72)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "3ddb4afc-aa84-4714-895a-acc507388425")
+	)
+	(wire
+		(pts
+			(xy 62.23 91.44) (xy 54.61 91.44)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "3e57f5ee-e41c-4698-a143-41cef44ef4aa")
+	)
+	(wire
+		(pts
+			(xy 77.47 213.36) (xy 85.09 213.36)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "3f22d8d4-8b38-4eff-83d0-7a2e0989e5bf")
+	)
+	(wire
+		(pts
+			(xy 62.23 172.72) (xy 54.61 172.72)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "3f49fb69-7a72-47f7-9d2e-d90e0488a5e2")
+	)
+	(wire
+		(pts
+			(xy 191.77 40.64) (xy 184.15 40.64)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "3fdd623e-d8fb-4289-a6c7-e5acaf9d7bc8")
+	)
+	(wire
+		(pts
+			(xy 191.77 208.28) (xy 184.15 208.28)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "41bffbd6-e348-425a-98c7-60244c6cdab8")
+	)
+	(wire
+		(pts
+			(xy 321.31 35.56) (xy 313.69 35.56)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "440be55e-0ea2-4cbd-a1fd-90c4a6bfc990")
+	)
+	(wire
+		(pts
+			(xy 62.23 132.08) (xy 54.61 132.08)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "47199246-703c-4ba2-8555-fa9cc037074c")
+	)
+	(wire
+		(pts
+			(xy 321.31 76.2) (xy 313.69 76.2)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "47f83d04-9119-4641-abf2-ffff92825234")
+	)
+	(wire
+		(pts
+			(xy 191.77 50.8) (xy 184.15 50.8)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "4817d83a-1c95-4337-95c5-c82eaf24ec41")
+	)
+	(wire
+		(pts
+			(xy 207.01 121.92) (xy 214.63 121.92)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "48291291-e4a2-4b72-8cae-a4fb4438594d")
+	)
+	(wire
+		(pts
+			(xy 191.77 203.2) (xy 184.15 203.2)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "4923b284-844b-490d-9d65-da2efdd03699")
+	)
+	(wire
+		(pts
+			(xy 62.23 50.8) (xy 54.61 50.8)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "49e3c7ce-ccd6-4e9e-a7a9-df9a722bb4a0")
+	)
+	(wire
+		(pts
+			(xy 62.23 121.92) (xy 54.61 121.92)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "4a994c24-651a-474e-a21f-4f1bdbe6c108")
+	)
+	(wire
+		(pts
+			(xy 321.31 116.84) (xy 313.69 116.84)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "4c1cf368-9ae0-43e8-970f-e7f43adc572b")
+	)
+	(wire
+		(pts
+			(xy 62.23 157.48) (xy 54.61 157.48)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "517e2aff-322c-4f47-ad56-fb7506619fba")
+	)
+	(wire
+		(pts
+			(xy 321.31 132.08) (xy 313.69 132.08)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "52849e46-dd3f-4d84-a338-98635023a64e")
+	)
+	(wire
+		(pts
+			(xy 207.01 91.44) (xy 214.63 91.44)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "5301ccc2-6dbe-42c2-8f31-8a05767e5761")
+	)
+	(wire
+		(pts
+			(xy 336.55 127) (xy 344.17 127)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "535045e9-9026-4445-b696-8c5cad7d9951")
+	)
+	(wire
+		(pts
+			(xy 62.23 116.84) (xy 54.61 116.84)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "54ccd4ca-61bb-4bce-87b2-feea1efcd576")
+	)
+	(wire
+		(pts
+			(xy 77.47 203.2) (xy 85.09 203.2)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "55002f84-ee00-4088-bac1-b2e7f684c7bc")
+	)
+	(wire
+		(pts
+			(xy 336.55 116.84) (xy 344.17 116.84)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "5bdbbfc2-6fb8-404b-a4a4-6efdf9fc4023")
+	)
+	(wire
+		(pts
+			(xy 336.55 40.64) (xy 344.17 40.64)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "5e44b9aa-aa37-4e0c-88e8-53978c8b4e96")
+	)
+	(wire
+		(pts
+			(xy 77.47 167.64) (xy 85.09 167.64)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "5fc2653b-0ed3-418b-b4e9-ad5f11381161")
+	)
+	(wire
+		(pts
+			(xy 336.55 76.2) (xy 344.17 76.2)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "61158466-a06c-4db8-80d6-2602bf75db8d")
+	)
+	(wire
+		(pts
+			(xy 207.01 167.64) (xy 214.63 167.64)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "61d029c6-8c19-4e7a-8e5b-898db91fdcf7")
+	)
+	(wire
+		(pts
+			(xy 77.47 91.44) (xy 85.09 91.44)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "63df31ca-9437-45b9-904e-2656cf47f1f9")
+	)
+	(wire
+		(pts
+			(xy 321.31 198.12) (xy 313.69 198.12)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "64039816-4bd6-4654-a56f-bb0034b67f68")
+	)
+	(wire
+		(pts
+			(xy 77.47 45.72) (xy 85.09 45.72)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "67e3483b-814c-401e-80f4-0950457fd937")
+	)
+	(wire
+		(pts
+			(xy 77.47 132.08) (xy 85.09 132.08)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "694cb009-dd05-46df-b577-8e091e1458db")
+	)
+	(wire
+		(pts
+			(xy 62.23 35.56) (xy 54.61 35.56)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "6bfceee5-bee4-4bd2-a325-e905924a2938")
+	)
+	(wire
+		(pts
+			(xy 62.23 40.64) (xy 54.61 40.64)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "726b7e5d-a35e-46a6-bc39-68bc3f4c47a4")
+	)
+	(wire
+		(pts
+			(xy 207.01 132.08) (xy 214.63 132.08)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "72ec36c1-e650-4c0e-8740-d079be975104")
+	)
+	(wire
+		(pts
+			(xy 62.23 213.36) (xy 54.61 213.36)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "742b8e33-88de-401b-a2b5-bf9e5df895e7")
+	)
+	(wire
+		(pts
+			(xy 207.01 127) (xy 214.63 127)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "74958bcc-7319-4589-a3ad-978e9fff1042")
+	)
+	(wire
+		(pts
+			(xy 321.31 127) (xy 313.69 127)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "77098fe1-4e1d-4f6b-9389-1c1ec5a73bf4")
+	)
+	(wire
+		(pts
+			(xy 336.55 45.72) (xy 344.17 45.72)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "7a332139-d3af-44d4-bee2-bd5899d99bee")
+	)
+	(wire
+		(pts
+			(xy 207.01 40.64) (xy 214.63 40.64)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "7b5a557a-afbe-401f-a71a-8edec9860f1f")
+	)
+	(wire
+		(pts
+			(xy 62.23 203.2) (xy 54.61 203.2)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "7c67a641-c833-4c31-8189-a7f998c2ebb8")
+	)
+	(wire
+		(pts
+			(xy 207.01 198.12) (xy 214.63 198.12)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "7d98a92f-ca20-4487-a86e-9a6cc6157ec0")
+	)
+	(wire
+		(pts
+			(xy 321.31 213.36) (xy 313.69 213.36)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "7dfa03b6-8ee2-4c35-a8f0-1907d7eb7671")
+	)
+	(wire
+		(pts
+			(xy 336.55 132.08) (xy 344.17 132.08)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "80cdfe68-ec36-445e-80c9-e4f815688348")
+	)
+	(wire
+		(pts
+			(xy 321.31 208.28) (xy 313.69 208.28)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "81f6fcb7-d32f-446c-a25a-e73b453eaa40")
+	)
+	(wire
+		(pts
+			(xy 321.31 91.44) (xy 313.69 91.44)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "854967d2-c3fa-4dc3-89e1-fa5623e3791f")
+	)
+	(wire
+		(pts
+			(xy 77.47 76.2) (xy 85.09 76.2)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "86b2d4fd-2e17-43bc-890a-0e20d088dd2c")
+	)
+	(wire
+		(pts
+			(xy 62.23 198.12) (xy 54.61 198.12)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "881e16f9-1ecd-4572-9771-3d43017c7334")
+	)
+	(wire
+		(pts
+			(xy 207.01 35.56) (xy 214.63 35.56)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "8b64b5ec-98fb-4586-bf3d-f787f9692a9e")
+	)
+	(wire
+		(pts
+			(xy 62.23 86.36) (xy 54.61 86.36)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "8f508d04-ded5-430c-8eed-9250a2ccb84f")
+	)
+	(wire
+		(pts
+			(xy 191.77 35.56) (xy 184.15 35.56)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "8fc70eb7-3ffd-46b0-bd2b-f47dcd970e40")
+	)
+	(wire
+		(pts
+			(xy 336.55 167.64) (xy 344.17 167.64)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "916e68d9-2e57-4b2f-81db-31ecdbbe8b63")
+	)
+	(wire
+		(pts
+			(xy 191.77 198.12) (xy 184.15 198.12)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "967feaab-ea81-4cc9-b639-7715fd79eb37")
+	)
+	(wire
+		(pts
+			(xy 191.77 213.36) (xy 184.15 213.36)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "981d5ebd-426e-47f9-9873-6b07a0e975c8")
+	)
+	(wire
+		(pts
+			(xy 336.55 50.8) (xy 344.17 50.8)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "98341dec-830c-40e3-8179-751eb898ab54")
+	)
+	(wire
+		(pts
+			(xy 77.47 208.28) (xy 85.09 208.28)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "9a63906d-1b5e-4ca6-9626-ae45a102a554")
+	)
+	(wire
+		(pts
+			(xy 77.47 121.92) (xy 85.09 121.92)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "9ab172d5-c659-4c25-ba36-5ebb58ff44e8")
+	)
+	(wire
+		(pts
+			(xy 62.23 208.28) (xy 54.61 208.28)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "9cbb1894-d7d8-41c9-a9fd-372a5e230873")
+	)
+	(wire
+		(pts
+			(xy 204.47 252.73) (xy 209.55 252.73)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "9d1d3813-e6ad-5762-b5b7-87f7bf15e4fc")
+	)
+	(wire
+		(pts
+			(xy 62.23 81.28) (xy 54.61 81.28)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "9f95c411-55b6-4c33-9b14-e700423c8aba")
+	)
+	(wire
+		(pts
+			(xy 336.55 91.44) (xy 344.17 91.44)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "a269922e-47e3-4003-9235-c8ef0708b333")
+	)
+	(wire
+		(pts
+			(xy 77.47 162.56) (xy 85.09 162.56)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "a99a527c-838c-4414-9572-181d645c0506")
+	)
+	(wire
+		(pts
+			(xy 191.77 167.64) (xy 184.15 167.64)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "ad5a8cf5-fa36-418c-8086-cd4a54d7232d")
+	)
+	(wire
+		(pts
+			(xy 62.23 167.64) (xy 54.61 167.64)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "b11e4b35-e745-47ba-8623-e519395be241")
+	)
+	(wire
+		(pts
+			(xy 336.55 86.36) (xy 344.17 86.36)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "b426a942-bd75-41ee-92cd-304ab1d8c188")
+	)
+	(wire
+		(pts
+			(xy 321.31 203.2) (xy 313.69 203.2)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "b5dab2c1-df7b-43dc-8f0c-a775be2f48bd")
+	)
+	(wire
+		(pts
+			(xy 191.77 132.08) (xy 184.15 132.08)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "b6d63711-84c5-4789-b350-697711bb9f14")
+	)
+	(wire
+		(pts
+			(xy 336.55 208.28) (xy 344.17 208.28)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "b7ce1b45-ddce-4fde-a2dd-26a5700fd8a9")
+	)
+	(wire
+		(pts
+			(xy 54.61 262.89) (xy 49.53 262.89)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "bc1e20b6-39f6-572c-83a4-5b84e317bd67")
+	)
+	(wire
+		(pts
+			(xy 77.47 35.56) (xy 85.09 35.56)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "bd713b4e-18cf-452d-8a03-7d096736f14f")
+	)
+	(wire
+		(pts
+			(xy 77.47 50.8) (xy 85.09 50.8)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "bd78af51-bbc7-4083-b9f4-0a8c73641b14")
+	)
+	(wire
+		(pts
+			(xy 321.31 45.72) (xy 313.69 45.72)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "c5fa1f55-d2e0-42f5-8448-f4d1b3f8c307")
+	)
+	(wire
+		(pts
+			(xy 321.31 121.92) (xy 313.69 121.92)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "c6ac7df7-aa1c-4902-b715-a98da417a750")
+	)
+	(wire
+		(pts
+			(xy 336.55 35.56) (xy 344.17 35.56)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "c813b6cc-ff77-47ca-a6c1-de4c4032619e")
+	)
+	(wire
+		(pts
+			(xy 207.01 45.72) (xy 214.63 45.72)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "cc18b594-1195-4016-95a1-67d84e73a1bc")
+	)
+	(wire
+		(pts
+			(xy 191.77 162.56) (xy 184.15 162.56)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "cf8afa0a-d80d-4ccb-ae16-b9e6bae19053")
+	)
+	(wire
+		(pts
+			(xy 321.31 81.28) (xy 313.69 81.28)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "cfceb8a8-eb7a-48d9-b3b2-d61c73f6654a")
+	)
+	(wire
+		(pts
+			(xy 336.55 81.28) (xy 344.17 81.28)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "d1dc07ac-a80b-4036-88af-c93c55f5a68e")
+	)
+	(wire
+		(pts
+			(xy 207.01 76.2) (xy 214.63 76.2)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "d2709790-6af7-4491-960c-043f8b0cd73d")
+	)
+	(wire
+		(pts
+			(xy 207.01 157.48) (xy 214.63 157.48)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "d2a1d4f1-30be-433f-8ce6-a1f53e556587")
+	)
+	(wire
+		(pts
+			(xy 77.47 116.84) (xy 85.09 116.84)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "d6084463-52dd-4f4d-bdfa-ff647312c542")
+	)
+	(wire
+		(pts
+			(xy 191.77 121.92) (xy 184.15 121.92)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "d60e72b4-84a5-4e70-99b0-610b1788b307")
+	)
+	(wire
+		(pts
+			(xy 336.55 121.92) (xy 344.17 121.92)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "d6aabbd1-e11b-4f53-ab2f-ba2a45260eca")
+	)
+	(wire
+		(pts
+			(xy 191.77 81.28) (xy 184.15 81.28)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "d7739517-323c-45f6-81c6-0dc2d1d9a46a")
+	)
+	(wire
+		(pts
+			(xy 191.77 91.44) (xy 184.15 91.44)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "d7f26b5b-bbd0-4fdc-bf2a-cef648d1baaf")
+	)
+	(wire
+		(pts
+			(xy 321.31 157.48) (xy 313.69 157.48)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "db53d000-e940-436e-bbc4-d8c78a81b725")
+	)
+	(wire
+		(pts
+			(xy 77.47 127) (xy 85.09 127)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "dc9707ae-8cab-441e-b5e0-3e92c251070a")
+	)
+	(wire
+		(pts
+			(xy 77.47 86.36) (xy 85.09 86.36)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "de291be4-456f-4bb0-8da0-27236c61f330")
+	)
+	(wire
+		(pts
+			(xy 321.31 162.56) (xy 313.69 162.56)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "e1d7a38e-ff76-4872-a31d-0752f9eb15ce")
+	)
+	(wire
+		(pts
+			(xy 62.23 45.72) (xy 54.61 45.72)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "e260b596-b677-41c0-aad1-381aeac51639")
+	)
+	(wire
+		(pts
+			(xy 191.77 157.48) (xy 184.15 157.48)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "e2b876fb-896b-4ada-aa02-6ed7c868d930")
+	)
+	(wire
+		(pts
+			(xy 321.31 50.8) (xy 313.69 50.8)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "ea9d16ee-019f-470b-ac63-6ce546ced15d")
+	)
+	(wire
+		(pts
+			(xy 336.55 157.48) (xy 344.17 157.48)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "ee08ee74-a5e0-49ef-b4e5-45c8042886d0")
+	)
+	(wire
+		(pts
+			(xy 207.01 86.36) (xy 214.63 86.36)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "ee290e60-29ee-4465-a27f-082218a98389")
+	)
+	(wire
+		(pts
+			(xy 191.77 127) (xy 184.15 127)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "f8a8b3d7-f719-4c5d-9eca-01a558744fc7")
+	)
+	(wire
+		(pts
+			(xy 336.55 198.12) (xy 344.17 198.12)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "f90e9343-56d5-460c-b72a-1f8fe7d47870")
+	)
+	(wire
+		(pts
+			(xy 191.77 76.2) (xy 184.15 76.2)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "fd1a71a7-a577-493a-bdff-8743eb56652d")
+	)
+	(wire
+		(pts
+			(xy 207.01 50.8) (xy 214.63 50.8)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "fea09f86-0bec-42dd-906b-4abad3539565")
+	)
+	(global_label "F_A7"
+		(shape passive)
+		(at 54.61 116.84 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "00061fbc-4ad2-40e4-8c30-c36c35f866f7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 54.61 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A1"
+		(shape passive)
+		(at 54.61 45.72 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "0059645b-3c00-4b94-bd51-7ab6ca33f35f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 54.61 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 344.17 203.2 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "033fd030-c0be-463d-92b2-0a607ea5ff26")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 344.17 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 344.17 81.28 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "0443b3e4-3ad6-4eb9-8914-192e179dc503")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 344.17 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 214.63 127 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "08073190-2f99-478e-b352-251cf6aff3ff")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 214.63 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 344.17 167.64 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "08fa4a23-e92f-4484-bd31-dea153850d61")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 344.17 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A18"
+		(shape passive)
+		(at 184.15 81.28 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "0957b4b6-ac15-4ef9-8c10-eadd53339487")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 184.15 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "F_A3"
+		(shape passive)
+		(at 313.69 76.2 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "0f35b700-c473-45a4-b86b-f1aea1437356")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 313.69 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 85.09 50.8 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "0f41fb73-f473-453e-b30e-8a392c1d0bdd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 85.09 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 214.63 35.56 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "0fb9a99a-bef7-4776-9257-f808577ae587")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 214.63 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A13"
+		(shape passive)
+		(at 54.61 86.36 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "121023fc-1f84-4382-b841-074adc0eac82")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 54.61 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 344.17 121.92 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "125a0cc2-5291-43d5-804c-64d4b3ea9194")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 344.17 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "F_A16"
+		(shape passive)
+		(at 54.61 172.72 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "17de07ac-9f23-4419-8fcc-6a01e2f736ab")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 54.61 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 85.09 172.72 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "18a59f9e-8307-4ca3-8d6d-b6b5d21ecfa4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 85.09 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "MCU_BUF_OE_N"
+		(shape passive)
+		(at 69.85 262.89 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "18e47ad6-4a49-56e6-b8e5-a1998e5470cb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 69.85 262.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 344.17 91.44 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "1b85c4fe-8780-4740-a17d-518c3ac025f0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 344.17 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 85.09 91.44 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "1c61e05b-995b-4ccb-acb9-2d2b272266bc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 85.09 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 344.17 116.84 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "20c0f072-d8cd-4220-9fa1-f5e234164948")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 344.17 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "F_A21"
+		(shape passive)
+		(at 184.15 162.56 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "22835152-1f8a-4abf-99aa-8d1fd0bf60b7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 184.15 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 214.63 213.36 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "257beff6-8d3b-4df3-be14-f173ffe5ff96")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 214.63 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 344.17 86.36 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "25c4faa0-4372-4909-a001-fac46277f8c4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 344.17 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "F_A17"
+		(shape passive)
+		(at 54.61 167.64 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "27cae757-066c-49fe-99aa-fb5b6d423f92")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 54.61 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 85.09 157.48 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "2ee618ca-c4e4-4725-a8d8-808d4783a60b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 85.09 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A7"
+		(shape passive)
+		(at 184.15 35.56 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "2f6d3fa9-b6ff-4c26-9208-cf24a64ffb4b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 184.15 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A8"
+		(shape passive)
+		(at 313.69 50.8 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "2fc59452-8c64-41e2-9b67-c9b67f9b7e00")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 313.69 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 214.63 167.64 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "334dea89-b840-46a0-90dd-111c7b2d99c8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 214.63 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "MCU_D7"
+		(shape passive)
+		(at 184.15 198.12 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "3420750c-e30a-45cb-a19b-577fe5070d30")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 184.15 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "F_A9"
+		(shape passive)
+		(at 184.15 127 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "34b0defb-4645-4ad9-910c-20e382700d8b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 184.15 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 344.17 162.56 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "39e4eaaa-0d00-4d3f-8cb8-3f1daed83e48")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 344.17 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "F_A15"
+		(shape passive)
+		(at 313.69 116.84 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "3daec9f1-7654-47dc-a4ee-a412367cd318")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 313.69 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 214.63 40.64 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "3f5509c6-5af6-4f63-926b-e50642db896a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 214.63 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 85.09 76.2 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "3fb75c94-4226-405d-8be4-16de5b464b34")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 85.09 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "F_A5"
+		(shape passive)
+		(at 54.61 127 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "41d5462c-b600-4cb6-a1c1-f990b44176f1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 54.61 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 85.09 132.08 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "42c4cd7d-751c-434f-b007-ed7324aaf7d9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 85.09 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 85.09 203.2 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "42d07fed-4b9b-4a2a-aea2-4be3d1b80e56")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 85.09 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 214.63 198.12 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "47f4d1ca-575e-4a1e-ac05-d861950a96cc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 214.63 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 214.63 86.36 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "4bb0faad-909b-46fe-bd24-595daa5635e0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 214.63 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 214.63 76.2 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "50d36b7b-5b18-4f9e-a09d-1e570d5ce602")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 214.63 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "MCU_D3"
+		(shape passive)
+		(at 313.69 198.12 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "529351ff-f706-4731-a4d4-691d034d499c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 313.69 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 214.63 208.28 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "5a42b7d8-f1c3-4da5-8813-d710930a7699")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 214.63 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "F_A10"
+		(shape passive)
+		(at 184.15 121.92 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "5ba42477-ce41-4a9e-bf70-7061e93eeba2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 184.15 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 344.17 50.8 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "5c597530-727a-46ab-81c7-d1d89e69c9d7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 344.17 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "F_A18"
+		(shape passive)
+		(at 54.61 162.56 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "5d7531fa-5c01-4083-9630-7806cde72c9f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 54.61 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "F_D1"
+		(shape passive)
+		(at 313.69 167.64 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "5e071608-d77e-4ea7-932d-fc2081b36d61")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 313.69 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "F_A0"
+		(shape passive)
+		(at 313.69 91.44 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "61ce88db-0cb8-47f3-83b6-56ad4adb2283")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 313.69 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 344.17 172.72 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "630fed76-dfda-4739-8c94-da7e7e79abbd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 344.17 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A4"
+		(shape passive)
+		(at 184.15 50.8 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "634607e4-d0d3-4f3d-a0a8-d9b15d107b83")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 184.15 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "F_A19"
+		(shape passive)
+		(at 54.61 157.48 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "639e79cf-8066-45ad-bd75-665747840185")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 54.61 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 344.17 198.12 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "64f985d6-e9dc-4175-9bfd-129d95076a62")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 344.17 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A3"
+		(shape passive)
+		(at 54.61 35.56 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "65c9fed0-a345-4e8f-a83d-cd5d33678d61")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 54.61 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 85.09 116.84 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "670a7fb1-c013-4a81-a5d8-d4eac3ccfbf1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 85.09 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 85.09 198.12 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "674d5005-4335-439c-b53a-0117b2b0ab73")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 85.09 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A17"
+		(shape passive)
+		(at 184.15 86.36 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "677b24db-7a58-4028-b4a9-b06bbff29399")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 184.15 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 85.09 81.28 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "6cc1e122-1dc9-435d-9456-83a6f5440003")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 85.09 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 85.09 35.56 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "705ab93b-8aff-4ad9-a644-e0fc144b3eb7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 85.09 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 85.09 213.36 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "71c9643b-befa-499c-b5b0-84c8ac6d3f5a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 85.09 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "F_A2"
+		(shape passive)
+		(at 313.69 81.28 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "71f8c48c-ec69-4808-8c36-1b1b95834ec0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 313.69 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A15"
+		(shape passive)
+		(at 54.61 76.2 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "7518de10-3a83-4589-814d-2937628d533a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 54.61 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 85.09 162.56 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "766f5b12-2b3c-4244-946a-21637c2cc09f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 85.09 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "F_D4"
+		(shape passive)
+		(at 54.61 213.36 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "7687ddf2-d43c-472f-b750-fcf8531c5ec9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 54.61 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 214.63 91.44 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "793653ab-f888-4946-9ae4-ae2569e355ad")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 214.63 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 344.17 40.64 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "79b506bf-1473-4336-91b9-02e0485647f4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 344.17 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "F_D0"
+		(shape passive)
+		(at 313.69 172.72 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "7a04d904-dc87-4477-8dbc-3842ef4c8225")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 313.69 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 214.63 81.28 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "7c80383e-8694-4957-817a-cd036f0b85b2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 214.63 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 214.63 45.72 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "7cb628b9-f444-474a-9b82-157aef8a0e93")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 214.63 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "F_A6"
+		(shape passive)
+		(at 54.61 121.92 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "7f4a4164-8448-4164-8444-bdf2b3ca5a3a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 54.61 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_5V"
+		(shape passive)
+		(at 189.23 252.73 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "83f56062-fd33-56c0-abe2-1ca3de01e9a0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 189.23 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "MCU_D2"
+		(shape passive)
+		(at 313.69 203.2 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "84069458-2819-4ee0-9756-4e5882a3aec4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 313.69 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_CS"
+		(shape passive)
+		(at 184.15 76.2 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "85bb1229-2a8a-42d9-87d6-e616774c7cc1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 184.15 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 214.63 121.92 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "87ec0cab-c079-4604-9a98-e804a4d9d3e9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 214.63 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "F_D5"
+		(shape passive)
+		(at 54.61 208.28 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "89781ae2-ddd6-426c-9736-78fe2b40689a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 54.61 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 344.17 45.72 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "89b3967c-b5ed-46aa-b981-8077cd313ef2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 344.17 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A6"
+		(shape passive)
+		(at 184.15 40.64 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "8b750351-30db-4ea2-9097-9eae8b4bd30f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 184.15 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A14"
+		(shape passive)
+		(at 54.61 81.28 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "8d110285-bf51-4e99-8075-02539b843bb7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 54.61 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 85.09 208.28 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "8daca3cd-ba9e-48f8-acbe-8e787bdc26ff")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 85.09 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 344.17 208.28 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "92315d6d-1942-44d4-9d13-c0abf2c67e00")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 344.17 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 214.63 132.08 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "92cc5c87-1b36-464a-939d-6bacc6e67977")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 214.63 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 214.63 50.8 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "98547a69-846e-4556-a178-666f20dae9c8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 214.63 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 344.17 76.2 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "9ae9fbc2-ce41-41e5-b93f-8bc677a4fd7d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 344.17 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A12"
+		(shape passive)
+		(at 54.61 91.44 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "9da3fdb8-8d50-4d73-a330-e768447aa17d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 54.61 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "F_D3"
+		(shape passive)
+		(at 313.69 157.48 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "9e75a66c-c049-459e-80e8-ce66b0a2baf6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 313.69 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 85.09 45.72 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "a27472f0-f9a4-4c7e-8455-36942ab91ae9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 85.09 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "F_A22"
+		(shape passive)
+		(at 184.15 157.48 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "a38132a2-cb9e-4d00-8309-d4a760d20bfc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 184.15 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 344.17 35.56 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "a877dfa0-9d6d-49e9-b161-35ba6255c103")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 344.17 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 214.63 116.84 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "aa803cf1-ff70-43dc-ab6e-eeb7f9d93ec4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 214.63 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 85.09 127 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "aa93c87d-8663-4b27-8a4c-899035f308a3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 85.09 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "F_A4"
+		(shape passive)
+		(at 54.61 132.08 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "aaf1fa95-556a-4cd5-a507-910c153b3e23")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 54.61 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 85.09 86.36 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "ad5bcda0-100e-48f4-8f1d-d359e19ee234")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 85.09 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A10"
+		(shape passive)
+		(at 313.69 40.64 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "ae282b55-24cd-4bba-beda-c9a1b566bb08")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 313.69 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A5"
+		(shape passive)
+		(at 184.15 45.72 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "b209d1e9-3e2c-45e1-848e-7a2d542fb39f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 184.15 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 344.17 127 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "b5b08ce2-34fe-4d62-9a41-481531b2a735")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 344.17 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A0"
+		(shape passive)
+		(at 54.61 50.8 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "b7ba4794-71ad-495d-9579-97f0ee618a5b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 54.61 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 344.17 132.08 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "b8c2efb6-84b9-46ed-b6b5-ebff04f535e4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 344.17 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "MCU_D1"
+		(shape passive)
+		(at 313.69 208.28 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "b9300cc9-5393-48b7-afa0-78582dee36bb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 313.69 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "F_A1"
+		(shape passive)
+		(at 313.69 86.36 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "bf210ff4-8eec-4e57-93fe-abde444801a1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 313.69 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_OE_N"
+		(shape passive)
+		(at 209.55 252.73 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "c0790f5d-571b-553a-93b7-88c7460107d5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 209.55 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A16"
+		(shape passive)
+		(at 184.15 91.44 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "c1027406-a7d2-41ba-99d0-88c3190d5839")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 184.15 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "F_D7"
+		(shape passive)
+		(at 54.61 198.12 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "c4b6a029-b35b-43d9-8ca3-1a4bc708e32d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 54.61 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 85.09 167.64 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "c57ec08f-b51e-4e9f-9bb5-e96145c5d426")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 85.09 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A9"
+		(shape passive)
+		(at 313.69 45.72 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "cad6af43-fbd2-47eb-9867-9c8261e0bbda")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 313.69 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "F_A11"
+		(shape passive)
+		(at 184.15 116.84 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "cd0682f0-dcae-4ab8-b7b4-f23f00720960")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 184.15 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A11"
+		(shape passive)
+		(at 313.69 35.56 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "cd6fe409-0706-4e35-b400-45a0f37cac63")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 313.69 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "F_A12"
+		(shape passive)
+		(at 313.69 132.08 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "d78e8e7f-9643-4548-b89f-caec488015dc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 313.69 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "MCU_D5"
+		(shape passive)
+		(at 184.15 208.28 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "d96d3086-fbb9-49d9-878d-1330517ebfa5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 184.15 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 344.17 213.36 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "dbb8b4d6-bf07-4272-8988-55a73887cf8b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 344.17 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 85.09 40.64 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "df514f9b-89e9-46c2-a48b-af2ef33d8bd3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 85.09 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "F_D6"
+		(shape passive)
+		(at 54.61 203.2 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "e247170c-19c2-43a9-9472-e765084812d8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 54.61 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "F_A14"
+		(shape passive)
+		(at 313.69 121.92 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "e2f0013c-85b3-4cb7-88f8-7e6cdda21e5b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 313.69 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "MCU_D6"
+		(shape passive)
+		(at 184.15 203.2 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "e7201460-e381-4ae1-8946-d348f6300629")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 184.15 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "F_A8"
+		(shape passive)
+		(at 184.15 132.08 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "eaba75b0-fe90-4e8f-b7a8-4001326c08bc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 184.15 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "F_A13"
+		(shape passive)
+		(at 313.69 127 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "ee2c4eda-5c64-4274-9b14-1ce8d2d1c96b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 313.69 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A2"
+		(shape passive)
+		(at 54.61 40.64 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "f0524735-fb93-4fbd-b89c-ac2cf78774ea")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 54.61 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 214.63 162.56 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "f08c4d33-655d-4792-bdb9-76e449d79248")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 214.63 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "MCU_D0"
+		(shape passive)
+		(at 313.69 213.36 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "f369ef3c-5437-462d-96b7-42a19fe4cc2e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 313.69 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 214.63 203.2 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "f4034ada-afd7-4a51-b5ee-7ca7334b715a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 214.63 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 49.53 262.89 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "f5371367-6094-5bce-a4ac-4193649674c8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 49.53 262.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 85.09 121.92 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "fba2664e-f975-48fd-8a97-6d482f76fa10")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 85.09 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "MCU_D4"
+		(shape passive)
+		(at 184.15 213.36 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "fbccd0d7-9e5c-4465-8677-049c77bd9c38")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 184.15 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 214.63 157.48 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "fc06b252-cd97-483a-aaff-a4403ca23655")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 214.63 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "F_A20"
+		(shape passive)
+		(at 184.15 167.64 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "fd63226d-49bf-499a-9875-9ee2f910f5c6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 184.15 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 344.17 157.48 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "fde26fb9-8208-4a15-be6b-03613761dee4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 344.17 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "F_D2"
+		(shape passive)
+		(at 313.69 162.56 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "fe4e2a13-4ac4-4a66-bf79-ac4cbc650e29")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 313.69 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:RN_4x100k")
+		(at 69.85 43.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "07fd77aa-3d0c-4758-af13-5d54f67c7181")
+		(property "Reference" "RN1"
+			(at 69.85 29.21 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "4x100k"
+			(at 69.85 31.75 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:Yageo_YC164_4x0603"
+			(at 69.85 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-YC164-FR-07100KL_C110374.pdf"
+			(at 69.85 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "4 isolated 100k ohm resistors, 1%, 62.5mW each, 50V, convex 0603x4"
+			(at 69.85 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 69.85 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "YC164-FR-07100KL"
+			(at 69.85 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C110374"
+			(at 69.85 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C110374"
+			(at 69.85 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C110374"
+			(at 69.85 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 69.85 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "JLCPCB_EXTENDED_STOCK_CHECKED_2026-10-30_RECHECK_AT_ORDER"
+			(at 69.85 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Four isolated 100k pulldowns; pin pairs 1-5, 2-6, 3-7, 4-8."
+			(at 69.85 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part Class" "Extended"
+			(at 69.85 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "PCBA Type" "Economic and Standard"
+			(at 69.85 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 69.85 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Power Rating" "62.5mW per element"
+			(at 69.85 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6589c39a-a6aa-436d-abae-22a49d7959bb")
+		)
+		(pin "5"
+			(uuid "a8b9829e-a22a-45b3-b8c9-2650d56552f1")
+		)
+		(pin "2"
+			(uuid "29c9f07a-10a6-4dc5-8603-f7600b577645")
+		)
+		(pin "6"
+			(uuid "2af461b3-0c04-4402-b292-80162d7a5458")
+		)
+		(pin "3"
+			(uuid "6dd4eff1-0527-4ca0-aea1-521408cefd9f")
+		)
+		(pin "7"
+			(uuid "752c8121-d9a6-41f6-ba28-2a6a1fa70d8e")
+		)
+		(pin "4"
+			(uuid "5c8f05c3-fe1c-40ec-a011-1fadb996bb31")
+		)
+		(pin "8"
+			(uuid "bc2b518e-1509-4768-919d-cfa81d5f5300")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/8ffeab7a-5fe5-5dc8-9941-7153a2ba80da"
+					(reference "RN1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:R_10k")
+		(at 59.69 262.89 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1eda03cb-8581-5e62-8c45-6fa24f30fa42")
+		(property "Reference" "R99"
+			(at 59.69 259.89 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 59.69 265.99 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:R_0603_1608Metric"
+			(at 59.69 262.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25804.html"
+			(at 59.69 262.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "10k ohm, 1%, 0.1W, 1608 metric"
+			(at 59.69 262.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 59.69 262.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1002T5E"
+			(at 59.69 262.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 59.69 262.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C25804"
+			(at 59.69 262.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C25804"
+			(at 59.69 262.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 59.69 262.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 59.69 262.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Data buffer disabled during logic power ramp"
+			(at 59.69 262.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6d0825af-c1d2-5868-8684-dcf9645c06e8")
+		)
+		(pin "2"
+			(uuid "0e8db5f2-915a-5167-9bb2-4874586dad32")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/8ffeab7a-5fe5-5dc8-9941-7153a2ba80da"
+					(reference "R99")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:RN_4x100k")
+		(at 199.39 124.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "224d05a7-f201-4003-bca1-93d1f3e5889f")
+		(property "Reference" "RN8"
+			(at 199.39 110.49 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "4x100k"
+			(at 199.39 113.03 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:Yageo_YC164_4x0603"
+			(at 199.39 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-YC164-FR-07100KL_C110374.pdf"
+			(at 199.39 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "4 isolated 100k ohm resistors, 1%, 62.5mW each, 50V, convex 0603x4"
+			(at 199.39 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 199.39 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "YC164-FR-07100KL"
+			(at 199.39 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C110374"
+			(at 199.39 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C110374"
+			(at 199.39 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C110374"
+			(at 199.39 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 199.39 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "JLCPCB_EXTENDED_STOCK_CHECKED_2026-10-30_RECHECK_AT_ORDER"
+			(at 199.39 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Four isolated 100k pulldowns; pin pairs 1-5, 2-6, 3-7, 4-8."
+			(at 199.39 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part Class" "Extended"
+			(at 199.39 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "PCBA Type" "Economic and Standard"
+			(at 199.39 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 199.39 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Power Rating" "62.5mW per element"
+			(at 199.39 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5bb92783-5d2f-4e99-ae54-3163db1528aa")
+		)
+		(pin "5"
+			(uuid "2315252d-24cc-42df-8b10-0b43ea923f14")
+		)
+		(pin "2"
+			(uuid "938b2e74-f57e-44f3-be1e-ebd86c1caf92")
+		)
+		(pin "6"
+			(uuid "b4cdbf1f-264a-4782-9388-61669cd67da5")
+		)
+		(pin "3"
+			(uuid "1031c21e-7437-4f83-8776-9ca015318922")
+		)
+		(pin "7"
+			(uuid "8f0d6b9a-f364-4b41-94a0-deace0a7ff18")
+		)
+		(pin "4"
+			(uuid "14f5fb4c-ea38-4ed9-82b0-e53c9eb46377")
+		)
+		(pin "8"
+			(uuid "86ac349c-4058-442e-aaa1-c271cf3ed029")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/8ffeab7a-5fe5-5dc8-9941-7153a2ba80da"
+					(reference "RN8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:RN_4x100k")
+		(at 199.39 43.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2a13e785-17f5-45cb-93ac-1a720237644b")
+		(property "Reference" "RN2"
+			(at 199.39 29.21 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "4x100k"
+			(at 199.39 31.75 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:Yageo_YC164_4x0603"
+			(at 199.39 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-YC164-FR-07100KL_C110374.pdf"
+			(at 199.39 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "4 isolated 100k ohm resistors, 1%, 62.5mW each, 50V, convex 0603x4"
+			(at 199.39 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 199.39 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "YC164-FR-07100KL"
+			(at 199.39 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C110374"
+			(at 199.39 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C110374"
+			(at 199.39 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C110374"
+			(at 199.39 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 199.39 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "JLCPCB_EXTENDED_STOCK_CHECKED_2026-10-30_RECHECK_AT_ORDER"
+			(at 199.39 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Four isolated 100k pulldowns; pin pairs 1-5, 2-6, 3-7, 4-8."
+			(at 199.39 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part Class" "Extended"
+			(at 199.39 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "PCBA Type" "Economic and Standard"
+			(at 199.39 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 199.39 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Power Rating" "62.5mW per element"
+			(at 199.39 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "effd0597-4dcf-47f5-95e4-daf027560f6c")
+		)
+		(pin "5"
+			(uuid "5aecfdf7-4a34-416d-b87f-e433e7039af3")
+		)
+		(pin "2"
+			(uuid "869fca72-6ede-49a5-998e-59462a99939f")
+		)
+		(pin "6"
+			(uuid "bf77218a-6a58-4f6a-9d24-8c431f3fb738")
+		)
+		(pin "3"
+			(uuid "1ad85076-0ee5-4690-8903-d36932c4c4f6")
+		)
+		(pin "7"
+			(uuid "185f489d-dbdd-40d6-b600-610bb67d6c92")
+		)
+		(pin "4"
+			(uuid "177e3cec-88fb-49eb-97b3-ab1ea4e336c4")
+		)
+		(pin "8"
+			(uuid "eb3b8fd2-3568-4482-a130-72fa371ced6d")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/8ffeab7a-5fe5-5dc8-9941-7153a2ba80da"
+					(reference "RN2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:RN_4x100k")
+		(at 199.39 165.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2cdab35f-29a8-412c-8ac0-5453e83e6ca5")
+		(property "Reference" "RN11"
+			(at 199.39 151.13 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "4x100k"
+			(at 199.39 153.67 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:Yageo_YC164_4x0603"
+			(at 199.39 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-YC164-FR-07100KL_C110374.pdf"
+			(at 199.39 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "4 isolated 100k ohm resistors, 1%, 62.5mW each, 50V, convex 0603x4"
+			(at 199.39 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 199.39 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "YC164-FR-07100KL"
+			(at 199.39 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C110374"
+			(at 199.39 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C110374"
+			(at 199.39 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C110374"
+			(at 199.39 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 199.39 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "JLCPCB_EXTENDED_STOCK_CHECKED_2026-10-30_RECHECK_AT_ORDER"
+			(at 199.39 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Four isolated 100k pulldowns; pin pairs 1-5, 2-6, 3-7, 4-8. Spare pair 4-8 intentionally NC on both ends."
+			(at 199.39 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part Class" "Extended"
+			(at 199.39 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "PCBA Type" "Economic and Standard"
+			(at 199.39 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 199.39 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Power Rating" "62.5mW per element"
+			(at 199.39 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a2aece7b-bd87-4106-a7dd-ed415b1c33a5")
+		)
+		(pin "5"
+			(uuid "3d3e221e-33fb-41c1-9f0d-3a6af4aae4ee")
+		)
+		(pin "2"
+			(uuid "f6cba05a-0e8d-4717-b36a-bac6c8d06466")
+		)
+		(pin "6"
+			(uuid "185e4796-915d-4d5c-8d73-044ff18b2a80")
+		)
+		(pin "3"
+			(uuid "b616f7be-11c9-4f51-aa81-20bba5a03d9f")
+		)
+		(pin "7"
+			(uuid "9ef3f59c-20b7-4327-8324-0646a164e260")
+		)
+		(pin "4"
+			(uuid "bedf473f-24b3-4046-b505-cc212af29931")
+		)
+		(pin "8"
+			(uuid "8f7f82fd-512a-4241-a13e-6e7bcaecb732")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/8ffeab7a-5fe5-5dc8-9941-7153a2ba80da"
+					(reference "RN11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:RN_4x100k")
+		(at 69.85 205.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4112f693-f01f-4de2-b944-f9aff8dd1cd9")
+		(property "Reference" "RN13"
+			(at 69.85 191.77 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "4x100k"
+			(at 69.85 194.31 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:Yageo_YC164_4x0603"
+			(at 69.85 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-YC164-FR-07100KL_C110374.pdf"
+			(at 69.85 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "4 isolated 100k ohm resistors, 1%, 62.5mW each, 50V, convex 0603x4"
+			(at 69.85 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 69.85 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "YC164-FR-07100KL"
+			(at 69.85 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C110374"
+			(at 69.85 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C110374"
+			(at 69.85 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C110374"
+			(at 69.85 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 69.85 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "JLCPCB_EXTENDED_STOCK_CHECKED_2026-10-30_RECHECK_AT_ORDER"
+			(at 69.85 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Four isolated 100k pulldowns; pin pairs 1-5, 2-6, 3-7, 4-8."
+			(at 69.85 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part Class" "Extended"
+			(at 69.85 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "PCBA Type" "Economic and Standard"
+			(at 69.85 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 69.85 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Power Rating" "62.5mW per element"
+			(at 69.85 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "23af3037-d05f-48f1-b393-53239a6e6ad5")
+		)
+		(pin "5"
+			(uuid "3b4653d2-3472-4794-ba42-dd99a74c0e52")
+		)
+		(pin "2"
+			(uuid "80cd83c9-4bfd-4a76-8cd0-36f34c235f57")
+		)
+		(pin "6"
+			(uuid "28c3d0f2-77e8-4d65-9ba5-c6e89c90cc21")
+		)
+		(pin "3"
+			(uuid "925ccb2a-cad8-4675-9d2d-52c16d05f24c")
+		)
+		(pin "7"
+			(uuid "d223016e-0911-4efe-bd15-e93a1606e52b")
+		)
+		(pin "4"
+			(uuid "fff77e73-56ce-4bf1-8bd4-f0fdee9b2f96")
+		)
+		(pin "8"
+			(uuid "b59a402f-881f-4923-87e9-114917f59fb5")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/8ffeab7a-5fe5-5dc8-9941-7153a2ba80da"
+					(reference "RN13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:RN_4x100k")
+		(at 328.93 124.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "46eecf87-8098-4d07-93a4-0710ab03290a")
+		(property "Reference" "RN9"
+			(at 328.93 110.49 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "4x100k"
+			(at 328.93 113.03 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:Yageo_YC164_4x0603"
+			(at 328.93 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-YC164-FR-07100KL_C110374.pdf"
+			(at 328.93 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "4 isolated 100k ohm resistors, 1%, 62.5mW each, 50V, convex 0603x4"
+			(at 328.93 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 328.93 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "YC164-FR-07100KL"
+			(at 328.93 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C110374"
+			(at 328.93 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C110374"
+			(at 328.93 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C110374"
+			(at 328.93 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 328.93 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "JLCPCB_EXTENDED_STOCK_CHECKED_2026-10-30_RECHECK_AT_ORDER"
+			(at 328.93 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Four isolated 100k pulldowns; pin pairs 1-5, 2-6, 3-7, 4-8."
+			(at 328.93 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part Class" "Extended"
+			(at 328.93 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "PCBA Type" "Economic and Standard"
+			(at 328.93 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 328.93 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Power Rating" "62.5mW per element"
+			(at 328.93 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "22e9a0d6-3d5c-4bc9-808c-3488ef0d85ac")
+		)
+		(pin "5"
+			(uuid "55ed3faf-e12e-44fd-b775-1c6d987f7f07")
+		)
+		(pin "2"
+			(uuid "bc71f941-0d91-4e0e-a2a7-244bf210d6a0")
+		)
+		(pin "6"
+			(uuid "451faf59-8a85-4d1d-bacf-b8f6aaa1fb9e")
+		)
+		(pin "3"
+			(uuid "0bbc379c-407b-476b-8e4b-dd944dc35d21")
+		)
+		(pin "7"
+			(uuid "53e7e6b5-33f1-401d-882a-1c47387b8f13")
+		)
+		(pin "4"
+			(uuid "e6beff3f-1616-487c-8bc0-ebf78f1deeff")
+		)
+		(pin "8"
+			(uuid "37a24c26-093d-44e1-be54-063e7c2a77b2")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/8ffeab7a-5fe5-5dc8-9941-7153a2ba80da"
+					(reference "RN9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:RN_4x100k")
+		(at 328.93 43.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "57ed2e85-e9cb-4529-a8ba-e6bfbc23ae01")
+		(property "Reference" "RN3"
+			(at 328.93 29.21 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "4x100k"
+			(at 328.93 31.75 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:Yageo_YC164_4x0603"
+			(at 328.93 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-YC164-FR-07100KL_C110374.pdf"
+			(at 328.93 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "4 isolated 100k ohm resistors, 1%, 62.5mW each, 50V, convex 0603x4"
+			(at 328.93 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 328.93 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "YC164-FR-07100KL"
+			(at 328.93 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C110374"
+			(at 328.93 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C110374"
+			(at 328.93 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C110374"
+			(at 328.93 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 328.93 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "JLCPCB_EXTENDED_STOCK_CHECKED_2026-10-30_RECHECK_AT_ORDER"
+			(at 328.93 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Four isolated 100k pulldowns; pin pairs 1-5, 2-6, 3-7, 4-8."
+			(at 328.93 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part Class" "Extended"
+			(at 328.93 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "PCBA Type" "Economic and Standard"
+			(at 328.93 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 328.93 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Power Rating" "62.5mW per element"
+			(at 328.93 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "99b51fe2-54be-415c-9b8b-05eae0f3fc2e")
+		)
+		(pin "5"
+			(uuid "08e1d303-0b62-4919-9676-abd62a043df4")
+		)
+		(pin "2"
+			(uuid "9890aa27-198e-4bb7-99cd-dfdc9ae844ae")
+		)
+		(pin "6"
+			(uuid "121d9ce5-91fb-495c-b82c-3953bbd28b94")
+		)
+		(pin "3"
+			(uuid "620a00fa-9df9-4ffe-923c-630ba9906765")
+		)
+		(pin "7"
+			(uuid "a993ca3c-a3de-4592-b3d1-8d31d8088b24")
+		)
+		(pin "4"
+			(uuid "c40f88cd-96ba-4a19-a286-7fda73b62cef")
+		)
+		(pin "8"
+			(uuid "056c694c-0d13-4207-aded-06f9b57efe0c")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/8ffeab7a-5fe5-5dc8-9941-7153a2ba80da"
+					(reference "RN3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:RN_4x100k")
+		(at 69.85 83.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "63587888-b4e1-4009-837c-1d66bf20deb4")
+		(property "Reference" "RN4"
+			(at 69.85 69.85 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "4x100k"
+			(at 69.85 72.39 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:Yageo_YC164_4x0603"
+			(at 69.85 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-YC164-FR-07100KL_C110374.pdf"
+			(at 69.85 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "4 isolated 100k ohm resistors, 1%, 62.5mW each, 50V, convex 0603x4"
+			(at 69.85 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 69.85 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "YC164-FR-07100KL"
+			(at 69.85 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C110374"
+			(at 69.85 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C110374"
+			(at 69.85 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C110374"
+			(at 69.85 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 69.85 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "JLCPCB_EXTENDED_STOCK_CHECKED_2026-10-30_RECHECK_AT_ORDER"
+			(at 69.85 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Four isolated 100k pulldowns; pin pairs 1-5, 2-6, 3-7, 4-8."
+			(at 69.85 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part Class" "Extended"
+			(at 69.85 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "PCBA Type" "Economic and Standard"
+			(at 69.85 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 69.85 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Power Rating" "62.5mW per element"
+			(at 69.85 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6786d795-9e97-4e21-8c89-9b5541ef6175")
+		)
+		(pin "5"
+			(uuid "b6e1cab6-b2fc-4363-a04c-bc50affc3c26")
+		)
+		(pin "2"
+			(uuid "145ba4ad-acb1-47c6-9962-d85c1f6082c2")
+		)
+		(pin "6"
+			(uuid "de4663b4-2b04-434b-8315-0d2a00bfd239")
+		)
+		(pin "3"
+			(uuid "7840442c-6157-4493-8d22-83630c766443")
+		)
+		(pin "7"
+			(uuid "5a2980bd-50af-4cdc-8a09-c4b57ec1fcaa")
+		)
+		(pin "4"
+			(uuid "a54fdbaf-8c8c-4e63-a844-ac7e60cd0042")
+		)
+		(pin "8"
+			(uuid "1d86fe25-7be7-43c9-a3ac-204388bc244d")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/8ffeab7a-5fe5-5dc8-9941-7153a2ba80da"
+					(reference "RN4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:RN_4x100k")
+		(at 199.39 83.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "751b3081-10f0-468f-aa43-e256b72091d8")
+		(property "Reference" "RN5"
+			(at 199.39 69.85 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "4x100k"
+			(at 199.39 72.39 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:Yageo_YC164_4x0603"
+			(at 199.39 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-YC164-FR-07100KL_C110374.pdf"
+			(at 199.39 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "4 isolated 100k ohm resistors, 1%, 62.5mW each, 50V, convex 0603x4"
+			(at 199.39 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 199.39 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "YC164-FR-07100KL"
+			(at 199.39 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C110374"
+			(at 199.39 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C110374"
+			(at 199.39 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C110374"
+			(at 199.39 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 199.39 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "JLCPCB_EXTENDED_STOCK_CHECKED_2026-10-30_RECHECK_AT_ORDER"
+			(at 199.39 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Four isolated 100k pulldowns; pin pairs 1-5, 2-6, 3-7, 4-8."
+			(at 199.39 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part Class" "Extended"
+			(at 199.39 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "PCBA Type" "Economic and Standard"
+			(at 199.39 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 199.39 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Power Rating" "62.5mW per element"
+			(at 199.39 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "94b21287-03bd-4c97-a7d8-574e7a832275")
+		)
+		(pin "5"
+			(uuid "07a92282-ac50-4059-8eba-148f1c864dfc")
+		)
+		(pin "2"
+			(uuid "c721df0b-8338-4ae6-bceb-c3caaa025b96")
+		)
+		(pin "6"
+			(uuid "d4ee5ec9-cd5d-4eb0-a87c-a3ace457642e")
+		)
+		(pin "3"
+			(uuid "335d3bdb-5d6a-4c09-9da3-6ae7d5e1dc82")
+		)
+		(pin "7"
+			(uuid "ee61e0dc-8013-4581-bf60-c73d49129c26")
+		)
+		(pin "4"
+			(uuid "8636d053-80cc-4982-8f9a-da3b9229c601")
+		)
+		(pin "8"
+			(uuid "5d691f2c-07a8-406c-93e9-1da3626519ed")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/8ffeab7a-5fe5-5dc8-9941-7153a2ba80da"
+					(reference "RN5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:RN_4x100k")
+		(at 328.93 83.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "77997bd8-67dc-47e2-ac75-4f8a1950f2f0")
+		(property "Reference" "RN6"
+			(at 328.93 69.85 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "4x100k"
+			(at 328.93 72.39 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:Yageo_YC164_4x0603"
+			(at 328.93 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-YC164-FR-07100KL_C110374.pdf"
+			(at 328.93 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "4 isolated 100k ohm resistors, 1%, 62.5mW each, 50V, convex 0603x4"
+			(at 328.93 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 328.93 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "YC164-FR-07100KL"
+			(at 328.93 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C110374"
+			(at 328.93 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C110374"
+			(at 328.93 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C110374"
+			(at 328.93 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 328.93 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "JLCPCB_EXTENDED_STOCK_CHECKED_2026-10-30_RECHECK_AT_ORDER"
+			(at 328.93 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Four isolated 100k pulldowns; pin pairs 1-5, 2-6, 3-7, 4-8."
+			(at 328.93 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part Class" "Extended"
+			(at 328.93 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "PCBA Type" "Economic and Standard"
+			(at 328.93 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 328.93 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Power Rating" "62.5mW per element"
+			(at 328.93 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "980566fc-8c62-44d4-94b2-e2ac26c503bd")
+		)
+		(pin "5"
+			(uuid "e2d7e02a-2cc4-4f1c-a9a7-6c88f0fa4c12")
+		)
+		(pin "2"
+			(uuid "02528e58-ce97-4703-a9f7-f35b356da1dd")
+		)
+		(pin "6"
+			(uuid "aefd9084-7a3d-4218-8e14-38513cab0cb3")
+		)
+		(pin "3"
+			(uuid "0324be0d-06b9-4d85-8334-65f7ffdbfb7a")
+		)
+		(pin "7"
+			(uuid "57af31a5-2298-4007-acb4-434e02b1889a")
+		)
+		(pin "4"
+			(uuid "3ffe2218-d69f-4603-89ef-07bd091cc31a")
+		)
+		(pin "8"
+			(uuid "5694dacc-bfe2-4325-9f09-754d1366875f")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/8ffeab7a-5fe5-5dc8-9941-7153a2ba80da"
+					(reference "RN6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:R_100k")
+		(at 199.39 252.73 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8c7c5af6-b340-5e22-965e-a8b2df895f08")
+		(property "Reference" "R98"
+			(at 199.39 249.73 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 199.39 255.83 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:R_0603_1608Metric"
+			(at 199.39 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25803.html"
+			(at 199.39 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100k ohm, 1%, 0.1W, 1608 metric"
+			(at 199.39 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 199.39 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1003T5E"
+			(at 199.39 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 199.39 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C25803"
+			(at 199.39 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C25803"
+			(at 199.39 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 199.39 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 199.39 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Bias host OE_N from host rail only, never back-power the host"
+			(at 199.39 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "13afc3e3-92ce-5ee8-89df-c2b371faeb14")
+		)
+		(pin "2"
+			(uuid "c9324a77-018a-5145-a78e-d1d0e6af3e42")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/8ffeab7a-5fe5-5dc8-9941-7153a2ba80da"
+					(reference "R98")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:RN_4x100k")
+		(at 69.85 124.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ada0b3fd-7911-49ef-94b9-be6fbcb27018")
+		(property "Reference" "RN7"
+			(at 69.85 110.49 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "4x100k"
+			(at 69.85 113.03 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:Yageo_YC164_4x0603"
+			(at 69.85 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-YC164-FR-07100KL_C110374.pdf"
+			(at 69.85 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "4 isolated 100k ohm resistors, 1%, 62.5mW each, 50V, convex 0603x4"
+			(at 69.85 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 69.85 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "YC164-FR-07100KL"
+			(at 69.85 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C110374"
+			(at 69.85 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C110374"
+			(at 69.85 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C110374"
+			(at 69.85 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 69.85 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "JLCPCB_EXTENDED_STOCK_CHECKED_2026-10-30_RECHECK_AT_ORDER"
+			(at 69.85 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Four isolated 100k pulldowns; pin pairs 1-5, 2-6, 3-7, 4-8."
+			(at 69.85 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part Class" "Extended"
+			(at 69.85 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "PCBA Type" "Economic and Standard"
+			(at 69.85 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 69.85 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Power Rating" "62.5mW per element"
+			(at 69.85 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b732bdf2-7dc3-4fc4-bd04-ac249dfc1a3f")
+		)
+		(pin "5"
+			(uuid "3249edf1-c31b-45ea-b0c7-2ced4a0f3012")
+		)
+		(pin "2"
+			(uuid "4f302113-b90c-4902-9a6e-a7b435265f28")
+		)
+		(pin "6"
+			(uuid "b2a3a70a-671e-4507-ad7c-c34812b38c33")
+		)
+		(pin "3"
+			(uuid "64f9930f-3228-448c-b1af-904e51c0c211")
+		)
+		(pin "7"
+			(uuid "14d7c90d-91d6-433f-8c26-6d1f0026d8bb")
+		)
+		(pin "4"
+			(uuid "30064334-a203-44d3-8833-ac305f9cf022")
+		)
+		(pin "8"
+			(uuid "09b40458-b2cf-4609-9b73-f3b7d7c19e9d")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/8ffeab7a-5fe5-5dc8-9941-7153a2ba80da"
+					(reference "RN7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:RN_4x100k")
+		(at 328.93 165.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ba8d25d9-3cd8-4d0b-acd8-370c81d9220b")
+		(property "Reference" "RN12"
+			(at 328.93 151.13 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "4x100k"
+			(at 328.93 153.67 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:Yageo_YC164_4x0603"
+			(at 328.93 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-YC164-FR-07100KL_C110374.pdf"
+			(at 328.93 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "4 isolated 100k ohm resistors, 1%, 62.5mW each, 50V, convex 0603x4"
+			(at 328.93 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 328.93 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "YC164-FR-07100KL"
+			(at 328.93 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C110374"
+			(at 328.93 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C110374"
+			(at 328.93 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C110374"
+			(at 328.93 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 328.93 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "JLCPCB_EXTENDED_STOCK_CHECKED_2026-10-30_RECHECK_AT_ORDER"
+			(at 328.93 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Four isolated 100k pulldowns; pin pairs 1-5, 2-6, 3-7, 4-8."
+			(at 328.93 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part Class" "Extended"
+			(at 328.93 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "PCBA Type" "Economic and Standard"
+			(at 328.93 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 328.93 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Power Rating" "62.5mW per element"
+			(at 328.93 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "125be7ac-a33e-4179-bcc9-abc22dd466ee")
+		)
+		(pin "5"
+			(uuid "69bd2929-b3f0-42c5-964c-5948e2939094")
+		)
+		(pin "2"
+			(uuid "5d691059-8d12-497c-a61e-2087f1fa4470")
+		)
+		(pin "6"
+			(uuid "51f14347-505d-4330-bdcd-366b9b8b703e")
+		)
+		(pin "3"
+			(uuid "82a7789a-7d5b-4669-8013-4741567784b7")
+		)
+		(pin "7"
+			(uuid "e1d9ee0d-a50e-4efa-9aff-e42fd93892a5")
+		)
+		(pin "4"
+			(uuid "d204c25a-cfb4-4152-9722-4534217b189e")
+		)
+		(pin "8"
+			(uuid "90ca5896-b29e-44df-8ba9-6993f7a10f2e")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/8ffeab7a-5fe5-5dc8-9941-7153a2ba80da"
+					(reference "RN12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:RN_4x100k")
+		(at 199.39 205.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cb69843f-10e6-42f0-8ab8-45feec21e605")
+		(property "Reference" "RN14"
+			(at 199.39 191.77 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "4x100k"
+			(at 199.39 194.31 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:Yageo_YC164_4x0603"
+			(at 199.39 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-YC164-FR-07100KL_C110374.pdf"
+			(at 199.39 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "4 isolated 100k ohm resistors, 1%, 62.5mW each, 50V, convex 0603x4"
+			(at 199.39 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 199.39 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "YC164-FR-07100KL"
+			(at 199.39 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C110374"
+			(at 199.39 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C110374"
+			(at 199.39 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C110374"
+			(at 199.39 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 199.39 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "JLCPCB_EXTENDED_STOCK_CHECKED_2026-10-30_RECHECK_AT_ORDER"
+			(at 199.39 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Four isolated 100k pulldowns; pin pairs 1-5, 2-6, 3-7, 4-8."
+			(at 199.39 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part Class" "Extended"
+			(at 199.39 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "PCBA Type" "Economic and Standard"
+			(at 199.39 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 199.39 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Power Rating" "62.5mW per element"
+			(at 199.39 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "83636d65-52c1-4f65-8b47-4911c8231267")
+		)
+		(pin "5"
+			(uuid "ecd31456-1b1a-42f2-9b62-e401c13be8be")
+		)
+		(pin "2"
+			(uuid "11297e10-77ff-40a5-875c-b4104a80d200")
+		)
+		(pin "6"
+			(uuid "b28daa67-b5de-48c5-a6af-c24afeabb57c")
+		)
+		(pin "3"
+			(uuid "5a17cf93-d51f-4931-8cac-0d35d3bff645")
+		)
+		(pin "7"
+			(uuid "f25245d2-e236-42e9-9a29-8715b8c81511")
+		)
+		(pin "4"
+			(uuid "ad810e25-7709-40c7-9562-3c22632d1097")
+		)
+		(pin "8"
+			(uuid "7a58e638-53a1-439a-9636-a520dedb98ad")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/8ffeab7a-5fe5-5dc8-9941-7153a2ba80da"
+					(reference "RN14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:RN_4x100k")
+		(at 69.85 165.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "de1824e7-fe0f-44ec-8d94-69ef416b12f8")
+		(property "Reference" "RN10"
+			(at 69.85 151.13 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "4x100k"
+			(at 69.85 153.67 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:Yageo_YC164_4x0603"
+			(at 69.85 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-YC164-FR-07100KL_C110374.pdf"
+			(at 69.85 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "4 isolated 100k ohm resistors, 1%, 62.5mW each, 50V, convex 0603x4"
+			(at 69.85 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 69.85 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "YC164-FR-07100KL"
+			(at 69.85 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C110374"
+			(at 69.85 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C110374"
+			(at 69.85 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C110374"
+			(at 69.85 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 69.85 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "JLCPCB_EXTENDED_STOCK_CHECKED_2026-10-30_RECHECK_AT_ORDER"
+			(at 69.85 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Four isolated 100k pulldowns; pin pairs 1-5, 2-6, 3-7, 4-8."
+			(at 69.85 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part Class" "Extended"
+			(at 69.85 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "PCBA Type" "Economic and Standard"
+			(at 69.85 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 69.85 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Power Rating" "62.5mW per element"
+			(at 69.85 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1821b026-5845-4e06-a644-c43001b914c9")
+		)
+		(pin "5"
+			(uuid "4a893394-bc00-4038-8586-94848c2a0695")
+		)
+		(pin "2"
+			(uuid "280b7718-0d9f-49a6-9c2f-2fee5c2b8511")
+		)
+		(pin "6"
+			(uuid "bd2c74bd-95bb-4406-8e37-10d17ff0eb0c")
+		)
+		(pin "3"
+			(uuid "633a6784-94f5-4204-bf48-356585454506")
+		)
+		(pin "7"
+			(uuid "33aee190-8ef2-443f-bca0-51e208c9d405")
+		)
+		(pin "4"
+			(uuid "7d4ca7f2-9fd5-4485-8b8b-c1c901840cda")
+		)
+		(pin "8"
+			(uuid "b52e26b8-9d9e-4ca5-81be-ed5aff2202e0")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/8ffeab7a-5fe5-5dc8-9941-7153a2ba80da"
+					(reference "RN10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:RN_4x100k")
+		(at 328.93 205.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f5bdc44a-3609-42cc-9896-0e6a5c016cfb")
+		(property "Reference" "RN15"
+			(at 328.93 191.77 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "4x100k"
+			(at 328.93 194.31 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:Yageo_YC164_4x0603"
+			(at 328.93 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-YC164-FR-07100KL_C110374.pdf"
+			(at 328.93 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "4 isolated 100k ohm resistors, 1%, 62.5mW each, 50V, convex 0603x4"
+			(at 328.93 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 328.93 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "YC164-FR-07100KL"
+			(at 328.93 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C110374"
+			(at 328.93 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C110374"
+			(at 328.93 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C110374"
+			(at 328.93 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 328.93 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "JLCPCB_EXTENDED_STOCK_CHECKED_2026-10-30_RECHECK_AT_ORDER"
+			(at 328.93 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Four isolated 100k pulldowns; pin pairs 1-5, 2-6, 3-7, 4-8."
+			(at 328.93 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part Class" "Extended"
+			(at 328.93 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "PCBA Type" "Economic and Standard"
+			(at 328.93 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 328.93 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Power Rating" "62.5mW per element"
+			(at 328.93 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "100e3b17-2463-404c-ac86-3267b6b4fc68")
+		)
+		(pin "5"
+			(uuid "e3b9dc98-37e8-4798-b93d-715008006f6d")
+		)
+		(pin "2"
+			(uuid "fb2e7607-23cb-49e0-92da-91f1c19e0228")
+		)
+		(pin "6"
+			(uuid "b201abe3-cf0b-4bde-8e2f-cb301396b4fd")
+		)
+		(pin "3"
+			(uuid "505b8dce-691c-4169-a21a-a8c436fad21b")
+		)
+		(pin "7"
+			(uuid "40360c90-f58a-4a50-9e3c-12cadb6ebe35")
+		)
+		(pin "4"
+			(uuid "a0d3fbeb-3da7-4152-b93d-47758abd3e04")
+		)
+		(pin "8"
+			(uuid "972f421e-6c72-4edd-8c28-19836cfb9b66")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/8ffeab7a-5fe5-5dc8-9941-7153a2ba80da"
+					(reference "RN15")
+					(unit 1)
+				)
+			)
+		)
+	)
+)

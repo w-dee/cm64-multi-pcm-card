@@ -1,0 +1,4734 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "567d34c2-65ac-5b74-aa83-1614ee9494d5")
+	(paper "A3")
+	(title_block
+		(title "Card and USB ESD protection")
+		(date "2026-10-30")
+		(rev "A0-placement")
+		(company "CM-64 Multi PCM Card")
+		(comment 1 "SCHEMATIC ONLY / prototype: timing, mechanics and native ERC require review")
+	)
+	(lib_symbols
+		(symbol "PCM_Card:ESD1"
+			(pin_names
+				(offset 0.762)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 8 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "TPD1E10B06DPYR"
+				(at 0 5 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" "PCM_Card:X1SON-2_1x0.6"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd1e10b06.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "ESD1_1_1"
+				(rectangle
+					(start -15.24 3.81)
+					(end 15.24 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -17.78 0 0)
+					(length 2.54)
+					(name "IO"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 0 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_Card:ESD4"
+			(pin_names
+				(offset 0.762)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 8 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "TPD4E05U06DQAR"
+				(at 0 5 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" "PCM_Card:USON-10_2.5x1_P0.5"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd4e05u06.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "ESD4_1_1"
+				(rectangle
+					(start -15.24 7.62)
+					(end 15.24 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -17.78 5.08 0)
+					(length 2.54)
+					(name "D1_P"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -17.78 2.54 0)
+					(length 2.54)
+					(name "D1_N"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -17.78 -5.08 0)
+					(length 2.54)
+					(name "GND_3"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -17.78 0 0)
+					(length 2.54)
+					(name "D2_P"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -17.78 -2.54 0)
+					(length 2.54)
+					(name "D2_N"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 -2.54 180)
+					(length 2.54)
+					(name "NC_6"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 0 180)
+					(length 2.54)
+					(name "NC_7"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 -5.08 180)
+					(length 2.54)
+					(name "GND_8"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 2.54 180)
+					(length 2.54)
+					(name "NC_9"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 5.08 180)
+					(length 2.54)
+					(name "NC_10"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "Eight low-capacitance 4-channel arrays at card contacts; one at USB D+/D-/CC1/CC2; one VBUS TVS.\nPCB copper connects pads 10-1, 9-2, 7-4 and 6-5 for straight-through routing (no internal connection)."
+		(exclude_from_sim no)
+		(at 15 18 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+			)
+			(justify left top)
+		)
+		(uuid "562bb7e2-d22c-50b0-939c-01e4e16526f8")
+	)
+	(text "TVS ground returns must be short and wide. Do not place the ESD return current path through MCU/flash ground necks.\nTVS channels follow J3 pin order: U24.1 protects pin 1 HOST_5V; U31.5 protects pin 34 SENS (same net).\nMechanical card thickness, insertion depth, pin numbering and contact-side orientation remain provisional."
+		(exclude_from_sim no)
+		(at 15 261 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left top)
+		)
+		(uuid "af5def92-a893-58e2-b916-fbc16c2fa983")
+	)
+	(wire
+		(pts (xy 217.17 113.03) (xy 222.25 113.03))
+		(stroke (width 0) (type default))
+		(uuid "8bd1b826-3c95-4550-a213-6f99d328466d")
+	)
+	(global_label "HOST_A15"
+		(shape passive)
+		(at 222.25 113.03 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "06165e98-9c8f-4321-923d-57422bce2817")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 222.25 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts (xy 347.98 107.95) (xy 353.06 107.95))
+		(stroke (width 0) (type default))
+		(uuid "b101860c-8bd8-4dcb-8e06-9c02299a89df")
+	)
+	(global_label "HOST_D0"
+		(shape passive)
+		(at 353.06 107.95 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "8916b76c-dfc5-4e07-8088-cd02045f6a5d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 353.06 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts (xy 87.63 170.18) (xy 92.71 170.18))
+		(stroke (width 0) (type default))
+		(uuid "bdfbf10e-6aa4-4bf2-917d-6e84bc7f640e")
+	)
+	(global_label "HOST_D3"
+		(shape passive)
+		(at 92.71 170.18 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "33158b08-8f69-46c3-bddd-adc9571d0c2e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 92.71 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts (xy 87.63 52.07) (xy 92.71 52.07))
+		(stroke (width 0) (type default))
+		(uuid "7251498c-8456-4001-b950-0e4d5a3ce079")
+	)
+	(global_label "HOST_A0"
+		(shape passive)
+		(at 92.71 52.07 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "5d63978a-4a78-46f8-9718-6ef85544ac7a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 92.71 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts (xy 347.98 52.07) (xy 353.06 52.07))
+		(stroke (width 0) (type default))
+		(uuid "42f53c7b-a120-47e0-b9f8-a4fd650d28f7")
+	)
+	(global_label "HOST_A8"
+		(shape passive)
+		(at 353.06 52.07 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "9438110f-7254-449a-a072-36026c19e0d5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 353.06 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts (xy 87.63 110.49) (xy 92.71 110.49))
+		(stroke (width 0) (type default))
+		(uuid "7f375aa1-e212-46b3-99a3-38242091ef6e")
+	)
+	(global_label "HOST_A12"
+		(shape passive)
+		(at 92.71 110.49 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "d782fcd5-3232-4d1b-bf77-be7b46c1229f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 92.71 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts (xy 87.63 49.53) (xy 92.71 49.53))
+		(stroke (width 0) (type default))
+		(uuid "2fce53b7-2006-4a8a-b557-80143382ffb7")
+	)
+	(global_label "HOST_A1"
+		(shape passive)
+		(at 92.71 49.53 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "451ee803-aa82-4528-95d0-c06bfb2deece")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 92.71 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts (xy 347.98 165.1) (xy 353.06 165.1))
+		(stroke (width 0) (type default))
+		(uuid "ec52bcfe-d1cd-4a9d-b34c-6482575dcb71")
+	)
+	(global_label "USB_DP_PORT"
+		(shape passive)
+		(at 353.06 165.1 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "2879d87d-c36d-4471-88d6-79d8fc473f8c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 353.06 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts (xy 347.98 167.64) (xy 353.06 167.64))
+		(stroke (width 0) (type default))
+		(uuid "a4809de3-f69f-4c2e-ac25-25b0b83bd2d5")
+	)
+	(global_label "USB_DM_PORT"
+		(shape passive)
+		(at 353.06 167.64 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "178060a8-6b24-4658-8388-f7a2453a3538")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 353.06 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts (xy 87.63 113.03) (xy 92.71 113.03))
+		(stroke (width 0) (type default))
+		(uuid "40611d12-fccb-413d-a852-ed395d711869")
+	)
+	(global_label "HOST_A11"
+		(shape passive)
+		(at 92.71 113.03 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "0e849f82-9c71-450c-80ee-e3d6f71d8f4a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 92.71 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts (xy 347.98 46.99) (xy 353.06 46.99))
+		(stroke (width 0) (type default))
+		(uuid "67460fff-d58b-4789-8079-fa898283ba91")
+	)
+	(global_label "HOST_A10"
+		(shape passive)
+		(at 353.06 46.99 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "923a3291-aefe-45e6-93b0-2f5bd3293bd4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 353.06 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts (xy 347.98 54.61) (xy 353.06 54.61))
+		(stroke (width 0) (type default))
+		(uuid "14066789-04d7-4a5e-ae11-c5b34f3b8941")
+	)
+	(global_label "HOST_A7"
+		(shape passive)
+		(at 353.06 54.61 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "6772fdc8-130c-4531-a101-9b336114bf19")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 353.06 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts (xy 87.63 46.99) (xy 92.71 46.99))
+		(stroke (width 0) (type default))
+		(uuid "f1bc71c1-85cf-4a12-905e-49e02e297b4e")
+	)
+	(global_label "HOST_A2"
+		(shape passive)
+		(at 92.71 46.99 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "b741e50d-fb50-48ee-afa4-8208b7488717")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 92.71 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts (xy 87.63 107.95) (xy 92.71 107.95))
+		(stroke (width 0) (type default))
+		(uuid "70c61b4e-4669-4f1a-97bc-fac861e39b71")
+	)
+	(global_label "HOST_A13"
+		(shape passive)
+		(at 92.71 107.95 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "6d71b67f-8f67-4ce6-92cc-caef9eda1cdf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 92.71 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts (xy 347.98 172.72) (xy 353.06 172.72))
+		(stroke (width 0) (type default))
+		(uuid "3a28a616-4bba-41b4-94b5-87898bf1ff54")
+	)
+	(global_label "USB_CC2"
+		(shape passive)
+		(at 353.06 172.72 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "6f1af770-6216-4d0c-b0d6-dd59f8d864d3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 353.06 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts (xy 217.17 105.41) (xy 222.25 105.41))
+		(stroke (width 0) (type default))
+		(uuid "23abcf5f-539d-4ac7-bf59-c2423343a1de")
+	)
+	(global_label "HOST_A18"
+		(shape passive)
+		(at 222.25 105.41 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "ab536538-08c1-4dea-aae7-8d2f2285f630")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 222.25 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts (xy 217.17 170.18) (xy 222.25 170.18))
+		(stroke (width 0) (type default))
+		(uuid "319b8f7a-b0cb-4833-8098-2b437a6c5cd5")
+	)
+	(global_label "HOST_D7"
+		(shape passive)
+		(at 222.25 170.18 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "7fc7662a-63b6-4c18-a031-91a106fa5f7a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 222.25 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts (xy 347.98 170.18) (xy 353.06 170.18))
+		(stroke (width 0) (type default))
+		(uuid "4d226d2c-8898-420f-ad30-3c25edb8437f")
+	)
+	(global_label "USB_CC1"
+		(shape passive)
+		(at 353.06 170.18 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "419d8fe2-2cee-45d6-887f-db1785afc3eb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 353.06 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts (xy 347.98 110.49) (xy 353.06 110.49))
+		(stroke (width 0) (type default))
+		(uuid "728d1fb6-f91f-435e-9ef0-c1cc096e1fc3")
+	)
+	(global_label "HOST_OE_N"
+		(shape passive)
+		(at 353.06 110.49 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "1ace1449-a1db-4148-8e97-956ef8495796")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 353.06 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts (xy 217.17 107.95) (xy 222.25 107.95))
+		(stroke (width 0) (type default))
+		(uuid "fea4b55c-45f6-4690-ba3f-f619a583d5dd")
+	)
+	(global_label "HOST_A17"
+		(shape passive)
+		(at 222.25 107.95 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "fada8564-621c-48dd-9be6-1143d4c65750")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 222.25 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts (xy 217.17 52.07) (xy 222.25 52.07))
+		(stroke (width 0) (type default))
+		(uuid "3367a0c9-6121-4fef-a506-fadcb8eece2c")
+	)
+	(global_label "HOST_A4"
+		(shape passive)
+		(at 222.25 52.07 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "d764e01f-4e55-4ad3-b92f-2a437435573d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 222.25 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts (xy 347.98 105.41) (xy 353.06 105.41))
+		(stroke (width 0) (type default))
+		(uuid "a294e6d7-9c67-42d4-89b1-431872e4a3aa")
+	)
+	(global_label "HOST_D1"
+		(shape passive)
+		(at 353.06 105.41 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "fb47b62b-8d74-4039-90f2-a787a8b1ffb8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 353.06 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts (xy 217.17 167.64) (xy 222.25 167.64))
+		(stroke (width 0) (type default))
+		(uuid "de7d7f4a-957f-4a33-b4cc-c17c10400ce0")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 222.25 167.64 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "c56eafd0-95ad-4128-9340-167b48b363f1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 222.25 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts (xy 87.63 105.41) (xy 92.71 105.41))
+		(stroke (width 0) (type default))
+		(uuid "eec30be8-5df8-4765-ba2b-b148e070ffcd")
+	)
+	(global_label "HOST_A14"
+		(shape passive)
+		(at 92.71 105.41 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "3dc2f6a0-9802-4cda-a305-4379042a4f3e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 92.71 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts (xy 347.98 113.03) (xy 353.06 113.03))
+		(stroke (width 0) (type default))
+		(uuid "f066d9f0-b3de-4f5c-9925-77ea2246a7ec")
+	)
+	(global_label "HOST_CS"
+		(shape passive)
+		(at 353.06 113.03 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "d9667f11-8811-41a1-9967-7d5f0591ff69")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 353.06 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts (xy 217.17 49.53) (xy 222.25 49.53))
+		(stroke (width 0) (type default))
+		(uuid "596ae79e-0f99-4abd-bd77-5f93e5f11502")
+	)
+	(global_label "HOST_A5"
+		(shape passive)
+		(at 222.25 49.53 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "dfd54db6-93e0-4dfe-8447-d74fb9d2c0e1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 222.25 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts (xy 87.63 172.72) (xy 92.71 172.72))
+		(stroke (width 0) (type default))
+		(uuid "55ecaed7-5e76-4007-b5e1-fdfc898f589f")
+	)
+	(global_label "HOST_D2"
+		(shape passive)
+		(at 92.71 172.72 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "f67e3b80-8c72-412e-a38a-86b948783960")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 92.71 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts (xy 217.17 110.49) (xy 222.25 110.49))
+		(stroke (width 0) (type default))
+		(uuid "c44133d5-c2e4-4518-a2ca-d14cd54f92dc")
+	)
+	(global_label "HOST_A16"
+		(shape passive)
+		(at 222.25 110.49 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "36d41abf-bf2d-452c-8c3c-e5cfe8b38ca1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 222.25 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts (xy 87.63 165.1) (xy 92.71 165.1))
+		(stroke (width 0) (type default))
+		(uuid "2dfb3f1b-1c6e-400a-b6be-65969ed2be6f")
+	)
+	(global_label "HOST_D5"
+		(shape passive)
+		(at 92.71 165.1 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "953d4ec6-fa84-4c19-8d3a-bc7560f87786")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 92.71 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts (xy 217.17 46.99) (xy 222.25 46.99))
+		(stroke (width 0) (type default))
+		(uuid "cd66190b-8c80-4714-94f2-dbc27db009fa")
+	)
+	(global_label "HOST_A6"
+		(shape passive)
+		(at 222.25 46.99 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "1d93395a-4356-4b9a-a28c-133cc0174216")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 222.25 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts (xy 87.63 54.61) (xy 92.71 54.61))
+		(stroke (width 0) (type default))
+		(uuid "63175aa8-5fb8-4973-a278-bdfaa9106935")
+	)
+	(global_label "HOST_5V"
+		(shape passive)
+		(at 92.71 54.61 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "3b3609e8-f4a7-4400-ad9e-935fc3142897")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 92.71 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts (xy 217.17 172.72) (xy 222.25 172.72))
+		(stroke (width 0) (type default))
+		(uuid "362868a2-47fa-4c96-b46d-1a2a87193060")
+	)
+	(global_label "HOST_D6"
+		(shape passive)
+		(at 222.25 172.72 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "9155a776-1ffd-488c-b92d-0c6a0bd71e09")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 222.25 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts (xy 217.17 54.61) (xy 222.25 54.61))
+		(stroke (width 0) (type default))
+		(uuid "1f54f487-235d-48e5-b757-d145d3f08531")
+	)
+	(global_label "HOST_A3"
+		(shape passive)
+		(at 222.25 54.61 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "dae4e18d-0fb7-42df-9803-26d172156678")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 222.25 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts (xy 347.98 49.53) (xy 353.06 49.53))
+		(stroke (width 0) (type default))
+		(uuid "03a538ad-cd67-4f96-8b30-c8d80dc863c9")
+	)
+	(global_label "HOST_A9"
+		(shape passive)
+		(at 353.06 49.53 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "1aab47dc-9a51-4a07-b095-f8baab74f683")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 353.06 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts (xy 87.63 167.64) (xy 92.71 167.64))
+		(stroke (width 0) (type default))
+		(uuid "80c43ae1-e15a-4d41-975e-9a7e4058af15")
+	)
+	(global_label "HOST_D4"
+		(shape passive)
+		(at 92.71 167.64 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "00e02243-d75f-42a6-b84d-547bb17c13fa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 92.71 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts (xy 217.17 165.1) (xy 222.25 165.1))
+		(stroke (width 0) (type default))
+		(uuid "134e34ab-fff6-4b8e-9727-8c92416c1ad2")
+	)
+	(global_label "HOST_5V"
+		(shape passive)
+		(at 222.25 165.1 0)
+		(effects (font (size 0.9 0.9)) (justify left))
+		(uuid "67f6a09d-2bb1-49a9-a867-b48f5e9b41d8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 222.25 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects (font (size 0.9 0.9)))
+		)
+	)
+	(wire
+		(pts
+			(xy 312.42 54.61) (xy 307.34 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02809482-21f2-556e-aab3-4355f318dd6a")
+	)
+	(wire
+		(pts
+			(xy 181.61 172.72) (xy 176.53 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0432ed49-dfb2-5269-a618-d7b9a4c1ffe2")
+	)
+	(wire
+		(pts
+			(xy 307.34 170.18) (xy 312.42 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05714885-3d19-4f0a-911a-290db29aa23e")
+	)
+	(wire
+		(pts
+			(xy 181.61 52.07) (xy 176.53 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11c9816b-316f-5b00-b37e-4285e6c8342d")
+	)
+	(wire
+		(pts
+			(xy 52.07 46.99) (xy 46.99 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13572ec8-dae3-5226-995f-f5d337b5c2cb")
+	)
+	(wire
+		(pts
+			(xy 312.42 49.53) (xy 307.34 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b494c95-e7a9-514e-9048-467a7ee8f242")
+	)
+	(wire
+		(pts
+			(xy 52.07 110.49) (xy 46.99 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2166b8ff-115c-59c9-8bba-e1a02af921e5")
+	)
+	(wire
+		(pts
+			(xy 307.34 165.1) (xy 312.42 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21fff8ba-a8a4-41e3-a6ac-2d833321a75a")
+	)
+	(wire
+		(pts
+			(xy 347.98 115.57) (xy 353.06 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32251ac8-8b68-560d-b519-9cde5aebad1d")
+	)
+	(wire
+		(pts
+			(xy 87.63 57.15) (xy 92.71 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34aa118b-0173-53b6-a11f-da19ef2ef7f4")
+	)
+	(wire
+		(pts
+			(xy 181.61 175.26) (xy 176.53 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34b9c63f-4fc1-50f3-af6a-4d9e4c5e1b8a")
+	)
+	(wire
+		(pts
+			(xy 307.34 172.72) (xy 312.42 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "372c441a-492c-4bee-b355-1827e53b423a")
+	)
+	(wire
+		(pts
+			(xy 312.42 57.15) (xy 307.34 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e4a6081-395f-59f5-8bda-3c5b17a9f8b2")
+	)
+	(wire
+		(pts
+			(xy 52.07 165.1) (xy 46.99 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e6c40f2-eca3-52af-b3b5-86e87c549a7e")
+	)
+	(wire
+		(pts
+			(xy 312.42 46.99) (xy 307.34 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e870c03-cb33-5c1f-904c-f0402aa77ae2")
+	)
+	(wire
+		(pts
+			(xy 181.61 107.95) (xy 176.53 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42f78b43-bb18-5105-af67-0139b49987df")
+	)
+	(wire
+		(pts
+			(xy 217.17 57.15) (xy 222.25 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4681b720-3b94-55be-b37d-105f802a626c")
+	)
+	(wire
+		(pts
+			(xy 312.42 115.57) (xy 307.34 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4988fbaf-90ba-5d36-b1e0-f952fd0a18ed")
+	)
+	(wire
+		(pts
+			(xy 52.07 170.18) (xy 46.99 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a6895f9-7e69-50ce-95d6-92561efca491")
+	)
+	(wire
+		(pts
+			(xy 312.42 175.26) (xy 307.34 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e8a6f32-2ae2-522d-9ae9-f81f91548a31")
+	)
+	(wire
+		(pts
+			(xy 181.61 113.03) (xy 176.53 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5bf07a13-16a5-566d-b9d3-95bd4b84061f")
+	)
+	(wire
+		(pts
+			(xy 52.07 57.15) (xy 46.99 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "613e8ebf-3c93-5cb1-8be5-1664c31b6629")
+	)
+	(wire
+		(pts
+			(xy 87.63 115.57) (xy 92.71 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e1a00e4-c2ff-52ba-b48c-314cb0df07b6")
+	)
+	(wire
+		(pts
+			(xy 52.07 107.95) (xy 46.99 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71b21ef5-cdda-577a-9b36-3b60b94e1dd8")
+	)
+	(wire
+		(pts
+			(xy 52.07 54.61) (xy 46.99 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "770c4191-bed9-5d52-8b99-ea58d2ad491d")
+	)
+	(wire
+		(pts
+			(xy 347.98 57.15) (xy 353.06 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78266a26-b3ae-5b6b-a432-410911ebf20a")
+	)
+	(wire
+		(pts
+			(xy 181.61 167.64) (xy 176.53 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "809392db-aae0-526f-8a80-9516c6321e62")
+	)
+	(wire
+		(pts
+			(xy 347.98 175.26) (xy 353.06 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81abf50c-4640-5733-9a8e-1aea61698fa4")
+	)
+	(wire
+		(pts
+			(xy 52.07 52.07) (xy 46.99 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8574001d-bd15-5e68-b7ce-f7e0b8fa623f")
+	)
+	(wire
+		(pts
+			(xy 181.61 170.18) (xy 176.53 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fd93317-3d2d-5440-a1f4-a0d576df7190")
+	)
+	(wire
+		(pts
+			(xy 181.61 165.1) (xy 176.53 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b3d04a3-ca14-5be8-aa43-6fc266b01116")
+	)
+	(wire
+		(pts
+			(xy 52.07 105.41) (xy 46.99 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d778c17-be21-5944-9b52-b2adf4496fba")
+	)
+	(wire
+		(pts
+			(xy 312.42 52.07) (xy 307.34 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f678356-a654-53d9-aef5-d0c36f2bc14d")
+	)
+	(wire
+		(pts
+			(xy 52.07 175.26) (xy 46.99 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9faf68f0-d462-53ae-ad1a-f746d5565e84")
+	)
+	(wire
+		(pts
+			(xy 181.61 115.57) (xy 176.53 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0c9b0cf-1c9d-526d-9567-1de9582d4597")
+	)
+	(wire
+		(pts
+			(xy 307.34 167.64) (xy 312.42 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7be6146-18eb-409d-9359-f82292d71063")
+	)
+	(wire
+		(pts
+			(xy 312.42 107.95) (xy 307.34 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b48624ce-99ec-5fa2-9da2-8d977147ca9a")
+	)
+	(wire
+		(pts
+			(xy 52.07 231.14) (xy 46.99 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6ddf7dd-3916-5800-9365-f070896ac609")
+	)
+	(wire
+		(pts
+			(xy 181.61 57.15) (xy 176.53 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc4c0f32-c6e5-50d4-bef0-386d5f734d07")
+	)
+	(wire
+		(pts
+			(xy 181.61 110.49) (xy 176.53 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd1467d4-5ba1-5637-a096-3916655e4105")
+	)
+	(wire
+		(pts
+			(xy 52.07 115.57) (xy 46.99 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd2f4cdb-7e29-5ae9-ba52-c7109915a67a")
+	)
+	(wire
+		(pts
+			(xy 181.61 46.99) (xy 176.53 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be4e24b3-bd4c-505c-b1e1-20738e0844f0")
+	)
+	(wire
+		(pts
+			(xy 52.07 167.64) (xy 46.99 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c57237e4-b133-51ec-9ca2-38bab58254bf")
+	)
+	(wire
+		(pts
+			(xy 52.07 113.03) (xy 46.99 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7eb6888-01b2-58d8-bfef-bff0fd4236a8")
+	)
+	(wire
+		(pts
+			(xy 312.42 110.49) (xy 307.34 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8dffcfc-da18-57c2-aebf-b08946a61df1")
+	)
+	(wire
+		(pts
+			(xy 312.42 105.41) (xy 307.34 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "def96811-408f-51b3-ad7d-e4a1dea80f43")
+	)
+	(wire
+		(pts
+			(xy 312.42 113.03) (xy 307.34 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e382e2fd-e82e-52ba-8ee3-e8df863b6e15")
+	)
+	(wire
+		(pts
+			(xy 52.07 172.72) (xy 46.99 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5189c19-b313-54fd-9bd2-f9c5217628d5")
+	)
+	(wire
+		(pts
+			(xy 181.61 49.53) (xy 176.53 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea94cfe0-1747-5faa-bb0d-6809286eb044")
+	)
+	(wire
+		(pts
+			(xy 181.61 54.61) (xy 176.53 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed63cce8-eb66-513c-b909-d32cd346fd79")
+	)
+	(wire
+		(pts
+			(xy 87.63 175.26) (xy 92.71 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eeb6ae56-7f33-5e35-bc2b-9fab16092099")
+	)
+	(wire
+		(pts
+			(xy 217.17 175.26) (xy 222.25 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f23ef13c-c2c7-54f1-9e09-fa01caeb2395")
+	)
+	(wire
+		(pts
+			(xy 181.61 105.41) (xy 176.53 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9f6a2f0-5371-5952-bf12-4abdde3ed3db")
+	)
+	(wire
+		(pts
+			(xy 52.07 49.53) (xy 46.99 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb857d56-98a0-5901-a473-10e116aafe91")
+	)
+	(wire
+		(pts
+			(xy 87.63 231.14) (xy 92.71 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fed1e8f1-c3c2-5d2e-97c3-9bae1eeab598")
+	)
+	(wire
+		(pts
+			(xy 217.17 115.57) (xy 222.25 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff4a83af-aa00-5935-85ca-fa3ca60b7348")
+	)
+	(global_label "HOST_D2"
+		(shape passive)
+		(at 46.99 172.72 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "00aeaa6c-a639-5853-b73a-5c400625f490")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 46.99 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A17"
+		(shape passive)
+		(at 176.53 107.95 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "0244635b-9c83-599a-9b0b-19eef461b3d9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 176.53 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_D0"
+		(shape passive)
+		(at 307.34 107.95 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "03089e49-0a4d-5fbc-9f93-1d8bca45a984")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 307.34 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A15"
+		(shape passive)
+		(at 176.53 113.03 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "043aa94e-43ba-525a-97f4-4d122f3a6d26")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 176.53 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "USB_VBUS"
+		(shape passive)
+		(at 46.99 231.14 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "04e2deff-c3f2-5c3b-9f7c-5959652ad925")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 46.99 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_CS"
+		(shape passive)
+		(at 307.34 113.03 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "066eddfb-2f89-5188-aa9d-1480d74140fc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 307.34 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_D7"
+		(shape passive)
+		(at 176.53 170.18 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "069add20-62d9-5d60-87bf-14f1b7982e21")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 176.53 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 353.06 115.57 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "0985121d-1377-54ab-929d-9aeb5857a01a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 353.06 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_OE_N"
+		(shape passive)
+		(at 307.34 110.49 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "0aab48c8-4494-5767-adc7-c88662a1a807")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 307.34 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A13"
+		(shape passive)
+		(at 46.99 107.95 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "15d37289-29a1-5bc0-b69c-5266161b25f8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 46.99 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 92.71 175.26 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "20491181-c13f-5612-8b52-ec3dba8e7936")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 92.71 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "USB_DP_PORT"
+		(shape passive)
+		(at 307.34 165.1 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "23bfa7de-9f45-5fae-afb3-75e51bcb11b9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 307.34 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 176.53 167.64 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "2af2957b-b70e-5afd-9ac8-d09ecc1cf26f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 176.53 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "USB_CC1"
+		(shape passive)
+		(at 307.34 170.18 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "2dcfcae3-6440-5258-8cf4-370b80993c1f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 307.34 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 176.53 57.15 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "2e91d650-9a9f-53df-abc2-4c9ff092ff47")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 176.53 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 176.53 115.57 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "38ed9dc5-69f9-5bfe-9187-f0b12140c421")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 176.53 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_D3"
+		(shape passive)
+		(at 46.99 170.18 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "392af161-2dbc-56fa-9db9-5be05e52150d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 46.99 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_5V"
+		(shape passive)
+		(at 46.99 54.61 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "3c6e1c6e-a4b2-574f-95c0-34b1c176cd3e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 46.99 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_D5"
+		(shape passive)
+		(at 46.99 165.1 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "3ff1f961-5920-5bb1-ae99-9257960f7cf7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 46.99 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A16"
+		(shape passive)
+		(at 176.53 110.49 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "43ddbfae-af0c-56fe-a114-9c52de418f6c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 176.53 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_D6"
+		(shape passive)
+		(at 176.53 172.72 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "45c19150-337b-5aca-a979-918c048b0475")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 176.53 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 46.99 115.57 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "4d133165-1c41-50b5-908f-38a230671911")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 46.99 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A1"
+		(shape passive)
+		(at 46.99 49.53 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "4d47db38-94fb-52b0-b247-77519527a049")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 46.99 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A2"
+		(shape passive)
+		(at 46.99 46.99 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "5047d1d1-c4bf-56df-b2af-fb24ec52cc82")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 46.99 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A6"
+		(shape passive)
+		(at 176.53 46.99 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "52eae04e-2b36-578a-bfa6-8765da3cdd98")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 176.53 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A9"
+		(shape passive)
+		(at 307.34 49.53 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "5bb1c0f5-98e5-5df6-8868-888964a64b5c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 307.34 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A7"
+		(shape passive)
+		(at 307.34 54.61 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "5bfec7a9-e246-519c-9303-3c699f023c10")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 307.34 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A11"
+		(shape passive)
+		(at 46.99 113.03 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "5f0a4a52-2960-5ae0-a4f7-26a29234ec91")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 46.99 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 353.06 57.15 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "6421cf18-9396-50d4-969c-517827792904")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 353.06 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_5V"
+		(shape passive)
+		(at 176.53 165.1 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "69dfbc08-af81-5d2f-8ff9-a67625d0f9bf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 176.53 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A18"
+		(shape passive)
+		(at 176.53 105.41 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "6bd4fe86-d11d-5869-846b-99631ae846f4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 176.53 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 307.34 175.26 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "6d0bdaaa-13a1-55a0-9868-4910ac6e7354")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 307.34 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 222.25 175.26 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "7951d9c0-411f-5d85-a51f-dafb2f2bcf1f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 222.25 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 176.53 175.26 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "895630f2-e3f1-5bc1-8ffb-6d43b598cca2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 176.53 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A10"
+		(shape passive)
+		(at 307.34 46.99 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "940ecbc0-2a8e-5490-8fdd-85195fbf47f3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 307.34 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A0"
+		(shape passive)
+		(at 46.99 52.07 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "97ce883a-94a3-50ba-97d5-2d42d484b5c2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 46.99 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A12"
+		(shape passive)
+		(at 46.99 110.49 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "9d99eaff-721f-511b-aa63-3018cb02244d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 46.99 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 46.99 57.15 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "9f83906d-a7a8-5c1f-8252-6475104fd6ce")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 46.99 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A8"
+		(shape passive)
+		(at 307.34 52.07 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "a0bae121-545b-5d6e-8fb4-aa789ef7bdd3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 307.34 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 222.25 57.15 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "a79fc438-16b2-544b-976a-a499b8694022")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 222.25 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 92.71 57.15 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "b41ce86e-8885-5b01-a305-58bc05d2b5c4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 92.71 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 222.25 115.57 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "b9a6fc92-5851-5832-a9e4-5cf95e71e8ca")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 222.25 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 92.71 115.57 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "c05fb60f-fa6f-5e6f-88e7-ff5c3a3ea027")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 92.71 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 307.34 57.15 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "c6cad189-97da-569f-8d23-3e6272081e1d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 307.34 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "USB_CC2"
+		(shape passive)
+		(at 307.34 172.72 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "c6f029e2-f43e-50c5-b344-b056d0746bfa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 307.34 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_D4"
+		(shape passive)
+		(at 46.99 167.64 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "cb81ea11-edae-5626-9a86-691ea456ed8d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 46.99 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A4"
+		(shape passive)
+		(at 176.53 52.07 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "cc80f019-ccca-5017-9b1e-fcbe9b5abd39")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 176.53 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 353.06 175.26 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "cf055934-24f1-5b15-ba59-f1c75bf035af")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 353.06 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A5"
+		(shape passive)
+		(at 176.53 49.53 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "de77f682-a35f-548e-9256-376c9234217b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 176.53 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 307.34 115.57 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "df57bd8e-c584-58f3-aef5-e9de286ed9a3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 307.34 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "USB_DM_PORT"
+		(shape passive)
+		(at 307.34 167.64 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "f20aa917-4a68-5139-9ff5-b689156ae380")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 307.34 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 46.99 175.26 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "f3777fe3-558a-53d9-916f-3f869bb8abe6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 46.99 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A14"
+		(shape passive)
+		(at 46.99 105.41 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "f427c81c-4049-5bc7-b508-0c4894cb5099")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 46.99 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_A3"
+		(shape passive)
+		(at 176.53 54.61 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "f9ed8c91-e4d6-5020-8b40-fb13f3c3f158")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 176.53 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "HOST_D1"
+		(shape passive)
+		(at 307.34 105.41 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "fd07fd9a-d8ff-51c0-92a6-a59b8adbe699")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 307.34 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 92.71 231.14 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "fea095ca-c78d-58a8-bf8a-c957a099b8d6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 92.71 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:ESD4")
+		(at 330.2 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "317def85-6b90-5cf6-a154-327dcc001931")
+		(property "Reference" "U26"
+			(at 330.2 42.25 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "TPD4E05U06DQAR"
+			(at 330.2 62.09 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:USON-10_2.5x1_P0.5"
+			(at 330.2 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd4e05u06.pdf"
+			(at 330.2 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 330.2 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 330.2 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "TPD4E05U06DQAR"
+			(at 330.2 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C138714"
+			(at 330.2 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C138714"
+			(at 330.2 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C138714"
+			(at 330.2 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 330.2 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 330.2 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at card edge. PCB copper connects 10-1, 9-2, 7-4, 6-5 for straight-through routing; NC pins have no internal connection."
+			(at 330.2 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fdc4fdd8-0872-54ea-9cfc-41d2b6e63d40")
+		)
+		(pin "2"
+			(uuid "5dce9583-b20a-5ab5-8814-3489109904ae")
+		)
+		(pin "4"
+			(uuid "f585feae-25d5-5dae-b21a-3f85c0afb719")
+		)
+		(pin "5"
+			(uuid "4badbf37-bad2-5b37-872e-2c6d251ada75")
+		)
+		(pin "3"
+			(uuid "5759e53f-0160-5665-9376-a5af91918de4")
+		)
+		(pin "10"
+			(uuid "2252b3f1-2d56-5af9-9bec-89ad5bc22973")
+		)
+		(pin "9"
+			(uuid "8984478e-3f4e-53a5-b4e5-3bde62074454")
+		)
+		(pin "7"
+			(uuid "5d23f5a6-b194-5def-a6dc-7e097043ac53")
+		)
+		(pin "6"
+			(uuid "7363563e-d788-5dc4-8052-74886aee9890")
+		)
+		(pin "8"
+			(uuid "ecc2615a-eef9-503b-817a-352cb1aa019f")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/0f74f593-1386-521a-a039-1cf6e6d3d60d"
+					(reference "U26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:ESD4")
+		(at 69.85 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5ba9effe-2ed6-5316-8465-a59ca4d0d642")
+		(property "Reference" "U24"
+			(at 69.85 42.25 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "TPD4E05U06DQAR"
+			(at 69.85 62.09 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:USON-10_2.5x1_P0.5"
+			(at 69.85 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd4e05u06.pdf"
+			(at 69.85 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 69.85 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 69.85 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "TPD4E05U06DQAR"
+			(at 69.85 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C138714"
+			(at 69.85 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C138714"
+			(at 69.85 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C138714"
+			(at 69.85 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 69.85 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 69.85 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at card edge. PCB copper connects 10-1, 9-2, 7-4, 6-5 for straight-through routing; NC pins have no internal connection."
+			(at 69.85 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "357fda84-dd60-51c6-b035-c6b8861543b3")
+		)
+		(pin "2"
+			(uuid "ddb2a2a7-c037-5198-a008-3051aff7970d")
+		)
+		(pin "4"
+			(uuid "38a30b0c-39bc-50ee-9e11-47f4049a0b30")
+		)
+		(pin "5"
+			(uuid "6a7d3f45-9ecc-5584-8292-5a6dbdb6dc0e")
+		)
+		(pin "3"
+			(uuid "787be01b-3b11-546e-8ef0-09c0fc123b97")
+		)
+		(pin "10"
+			(uuid "ea25d672-8e90-5ce9-bf58-b738f433a994")
+		)
+		(pin "9"
+			(uuid "a3698cdc-1b8d-5899-9a97-b31c0dc8e841")
+		)
+		(pin "7"
+			(uuid "aae5e5f5-f855-5020-82d4-970852889828")
+		)
+		(pin "6"
+			(uuid "018024a0-f173-5020-80ce-44eadf2939e2")
+		)
+		(pin "8"
+			(uuid "dbff596c-179d-509b-9e86-e1ce0cec1cec")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/0f74f593-1386-521a-a039-1cf6e6d3d60d"
+					(reference "U24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:ESD4")
+		(at 69.85 170.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "617c82bd-90b7-5f31-9f8b-c61946440e9d")
+		(property "Reference" "U30"
+			(at 69.85 160.36 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "TPD4E05U06DQAR"
+			(at 69.85 180.2 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:USON-10_2.5x1_P0.5"
+			(at 69.85 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd4e05u06.pdf"
+			(at 69.85 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 69.85 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 69.85 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "TPD4E05U06DQAR"
+			(at 69.85 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C138714"
+			(at 69.85 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C138714"
+			(at 69.85 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C138714"
+			(at 69.85 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 69.85 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 69.85 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at card edge. PCB copper connects 10-1, 9-2, 7-4, 6-5 for straight-through routing; NC pins have no internal connection."
+			(at 69.85 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "58e42c81-0b31-5392-9d95-4a280f654afc")
+		)
+		(pin "2"
+			(uuid "4fc8d32c-b8c1-5f9a-80d6-5d7db4351c42")
+		)
+		(pin "4"
+			(uuid "5d8b6197-689d-548c-a7cb-20508beeeddb")
+		)
+		(pin "5"
+			(uuid "1d475fbf-08c5-537c-a666-0a8090670987")
+		)
+		(pin "3"
+			(uuid "54026154-489e-5f15-a45f-efce0997a15f")
+		)
+		(pin "10"
+			(uuid "56581232-56b2-53e9-a57b-1abe988b4e97")
+		)
+		(pin "9"
+			(uuid "45a4770c-6192-5ccf-9fbe-383b0412cc08")
+		)
+		(pin "7"
+			(uuid "bca3b2b8-caf5-5835-8c57-fae8a19e0598")
+		)
+		(pin "6"
+			(uuid "4a8948c8-346a-5693-bd8c-58a329e7b1b4")
+		)
+		(pin "8"
+			(uuid "043cb40b-6214-51d0-b66e-215fea9c2655")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/0f74f593-1386-521a-a039-1cf6e6d3d60d"
+					(reference "U30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:ESD4")
+		(at 330.2 170.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "87cf62f4-f0cd-54cc-ba43-986e32f85d20")
+		(property "Reference" "U32"
+			(at 330.2 160.36 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "TPD4E05U06DQAR"
+			(at 330.2 180.2 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:USON-10_2.5x1_P0.5"
+			(at 330.2 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd4e05u06.pdf"
+			(at 330.2 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 330.2 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 330.2 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "TPD4E05U06DQAR"
+			(at 330.2 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C138714"
+			(at 330.2 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C138714"
+			(at 330.2 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C138714"
+			(at 330.2 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 330.2 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 330.2 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place close to USB connector; low-inductance ground. PCB copper connects 10-1, 9-2, 7-4, 6-5 for straight-through routing; NC pins have no internal connection."
+			(at 330.2 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f4b3db4b-6fa0-58fc-8a23-8337298b88fb")
+		)
+		(pin "2"
+			(uuid "4ce5e6d9-4d6e-5288-8f6b-a040f97f2692")
+		)
+		(pin "4"
+			(uuid "f79eddef-831b-5019-bb1f-3922f4a6c3a0")
+		)
+		(pin "5"
+			(uuid "d78d37c3-7405-5320-bc19-d286fc257496")
+		)
+		(pin "3"
+			(uuid "024955c3-1ccf-5c89-8c7a-9368464112df")
+		)
+		(pin "10"
+			(uuid "23497031-3803-55b0-870c-72a36868da93")
+		)
+		(pin "9"
+			(uuid "2de54c00-c2e6-5897-8110-19a53aa55aa3")
+		)
+		(pin "7"
+			(uuid "f5633fbc-f3d7-54dc-af46-81d17196aaa6")
+		)
+		(pin "6"
+			(uuid "d47e4cb6-91f5-578d-abd2-9300a991ac78")
+		)
+		(pin "8"
+			(uuid "4933f336-cdd5-5cd9-b535-060408d146d1")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/0f74f593-1386-521a-a039-1cf6e6d3d60d"
+					(reference "U32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:ESD4")
+		(at 199.39 170.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a7b1d1b9-a982-5352-8578-4f53384d766a")
+		(property "Reference" "U31"
+			(at 199.39 160.36 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "TPD4E05U06DQAR"
+			(at 199.39 180.2 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:USON-10_2.5x1_P0.5"
+			(at 199.39 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd4e05u06.pdf"
+			(at 199.39 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 199.39 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 199.39 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "TPD4E05U06DQAR"
+			(at 199.39 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C138714"
+			(at 199.39 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C138714"
+			(at 199.39 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C138714"
+			(at 199.39 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 199.39 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 199.39 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at card edge. PCB copper connects 10-1, 9-2, 7-4, 6-5 for straight-through routing; NC pins have no internal connection."
+			(at 199.39 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d63df4bd-3b28-53bc-984e-55ea63b46cab")
+		)
+		(pin "2"
+			(uuid "f3c67fbc-5046-5d43-9e8c-c46aba9c31b7")
+		)
+		(pin "4"
+			(uuid "5ccdc086-1a9b-5b1f-9cfc-966be8a897fb")
+		)
+		(pin "5"
+			(uuid "a5425b0b-58d2-560e-9595-ae3ce1e0e28a")
+		)
+		(pin "3"
+			(uuid "6ef277a1-c40d-5caf-baee-33ddb333c66e")
+		)
+		(pin "10"
+			(uuid "6cfe4b74-c731-5f9b-9d05-7df4c1ce2877")
+		)
+		(pin "9"
+			(uuid "5942141f-a81f-5009-90e0-cbda1a867113")
+		)
+		(pin "7"
+			(uuid "07f3aa19-8e34-5fc0-8966-2ad11e11adbe")
+		)
+		(pin "6"
+			(uuid "ee391b0f-7af5-5a86-955f-d1ba6da9379c")
+		)
+		(pin "8"
+			(uuid "7193a108-e096-563d-877e-82bf732f9ecd")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/0f74f593-1386-521a-a039-1cf6e6d3d60d"
+					(reference "U31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:ESD4")
+		(at 199.39 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b37f6652-d21d-531a-8daa-a45671b3d2b9")
+		(property "Reference" "U28"
+			(at 199.39 100.67 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "TPD4E05U06DQAR"
+			(at 199.39 120.51 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:USON-10_2.5x1_P0.5"
+			(at 199.39 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd4e05u06.pdf"
+			(at 199.39 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 199.39 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 199.39 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "TPD4E05U06DQAR"
+			(at 199.39 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C138714"
+			(at 199.39 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C138714"
+			(at 199.39 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C138714"
+			(at 199.39 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 199.39 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 199.39 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at card edge. PCB copper connects 10-1, 9-2, 7-4, 6-5 for straight-through routing; NC pins have no internal connection."
+			(at 199.39 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "19b91ae0-7e05-53e6-8a52-39c917bf7bda")
+		)
+		(pin "2"
+			(uuid "48097376-9851-5be5-93d9-a6d43af365bd")
+		)
+		(pin "4"
+			(uuid "d1d174b1-17c9-54ce-bf22-755b1b538ea3")
+		)
+		(pin "5"
+			(uuid "edbc8050-119c-50c6-8ba0-2d89ee50b9f4")
+		)
+		(pin "3"
+			(uuid "23dd80a2-c600-5c6f-9db5-4d4d6e8a49a4")
+		)
+		(pin "10"
+			(uuid "b1ada668-c7df-5e81-89f2-0e7652c90eea")
+		)
+		(pin "9"
+			(uuid "f205ca21-5039-5b1c-8fed-7239df15328c")
+		)
+		(pin "7"
+			(uuid "81e00151-1049-58eb-b8fd-b381773f61a6")
+		)
+		(pin "6"
+			(uuid "6d8aea48-bdb5-535c-913b-ce481f7183ee")
+		)
+		(pin "8"
+			(uuid "47a06370-a3f4-51b7-9491-a6d305bb4f5d")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/0f74f593-1386-521a-a039-1cf6e6d3d60d"
+					(reference "U28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:ESD4")
+		(at 330.2 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c8c4a445-19a6-5a48-beb8-caf4b8afde4a")
+		(property "Reference" "U29"
+			(at 330.2 100.67 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "TPD4E05U06DQAR"
+			(at 330.2 120.51 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:USON-10_2.5x1_P0.5"
+			(at 330.2 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd4e05u06.pdf"
+			(at 330.2 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 330.2 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 330.2 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "TPD4E05U06DQAR"
+			(at 330.2 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C138714"
+			(at 330.2 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C138714"
+			(at 330.2 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C138714"
+			(at 330.2 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 330.2 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 330.2 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at card edge. PCB copper connects 10-1, 9-2, 7-4, 6-5 for straight-through routing; NC pins have no internal connection."
+			(at 330.2 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cb23a9e9-fb33-53c2-b54d-769950481f54")
+		)
+		(pin "2"
+			(uuid "112e7335-683b-52ff-98d8-c73b51cf5bee")
+		)
+		(pin "4"
+			(uuid "3648e0a7-dda7-58e0-a5cd-17f3e9d75d87")
+		)
+		(pin "5"
+			(uuid "fed5b6cf-6ee2-53ac-bca4-45fc4d7e5fe4")
+		)
+		(pin "3"
+			(uuid "e20b3bfa-99e5-5be5-80c9-54c8059c6beb")
+		)
+		(pin "10"
+			(uuid "f327b89f-7efa-504c-93e1-9257654979e8")
+		)
+		(pin "9"
+			(uuid "534a6043-cb26-59f4-9d41-85d9275745da")
+		)
+		(pin "7"
+			(uuid "f85f99ce-a508-5e97-8585-21876ee54e68")
+		)
+		(pin "6"
+			(uuid "46ed393e-4745-5076-ac5c-ee21a47145e4")
+		)
+		(pin "8"
+			(uuid "198bb03c-2328-5bba-8db6-ccf84046f30d")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/0f74f593-1386-521a-a039-1cf6e6d3d60d"
+					(reference "U29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:ESD4")
+		(at 199.39 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cfc1c62a-b5cd-5c8b-ae52-d75449ff6757")
+		(property "Reference" "U25"
+			(at 199.39 42.25 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "TPD4E05U06DQAR"
+			(at 199.39 62.09 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:USON-10_2.5x1_P0.5"
+			(at 199.39 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd4e05u06.pdf"
+			(at 199.39 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 199.39 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 199.39 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "TPD4E05U06DQAR"
+			(at 199.39 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C138714"
+			(at 199.39 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C138714"
+			(at 199.39 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C138714"
+			(at 199.39 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 199.39 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 199.39 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at card edge. PCB copper connects 10-1, 9-2, 7-4, 6-5 for straight-through routing; NC pins have no internal connection."
+			(at 199.39 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5855f842-dae9-56fa-9458-bc4db9b79a50")
+		)
+		(pin "2"
+			(uuid "b6104d81-fa12-529a-afea-0d5361c9705c")
+		)
+		(pin "4"
+			(uuid "0ab64571-23e4-51e2-86f5-829543f3169c")
+		)
+		(pin "5"
+			(uuid "17c11d19-afae-563e-a0e3-8c0481e3a5a5")
+		)
+		(pin "3"
+			(uuid "dd601c12-6d31-5a27-bc78-8cab486fbe39")
+		)
+		(pin "10"
+			(uuid "ceb43768-1567-5cfe-9a16-d61f1acfc8af")
+		)
+		(pin "9"
+			(uuid "54dd8b29-7793-5e3c-8a97-4dac48996cdc")
+		)
+		(pin "7"
+			(uuid "4530756b-bd23-58b9-beba-e06897b6f242")
+		)
+		(pin "6"
+			(uuid "1bb23cd7-bd7f-59b3-bc6a-599b9c1b7d10")
+		)
+		(pin "8"
+			(uuid "dc8d387d-a456-5108-b3a1-11177fe1efe4")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/0f74f593-1386-521a-a039-1cf6e6d3d60d"
+					(reference "U25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:ESD1")
+		(at 69.85 231.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e35f2543-4a98-578a-ac5a-c22dc9c31067")
+		(property "Reference" "U33"
+			(at 69.85 225.13 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "TPD1E10B06DPYR"
+			(at 69.85 237.35 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:X1SON-2_1x0.6"
+			(at 69.85 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd1e10b06.pdf"
+			(at 69.85 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 69.85 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 69.85 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "TPD1E10B06DPYR"
+			(at 69.85 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C48260"
+			(at 69.85 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C48260"
+			(at 69.85 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C48260"
+			(at 69.85 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 69.85 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 69.85 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "USB VBUS ESD protection; does not protect against sustained overvoltage"
+			(at 69.85 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ccaab123-ed71-502c-8ccb-8f41e9966d0c")
+		)
+		(pin "2"
+			(uuid "e8a6e74c-5741-55fd-aa43-f38d92c34ee7")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/0f74f593-1386-521a-a039-1cf6e6d3d60d"
+					(reference "U33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:ESD4")
+		(at 69.85 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fad8d0de-1053-57ef-85c5-f329be0603ff")
+		(property "Reference" "U27"
+			(at 69.85 100.67 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "TPD4E05U06DQAR"
+			(at 69.85 120.51 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:USON-10_2.5x1_P0.5"
+			(at 69.85 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd4e05u06.pdf"
+			(at 69.85 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 69.85 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 69.85 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "TPD4E05U06DQAR"
+			(at 69.85 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C138714"
+			(at 69.85 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C138714"
+			(at 69.85 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C138714"
+			(at 69.85 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 69.85 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 69.85 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "Place at card edge. PCB copper connects 10-1, 9-2, 7-4, 6-5 for straight-through routing; NC pins have no internal connection."
+			(at 69.85 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "aef14dd6-eb1c-563a-8cab-14fd57a478d1")
+		)
+		(pin "2"
+			(uuid "3c3cb1f2-04ba-55e4-afa9-a62f791958fa")
+		)
+		(pin "4"
+			(uuid "eac5db80-745c-56b8-9d49-d8efd0721cec")
+		)
+		(pin "5"
+			(uuid "3c6fee69-75ec-557c-a2d9-7d511318732d")
+		)
+		(pin "3"
+			(uuid "dc7d377e-2dba-59be-8330-686031175b2a")
+		)
+		(pin "10"
+			(uuid "d1121ac6-7f2c-5836-8dd6-6c88fc22c65d")
+		)
+		(pin "9"
+			(uuid "5251f5b2-c35b-50cc-b01b-6f3477a24042")
+		)
+		(pin "7"
+			(uuid "3472faf3-32c0-5bd4-90e4-ccd1b59435b0")
+		)
+		(pin "6"
+			(uuid "e99b3f8b-1f2f-54dc-871c-9798fd24b15b")
+		)
+		(pin "8"
+			(uuid "44add381-9d9e-5c5d-899b-1c845590ced5")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/0f74f593-1386-521a-a039-1cf6e6d3d60d"
+					(reference "U27")
+					(unit 1)
+				)
+			)
+		)
+	)
+)

@@ -1,0 +1,172 @@
+(kicad_symbol_lib
+  (version 20241209)
+  (generator "kicad_symbol_editor")
+  (symbol "KMD13-6_PS2"
+    (pin_names (offset 1.016))
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "J" (at 0 12.7 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "KMD13-6_PS2" (at 0 10.16 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "card-reader-adapter:MiniDIN6_KMD13-6_PS2_Current"
+      (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Datasheet" "https://akizukidenshi.com/goodsaffix/KMD13-6_20260114.pdf"
+      (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (symbol "KMD13-6_PS2_0_1"
+      (rectangle
+        (start -10.16 10.16)
+        (end 10.16 -10.16)
+        (stroke (width 0.254) (type default))
+        (fill (type background))
+      )
+    )
+    (symbol "KMD13-6_PS2_1_1"
+      (pin passive line
+        (at -15.24 5.08 0)
+        (length 5.08)
+        (name "DATA" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line
+        (at -15.24 0 0)
+        (length 5.08)
+        (name "CLK" (effects (font (size 1.27 1.27))))
+        (number "5" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line
+        (at 0 15.24 270)
+        (length 5.08)
+        (name "VBUS" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line
+        (at 0 -15.24 90)
+        (length 5.08)
+        (name "GND" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line
+        (at 5.08 -15.24 90)
+        (length 5.08)
+        (name "SHIELD" (effects (font (size 1.27 1.27))))
+        (number "7" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line
+        (at 15.24 5.08 180)
+        (length 5.08)
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line
+        (at 15.24 0 180)
+        (length 5.08)
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "6" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+
+(symbol "PLT133_T"
+  (pin_names (offset 1.016))
+  (in_bom yes)
+  (on_board yes)
+  (property "Reference" "J" (at 0 12.7 0) (effects (font (size 1.27 1.27))))
+  (property "Value" "PLT133_T" (at 0 -12.7 0) (effects (font (size 1.27 1.27))))
+  (property "Footprint" "card-reader-adapter:Everlight_PLT133-T_PLR135-T"
+    (at 0 0 0)
+    (hide yes)
+    (effects (font (size 1.27 1.27)))
+  )
+  (property "Datasheet" "https://akizukidenshi.com/goodsaffix/plt133-t.pdf"
+    (at 0 0 0)
+    (hide yes)
+    (effects (font (size 1.27 1.27)))
+  )
+  (property "Description" "Everlight TOSLINK optical transmitter; 1=VIN 2=VCC 3=GND"
+    (at 0 0 0)
+    (hide yes)
+    (effects (font (size 1.27 1.27)))
+  )
+  (symbol "PLT133_T_0_1"
+    (rectangle
+      (start -10.16 10.16)
+      (end 10.16 -10.16)
+      (stroke (width 0.254) (type default))
+      (fill (type background))
+    )
+  )
+  (symbol "PLT133_T_1_1"
+    (pin input line
+      (at -15.24 0 0)
+      (length 5.08)
+      (name "VIN" (effects (font (size 1.27 1.27))))
+      (number "1" (effects (font (size 1.27 1.27))))
+    )
+    (pin power_in line
+      (at 0 15.24 270)
+      (length 5.08)
+      (name "VCC" (effects (font (size 1.27 1.27))))
+      (number "2" (effects (font (size 1.27 1.27))))
+    )
+    (pin power_in line
+      (at 0 -15.24 90)
+      (length 5.08)
+      (name "GND" (effects (font (size 1.27 1.27))))
+      (number "3" (effects (font (size 1.27 1.27))))
+    )
+  )
+)
+(symbol "PLR135_T"
+  (pin_names (offset 1.016))
+  (in_bom yes)
+  (on_board yes)
+  (property "Reference" "J" (at 0 12.7 0) (effects (font (size 1.27 1.27))))
+  (property "Value" "PLR135_T" (at 0 -12.7 0) (effects (font (size 1.27 1.27))))
+  (property "Footprint" "card-reader-adapter:Everlight_PLT133-T_PLR135-T"
+    (at 0 0 0)
+    (hide yes)
+    (effects (font (size 1.27 1.27)))
+  )
+  (property "Datasheet" "https://akizukidenshi.com/goodsaffix/plr135-t.pdf"
+    (at 0 0 0)
+    (hide yes)
+    (effects (font (size 1.27 1.27)))
+  )
+  (property "Description" "Everlight TOSLINK optical receiver; 1=VCC 2=GND 3=VOUT"
+    (at 0 0 0)
+    (hide yes)
+    (effects (font (size 1.27 1.27)))
+  )
+  (symbol "PLR135_T_0_1"
+    (rectangle
+      (start -10.16 10.16)
+      (end 10.16 -10.16)
+      (stroke (width 0.254) (type default))
+      (fill (type background))
+    )
+  )
+  (symbol "PLR135_T_1_1"
+    (pin power_in line
+      (at 0 15.24 270)
+      (length 5.08)
+      (name "VCC" (effects (font (size 1.27 1.27))))
+      (number "1" (effects (font (size 1.27 1.27))))
+    )
+    (pin power_in line
+      (at 0 -15.24 90)
+      (length 5.08)
+      (name "GND" (effects (font (size 1.27 1.27))))
+      (number "2" (effects (font (size 1.27 1.27))))
+    )
+    (pin output line
+      (at 15.24 0 180)
+      (length 5.08)
+      (name "VOUT" (effects (font (size 1.27 1.27))))
+      (number "3" (effects (font (size 1.27 1.27))))
+    )
+  )
+)
+)

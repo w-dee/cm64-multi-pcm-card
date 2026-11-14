@@ -1,0 +1,10127 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "7d0faa0b-f4a3-5a7e-b2db-597e4c454fcb")
+	(paper "A3")
+	(title_block
+  (title "RP2040 / USB programmer")
+  (date "2026-11-01")
+  (rev "A0-review")
+  (company "CM-64 Multi PCM Card")
+  (comment 1 "SCHEMATIC ONLY / prototype: timing, mechanics and native ERC require review")
+)
+	(lib_symbols
+		(symbol "PCM_Card:C_15p"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0 8 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "CL10C150JB8NNNC"
+				(at 0 5 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" "PCM_Card:C_0603_1608Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C1644.html"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" "15pF 50V C0G 5%, 1608 metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "C_15p_1_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -0.635 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 -1.8) (xy -0.635 1.8)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -1.8) (xy 0.635 1.8)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_Card:HDR2"
+			(pin_names
+				(offset 0.762)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 8 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "TSW-102-07-G-S"
+				(at 0 5 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" "PCM_Card:Header_1x02_P2.54"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.samtec.com/products/tsw"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" "BOOTSEL; short during USB connection"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "HDR2_1_1"
+				(rectangle
+					(start -15.24 3.81)
+					(end 15.24 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -17.78 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_Card:LED_GREEN"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "KT-0603G"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "PCM_Card:LED_0603_1608Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C12624.html"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Green LED, 1608 metric / 0603, cathode pad 1, anode pad 2"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "LED_GREEN_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27) (xy 1.27 0) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.778 -0.762) (xy 3.302 -2.286) (xy 2.54 -2.286) (xy 3.302 -2.286) (xy 3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.048 -0.762) (xy 4.572 -2.286) (xy 3.81 -2.286) (xy 4.572 -2.286) (xy 4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_GREEN_1_1"
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_Card:LED_RED"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "KT-0603R"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "PCM_Card:LED_0603_1608Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C2286.html"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Red LED, 1608 metric / 0603, cathode pad 1, anode pad 2"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "LED_RED_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27) (xy 1.27 0) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.778 -0.762) (xy 3.302 -2.286) (xy 2.54 -2.286) (xy 3.302 -2.286) (xy 3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.048 -0.762) (xy 4.572 -2.286) (xy 3.81 -2.286) (xy 4.572 -2.286) (xy 4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_RED_1_1"
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_Card:QSPI"
+			(pin_names
+				(offset 0.762)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 8 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "W25Q128JVPIQ"
+				(at 0 5 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" "PCM_Card:WSON-8_6x5mm_P1.27mm_EP3.4x4.3mm_Floating"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.winbond.com/resource-files/W25Q128JV%20RevF%2003272018%20Plus.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "QSPI_1_1"
+				(rectangle
+					(start -15.24 6.35)
+					(end 15.24 -6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -17.78 3.81 0)
+					(length 2.54)
+					(name "CS_N"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 -3.81 0)
+					(length 2.54)
+					(name "IO1"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 17.78 3.81 180)
+					(length 2.54)
+					(name "IO2_WP_N"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 17.78 -3.81 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 -1.27 0)
+					(length 2.54)
+					(name "IO0"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 1.27 0)
+					(length 2.54)
+					(name "CLK"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 17.78 1.27 180)
+					(length 2.54)
+					(name "IO3_HOLD_N"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 17.78 -1.27 180)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_Card:RP2040"
+			(pin_names
+				(offset 0.762)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 8 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "RP2040"
+				(at 0 5 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" "PCM_Card:QFN-56-1EP_7x7_P0.4_EP3.2"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" "https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" "RP2040; GPIO unit and power/boot unit"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "RP2040_1_1"
+				(rectangle
+					(start -19.05 20.32)
+					(end 19.05 -20.32)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin bidirectional line
+					(at -21.59 17.78 0)
+					(length 2.54)
+					(name "GPIO0"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -21.59 15.24 0)
+					(length 2.54)
+					(name "GPIO1"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -21.59 12.7 0)
+					(length 2.54)
+					(name "GPIO2"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -21.59 10.16 0)
+					(length 2.54)
+					(name "GPIO3"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -21.59 7.62 0)
+					(length 2.54)
+					(name "GPIO4"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -21.59 5.08 0)
+					(length 2.54)
+					(name "GPIO5"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -21.59 2.54 0)
+					(length 2.54)
+					(name "GPIO6"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -21.59 0 0)
+					(length 2.54)
+					(name "GPIO7"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -21.59 -2.54 0)
+					(length 2.54)
+					(name "GPIO8"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -21.59 -5.08 0)
+					(length 2.54)
+					(name "GPIO9"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -21.59 -7.62 0)
+					(length 2.54)
+					(name "GPIO10"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -21.59 -10.16 0)
+					(length 2.54)
+					(name "GPIO11"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -21.59 -12.7 0)
+					(length 2.54)
+					(name "GPIO12"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -21.59 -15.24 0)
+					(length 2.54)
+					(name "GPIO13"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -21.59 -17.78 0)
+					(length 2.54)
+					(name "GPIO14"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 21.59 17.78 180)
+					(length 2.54)
+					(name "GPIO15"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 21.59 15.24 180)
+					(length 2.54)
+					(name "GPIO16"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "27"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 21.59 12.7 180)
+					(length 2.54)
+					(name "GPIO17"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "28"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 21.59 10.16 180)
+					(length 2.54)
+					(name "GPIO18"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "29"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 21.59 7.62 180)
+					(length 2.54)
+					(name "GPIO19"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "30"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 21.59 5.08 180)
+					(length 2.54)
+					(name "GPIO20"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "31"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 21.59 2.54 180)
+					(length 2.54)
+					(name "GPIO21"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "32"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 21.59 0 180)
+					(length 2.54)
+					(name "GPIO22"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "34"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 21.59 -2.54 180)
+					(length 2.54)
+					(name "GPIO23"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "35"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 21.59 -5.08 180)
+					(length 2.54)
+					(name "GPIO24"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "36"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 21.59 -7.62 180)
+					(length 2.54)
+					(name "GPIO25"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "37"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 21.59 -10.16 180)
+					(length 2.54)
+					(name "GPIO26"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "38"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 21.59 -12.7 180)
+					(length 2.54)
+					(name "GPIO27"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "39"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 21.59 -15.24 180)
+					(length 2.54)
+					(name "GPIO28"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "40"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 21.59 -17.78 180)
+					(length 2.54)
+					(name "GPIO29"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "41"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(symbol "RP2040_2_1"
+				(rectangle
+					(start -19.05 19.05)
+					(end 19.05 -19.05)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at 21.59 15.24 180)
+					(length 2.54)
+					(name "IOVDD_1"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 21.59 12.7 180)
+					(length 2.54)
+					(name "IOVDD_10"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -21.59 16.51 0)
+					(length 2.54)
+					(name "TESTEN"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -21.59 13.97 0)
+					(length 2.54)
+					(name "XIN"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -21.59 11.43 0)
+					(length 2.54)
+					(name "XOUT"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 21.59 10.16 180)
+					(length 2.54)
+					(name "IOVDD_22"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 21.59 -10.16 180)
+					(length 2.54)
+					(name "DVDD_23"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -21.59 8.89 0)
+					(length 2.54)
+					(name "SWCLK"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -21.59 6.35 0)
+					(length 2.54)
+					(name "SWDIO"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "25"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -21.59 3.81 0)
+					(length 2.54)
+					(name "RUN"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 21.59 7.62 180)
+					(length 2.54)
+					(name "IOVDD_33"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "33"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 21.59 5.08 180)
+					(length 2.54)
+					(name "IOVDD_42"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "42"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 21.59 0 180)
+					(length 2.54)
+					(name "ADC_AVDD"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "43"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 21.59 -5.08 180)
+					(length 2.54)
+					(name "VREG_IN"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "44"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 21.59 -7.62 180)
+					(length 2.54)
+					(name "VREG_VOUT"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "45"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -21.59 1.27 0)
+					(length 2.54)
+					(name "USB_DM"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "46"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -21.59 -1.27 0)
+					(length 2.54)
+					(name "USB_DP"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "47"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 21.59 -2.54 180)
+					(length 2.54)
+					(name "USB_VDD"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "48"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 21.59 2.54 180)
+					(length 2.54)
+					(name "IOVDD_49"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "49"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 21.59 -12.7 180)
+					(length 2.54)
+					(name "DVDD_50"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "50"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -21.59 -3.81 0)
+					(length 2.54)
+					(name "QSPI_SD3"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "51"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -21.59 -6.35 0)
+					(length 2.54)
+					(name "QSPI_SCLK"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "52"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -21.59 -8.89 0)
+					(length 2.54)
+					(name "QSPI_SD0"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "53"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -21.59 -11.43 0)
+					(length 2.54)
+					(name "QSPI_SD2"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "54"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -21.59 -13.97 0)
+					(length 2.54)
+					(name "QSPI_SD1"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "55"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -21.59 -16.51 0)
+					(length 2.54)
+					(name "QSPI_SS_N"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "56"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 21.59 -15.24 180)
+					(length 2.54)
+					(name "GND_EP"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "57"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_Card:R_10k"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0 8 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "0603WAF1002T5E"
+				(at 0 5 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" "PCM_Card:R_0603_1608Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C25804.html"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" "10k ohm, 1%, 0.1W, 1608 metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "R_10k_1_1"
+				(rectangle
+					(start -2.54 1.016)
+					(end 2.54 -1.016)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_Card:R_1k"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0 8 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "0603WAF1001T5E"
+				(at 0 5 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" "PCM_Card:R_0603_1608Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C21190.html"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" "1k ohm, 1%, 0.1W, 1608 metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "R_1k_1_1"
+				(rectangle
+					(start -2.54 1.016)
+					(end 2.54 -1.016)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_Card:R_27"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0 8 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "0603WAF270JT5E"
+				(at 0 5 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" "PCM_Card:R_0603_1608Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C25190.html"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" "27 ohm, 1%, 0.1W, 1608 metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "R_27_1_1"
+				(rectangle
+					(start -2.54 1.016)
+					(end 2.54 -1.016)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_Card:XTAL"
+			(pin_names
+				(offset 0.762)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "X"
+				(at 0 8 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "ABM8-272-T3"
+				(at 0 5 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" "PCM_Card:Crystal_3225_4pad"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" "https://abracon.com/Resonators/ABM8-272-T3.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" "12 MHz, CL=10pF; original crystal retained"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "XTAL_1_1"
+				(rectangle
+					(start -15.24 3.81)
+					(end 15.24 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -17.78 1.27 0)
+					(length 2.54)
+					(name "XTAL1"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -17.78 -1.27 0)
+					(length 2.54)
+					(name "GND_2"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 1.27 180)
+					(length 2.54)
+					(name "XTAL2"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 -1.27 180)
+					(length 2.54)
+					(name "GND_4"
+						(effects
+							(font
+								(size 0.95 0.95)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+
+	(symbol "PCM_Card:R_100k"
+    (pin_names
+      (offset 0.762)
+      (hide yes)
+    )
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "R"
+      (at 0.0 8.0 0)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+      )
+    )
+    (property "Value" "0603WAF1003T5E"
+      (at 0.0 5.0 0)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+      )
+    )
+    (property "Footprint" "PCM_Card:R_0603_1608Metric"
+      (at 0.0 0.0 0)
+      (show_name no)
+      (do_not_autoplace yes)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+      )
+    )
+    (property "Datasheet" "https://www.lcsc.com/product-detail/C25803.html"
+      (at 0.0 0.0 0)
+      (show_name no)
+      (do_not_autoplace yes)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+      )
+    )
+    (property "Description" "100k ohm, 1%, 0.1W, 1608 metric"
+      (at 0.0 0.0 0)
+      (show_name no)
+      (do_not_autoplace yes)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+      )
+    )
+    (pin_numbers
+      (hide yes)
+    )
+    (symbol "R_100k_1_1"
+      (rectangle
+        (start -2.54 1.016)
+        (end 2.54 -1.016)
+        (stroke
+          (width 0.254)
+          (type default)
+        )
+        (fill
+          (type none)
+        )
+      )
+      (pin passive line
+        (at -5.08 0.0 0)
+        (length 2.54)
+        (name ""
+          (effects
+            (font
+              (size 0.95 0.95)
+            )
+          )
+        )
+        (number "1"
+          (effects
+            (font
+              (size 0.8 0.8)
+            )
+          )
+        )
+      )
+      (pin passive line
+        (at 5.08 0.0 180)
+        (length 2.54)
+        (name ""
+          (effects
+            (font
+              (size 0.95 0.95)
+            )
+          )
+        )
+        (number "2"
+          (effects
+            (font
+              (size 0.8 0.8)
+            )
+          )
+        )
+      )
+    )
+  )
+)
+	(text "USB-only programming: remove the card from CM-64. Start with ARM=0, DATA_OE_N=1 and all strobes HIGH.\nLoad all 24 address bits before ARM=1. Wait >=100 us after arming. Deassert ARM before USB disconnect."
+		(exclude_from_sim no)
+		(at 15 260 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left top)
+		)
+		(uuid "540376c1-bd25-5780-bc62-61531ae906dd")
+	)
+	(text "GPIO0..7=data; GPIO16/17/18=595 serial/clock/latch. Firmware is not in the PLAY path."
+		(exclude_from_sim no)
+		(at 15 18 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+			)
+			(justify left top)
+		)
+		(uuid "b2bb39d0-8739-511d-aed3-d114b92839d1")
+	)
+	(text "Status LEDs: GPIO19=green, GPIO20=red. HIGH=ON; LOW=OFF. Each LED uses 1k in series."
+		(exclude_from_sim no)
+		(at 146.05 100.33 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left bottom)
+		)
+		(uuid "bcdb6bcf-bc23-4392-abe9-ed1a6496e9a0")
+	)
+	(no_connect
+		(at 116.84 76.2)
+		(uuid "46afe5e7-d7f6-5dcf-b986-32b5ec7fe5b2")
+	)
+	(no_connect
+		(at 116.84 86.36)
+		(uuid "4956e3d1-3e7a-51da-8d61-2363adbe1bd8")
+	)
+	(no_connect
+		(at 116.84 83.82)
+		(uuid "8b371fe9-c3f1-5335-be22-bca6a5ce74fb")
+	)
+	(no_connect
+		(at 116.84 68.58)
+		(uuid "b8428def-e8fb-5f81-8ae8-da06d09274ce")
+	)
+	(no_connect
+		(at 116.84 66.04)
+		(uuid "eeb31ad7-b288-555b-b548-5f2f8ac3c64c")
+	)
+	(wire
+		(pts
+			(xy 306.07 78.74) (xy 311.15 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01b35ac7-c810-58b9-9401-8468d86c5a25")
+	)
+	(wire
+		(pts
+			(xy 116.84 53.34) (xy 121.92 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "040b8326-9fec-5afc-8bb7-4d1172f648e2")
+	)
+	(wire
+		(pts
+			(xy 260.35 175.26) (xy 255.27 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08c42433-e0ab-5fa4-9eec-b49a304b2deb")
+	)
+	(wire
+		(pts
+			(xy 234.95 234.95) (xy 240.03 234.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09c95b2f-6011-5b18-a76d-7ad5c34f2127")
+	)
+	(wire
+		(pts
+			(xy 262.89 59.69) (xy 257.81 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d82930b-574d-57af-8961-6cf89b622e0d")
+	)
+	(wire
+		(pts
+			(xy 73.66 58.42) (xy 68.58 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d9a21e1-456b-55e4-886b-7bf029a30347")
+	)
+	(wire
+		(pts
+			(xy 69.85 207.01) (xy 64.77 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "165ea4d5-6967-55a2-8e58-9da7529628a6")
+	)
+	(wire
+		(pts
+			(xy 306.07 76.2) (xy 311.15 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17be37a6-bd0a-5ce9-ba90-745f76a5e40a")
+	)
+	(wire
+		(pts
+			(xy 306.07 60.96) (xy 311.15 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24c92f43-f349-5d47-9232-8a97eb5ef1bd")
+	)
+	(wire
+		(pts
+			(xy 80.01 185.42) (xy 85.09 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "255e63ba-7502-5416-99ac-1e54ab51e29e")
+	)
+	(wire
+		(pts
+			(xy 73.66 83.82) (xy 68.58 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26ef25fc-09b9-52d3-aee8-e039596e91c3")
+	)
+	(wire
+		(pts
+			(xy 116.84 55.88) (xy 121.92 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28ce6004-5aa7-5fa1-8eed-1f01209d96d9")
+	)
+	(wire
+		(pts
+			(xy 262.89 57.15) (xy 257.81 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "299d1a6c-9e0e-5cf3-b220-88d456e3edde")
+	)
+	(wire
+		(pts
+			(xy 116.84 73.66) (xy 121.92 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b683d11-e9b9-54ce-b504-85c9bbea4be9")
+	)
+	(wire
+		(pts
+			(xy 97.79 143.51) (xy 102.87 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b854d3f-755d-5311-90d4-3aea225f1285")
+	)
+	(wire
+		(pts
+			(xy 262.89 72.39) (xy 257.81 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3294674d-4392-5fd5-ad81-cdf1fa4c9414")
+	)
+	(wire
+		(pts
+			(xy 73.66 53.34) (xy 68.58 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "375599ae-c678-5883-9a14-51c1c31a0218")
+	)
+	(wire
+		(pts
+			(xy 116.84 63.5) (xy 121.92 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37d72abe-97a7-4a7d-9746-6eb6f9d43e97")
+	)
+	(wire
+		(pts
+			(xy 80.01 207.01) (xy 85.09 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "391789d2-e294-5e4c-805a-1fcf05a9183b")
+	)
+	(wire
+		(pts
+			(xy 62.23 148.59) (xy 57.15 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39513046-b0bd-5dfe-866e-96b4c61d4e08")
+	)
+	(wire
+		(pts
+			(xy 306.07 66.04) (xy 311.15 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3bc4a496-7190-5092-bdb1-c01c3398ef3f")
+	)
+	(wire
+		(pts
+			(xy 73.66 78.74) (xy 68.58 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fcbea95-1e9f-50e9-8bd6-a03546aa3267")
+	)
+	(wire
+		(pts
+			(xy 97.79 148.59) (xy 102.87 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40dacb98-da17-5540-9b7a-b2a9a65cd3a8")
+	)
+	(wire
+		(pts
+			(xy 224.79 234.95) (xy 219.71 234.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4102cc22-6849-54d8-a9e2-4496d98a2cd4")
+	)
+	(wire
+		(pts
+			(xy 262.89 74.93) (xy 257.81 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42cb2991-4759-50eb-b230-41c67f821ca7")
+	)
+	(wire
+		(pts
+			(xy 283.21 143.51) (xy 288.29 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e89e309-708f-59f6-ad09-f1c7f5753ba2")
+	)
+	(wire
+		(pts
+			(xy 73.66 76.2) (xy 68.58 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50c80031-65ff-5682-bf32-ff72c6bbc26b")
+	)
+	(wire
+		(pts
+			(xy 224.79 207.01) (xy 219.71 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5263b7ca-168f-54ff-a034-ba587b700f3c")
+	)
+	(wire
+		(pts
+			(xy 283.21 146.05) (xy 288.29 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "555acb27-b7c5-5a1c-8a7c-0ade70c2dd6e")
+	)
+	(wire
+		(pts
+			(xy 306.07 55.88) (xy 311.15 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58458c39-21f1-5842-9a06-36fae5dc3784")
+	)
+	(wire
+		(pts
+			(xy 262.89 77.47) (xy 257.81 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59e62750-41fd-5785-a942-819155e6e149")
+	)
+	(wire
+		(pts
+			(xy 151.13 114.3) (xy 156.21 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5db1add1-7782-46d9-8cc0-5dc0c3c2fc86")
+	)
+	(wire
+		(pts
+			(xy 116.84 81.28) (xy 121.92 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60de9f6e-e001-5739-98db-564aa9df4203")
+	)
+	(wire
+		(pts
+			(xy 306.07 81.28) (xy 311.15 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67a05685-ba6f-5067-be9b-f8aead94a0db")
+	)
+	(wire
+		(pts
+			(xy 262.89 52.07) (xy 257.81 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68b1108d-bc5c-531c-b706-f3d99de00276")
+	)
+	(wire
+		(pts
+			(xy 306.07 73.66) (xy 311.15 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "695b5e8e-6cc4-529a-a9d2-f43ca100a644")
+	)
+	(wire
+		(pts
+			(xy 73.66 63.5) (xy 68.58 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c0138ae-8a88-5fb6-8bb2-66cdecdd9af8")
+	)
+	(wire
+		(pts
+			(xy 247.65 146.05) (xy 242.57 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c8a099a-7526-5d6d-9511-0cfa6c1e8725")
+	)
+	(wire
+		(pts
+			(xy 306.07 83.82) (xy 311.15 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f04fdf4-a8aa-5f49-ae74-f488cd5acec7")
+	)
+	(wire
+		(pts
+			(xy 62.23 140.97) (xy 57.15 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "700764cc-26d4-50c8-ab11-467dccbdcf65")
+	)
+	(wire
+		(pts
+			(xy 306.07 58.42) (xy 311.15 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "718ae186-ece5-5f9a-a67c-2235ee77ae6d")
+	)
+	(wire
+		(pts
+			(xy 262.89 80.01) (xy 257.81 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "725b96af-890e-5ce1-8969-e56c49b38780")
+	)
+	(wire
+		(pts
+			(xy 262.89 67.31) (xy 257.81 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72b80b22-5fcf-5be5-99ed-579efde85ad7")
+	)
+	(wire
+		(pts
+			(xy 57.15 234.95) (xy 52.07 234.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "792a6b7c-ce58-50e4-a413-e92ae8fea43e")
+	)
+	(wire
+		(pts
+			(xy 73.66 66.04) (xy 68.58 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ac2a0c7-c9b5-5b05-9939-9ea91fbfcf5c")
+	)
+	(wire
+		(pts
+			(xy 306.07 71.12) (xy 311.15 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c7609de-904f-5c21-b3fa-37dc638f458f")
+	)
+	(wire
+		(pts
+			(xy 116.84 50.8) (xy 121.92 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d462500-51c0-5ffb-8295-e8591995d97c")
+	)
+	(wire
+		(pts
+			(xy 73.66 60.96) (xy 68.58 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ef36d8d-96eb-5b3b-afbc-adc87cd557b3")
+	)
+	(wire
+		(pts
+			(xy 116.84 78.74) (xy 121.92 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ac4d9c3-5c51-5976-81f8-313200a8bf76")
+	)
+	(wire
+		(pts
+			(xy 73.66 81.28) (xy 68.58 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c9e5862-a9d0-5729-83f9-8dfa4ac87992")
+	)
+	(wire
+		(pts
+			(xy 166.37 134.62) (xy 182.88 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d8ff6f3-e2bb-4ebc-af05-07976b566235")
+	)
+	(wire
+		(pts
+			(xy 97.79 140.97) (xy 102.87 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ebfa528-7a7c-5243-a429-8e9c2260445f")
+	)
+	(wire
+		(pts
+			(xy 97.79 146.05) (xy 102.87 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94ad9a6a-4912-58c6-af24-6d209c1e4f1f")
+	)
+	(wire
+		(pts
+			(xy 116.84 60.96) (xy 121.92 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95ff33db-3a25-44b6-810f-d21d263e3a82")
+	)
+	(wire
+		(pts
+			(xy 73.66 86.36) (xy 68.58 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "982ae9fc-8edd-54f7-a30a-a79374ae97a5")
+	)
+	(wire
+		(pts
+			(xy 73.66 50.8) (xy 68.58 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c253be8-f726-5bd0-89ec-39f256be0054")
+	)
+	(wire
+		(pts
+			(xy 306.07 63.5) (xy 311.15 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cb2e8fc-1bd6-56bf-8e8d-90a83624c809")
+	)
+	(wire
+		(pts
+			(xy 306.07 53.34) (xy 311.15 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2fc559c-8c35-5d61-a00b-1b1df8f32cd6")
+	)
+	(wire
+		(pts
+			(xy 62.23 143.51) (xy 57.15 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae554124-3705-52e1-ae5c-68fd90651f56")
+	)
+	(wire
+		(pts
+			(xy 262.89 82.55) (xy 257.81 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aeea2d12-f795-5007-8298-4fccca40c4a1")
+	)
+	(wire
+		(pts
+			(xy 340.36 207.01) (xy 335.28 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af87f51d-63b7-54d0-b56a-a949de94ec20")
+	)
+	(wire
+		(pts
+			(xy 262.89 62.23) (xy 257.81 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4241a2d-4ea9-564d-b023-c14d610b128a")
+	)
+	(wire
+		(pts
+			(xy 350.52 207.01) (xy 355.6 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b45823b0-434b-51d1-a572-b4083450aa3e")
+	)
+	(wire
+		(pts
+			(xy 73.66 55.88) (xy 68.58 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b475f2b7-30f1-59d1-9ab2-a87b97228a29")
+	)
+	(wire
+		(pts
+			(xy 190.5 134.62) (xy 195.58 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6bd8123-34b7-4fe0-a7c0-baeabe78a767")
+	)
+	(wire
+		(pts
+			(xy 262.89 64.77) (xy 257.81 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8d79d46-4573-531b-bff7-12191c7b86e1")
+	)
+	(wire
+		(pts
+			(xy 270.51 175.26) (xy 275.59 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c981f52e-0cbb-568c-abd0-80a1389b5237")
+	)
+	(wire
+		(pts
+			(xy 262.89 54.61) (xy 257.81 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbd6c827-0d18-5bb0-9bbd-f1a353399c2d")
+	)
+	(wire
+		(pts
+			(xy 92.71 234.95) (xy 97.79 234.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1f893d5-7981-5590-a561-34022b06547a")
+	)
+	(wire
+		(pts
+			(xy 350.52 234.95) (xy 355.6 234.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2a884ec-37f0-5251-840e-22cb0de65c22")
+	)
+	(wire
+		(pts
+			(xy 340.36 234.95) (xy 335.28 234.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6ab8812-c314-5e75-a3a4-8f9d12e32639")
+	)
+	(wire
+		(pts
+			(xy 116.84 71.12) (xy 121.92 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7bac530-ec69-5c41-832d-e1b11e035da4")
+	)
+	(wire
+		(pts
+			(xy 62.23 146.05) (xy 57.15 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8191737-11dd-583b-80e5-7aa53cc9a6cd")
+	)
+	(wire
+		(pts
+			(xy 73.66 68.58) (xy 68.58 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da037496-7092-52aa-a1e3-3c948590f501")
+	)
+	(wire
+		(pts
+			(xy 262.89 69.85) (xy 257.81 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da490585-1439-5b87-80f6-3a9ea7fe750d")
+	)
+	(wire
+		(pts
+			(xy 247.65 143.51) (xy 242.57 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de0dd5c2-7683-5ac4-a7a3-b2c7679b739a")
+	)
+	(wire
+		(pts
+			(xy 306.07 68.58) (xy 311.15 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df760320-e2f9-59b2-b286-c07f574793ac")
+	)
+	(wire
+		(pts
+			(xy 262.89 85.09) (xy 257.81 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e226350e-2e14-512e-baae-4be335b0c301")
+	)
+	(wire
+		(pts
+			(xy 73.66 73.66) (xy 68.58 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e762b4f6-6b24-5069-9b7a-2fbe5270c09f")
+	)
+	(wire
+		(pts
+			(xy 151.13 134.62) (xy 156.21 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e929d98c-9a28-4f71-abce-d20b15e7e44d")
+	)
+	(wire
+		(pts
+			(xy 190.5 114.3) (xy 195.58 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed9aaa47-e454-4f32-9487-e18fb572d479")
+	)
+	(wire
+		(pts
+			(xy 166.37 114.3) (xy 182.88 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eea16f47-7922-405c-8595-c8201df91225")
+	)
+	(wire
+		(pts
+			(xy 73.66 71.12) (xy 68.58 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f106e971-50b6-5eaf-aedf-401ad6847222")
+	)
+	(wire
+		(pts
+			(xy 234.95 207.01) (xy 240.03 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1d3aa5e-7d50-5a86-b83b-8f3f8011e9c0")
+	)
+	(wire
+		(pts
+			(xy 69.85 185.42) (xy 64.77 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f634b803-e358-5b5b-8cfa-b871e915d87b")
+	)
+	(wire
+		(pts
+			(xy 116.84 58.42) (xy 121.92 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fece55c0-cadb-578e-a9d1-ff9f20a18a69")
+	)
+	(global_label "MCU_D2"
+		(shape passive)
+		(at 68.58 55.88 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "042b65db-ddf1-5dfa-865f-5fcc6ce75eae")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.58 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "MCU_CE_N"
+		(shape passive)
+		(at 68.58 76.2 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "06f33e06-b952-5a48-8130-8a114c7f54ae")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.58 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "MCU_D3"
+		(shape passive)
+		(at 68.58 58.42 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "079e6a50-f81d-5b8d-ad15-cebe61bb18a7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.58 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "XOUT"
+		(shape passive)
+		(at 255.27 175.26 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "09cf4c4a-1ee8-5935-b08b-25ec0b22e14a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 255.27 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "XIN"
+		(shape passive)
+		(at 219.71 207.01 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "0cc0f1df-eab8-584b-bcb2-0430efc69a06")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 219.71 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "MCU_D5"
+		(shape passive)
+		(at 68.58 63.5 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "0de85e6e-5a0c-56e3-bd1b-df037dd43e85")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.58 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 311.15 83.82 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "0e51ca08-e756-5064-93e1-276d43e284dd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 311.15 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 288.29 146.05 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "1030f008-9dad-5563-bc03-676b66553f4d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 288.29 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "MCU_D6"
+		(shape passive)
+		(at 68.58 66.04 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "115eb75e-37da-5a0c-84bf-009d82efca35")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.58 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "QSPI_D1"
+		(shape passive)
+		(at 257.81 82.55 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "18404a9d-069f-5d95-91fa-cbaae1b97321")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 257.81 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "XIN"
+		(shape passive)
+		(at 242.57 143.51 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "1b956eb1-e3fe-5ef5-bff7-79378f203dc8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 242.57 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "MCU_ARM"
+		(shape passive)
+		(at 68.58 83.82 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "23022d49-166a-596f-ba5a-654b20a685de")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.58 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "USB_DM_PORT"
+		(shape passive)
+		(at 335.28 234.95 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "2344ba47-ee57-546e-a62d-c9267fe2f4d4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 335.28 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "SWCLK"
+		(shape passive)
+		(at 257.81 59.69 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "23a6a473-ba15-5444-8bcc-489c3ab975f4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 257.81 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 102.87 146.05 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "25991e5e-01d0-557e-845f-108874d6ec03")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 102.87 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "QSPI_D0"
+		(shape passive)
+		(at 257.81 77.47 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "287426c3-bf44-5d29-a409-09a43792e1da")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 257.81 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "VREG_1V1"
+		(shape passive)
+		(at 311.15 78.74 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "29ea5d46-86e6-596e-9b12-6e7e97144dbe")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 311.15 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "MCU_OE_N"
+		(shape passive)
+		(at 68.58 78.74 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "2e97ab14-49f1-5a48-a8ff-ae320f35a6dd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.58 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "MCU_D4"
+		(shape passive)
+		(at 68.58 60.96 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "317c5469-0c05-54d1-be14-a4a24e9a908d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.58 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "USB_DP_PORT"
+		(shape passive)
+		(at 219.71 234.95 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "33fd5aeb-2f12-5bc3-a127-b5da26844bee")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 219.71 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 64.77 185.42 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "36c6f4ff-0daf-52f5-b23c-23722d910009")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 64.77 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "QSPI_D2"
+		(shape passive)
+		(at 102.87 140.97 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "39b0dc3f-5c9b-5279-94d0-ebef3449709a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 102.87 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "MCU_D7"
+		(shape passive)
+		(at 68.58 68.58 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "3c229134-6c03-526d-823b-3d3c37b0517c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.58 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "USB_DP_MCU"
+		(shape passive)
+		(at 257.81 69.85 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "3c23cc5a-a15b-598c-8204-4f3968717a36")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 257.81 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "QSPI_D2"
+		(shape passive)
+		(at 257.81 80.01 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "43327fd6-9969-54b5-b5cc-d3b654b73b48")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 257.81 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "LED_RED_A"
+		(shape passive)
+		(at 173.99 134.62 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "45511107-ba14-4967-a4cd-be0f4328154b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 173.99 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "ADDR_LATCH"
+		(shape passive)
+		(at 121.92 58.42 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "48b52cd0-c400-525d-bec6-4b215f414e1b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 121.92 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "XTAL_OUT"
+		(shape passive)
+		(at 288.29 143.51 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "4931346b-f18e-5147-b39c-a342be659838")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 288.29 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "MCU_WE_N"
+		(shape passive)
+		(at 68.58 81.28 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "4f1080b3-16de-564f-8755-04079cfa8526")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.58 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "XTAL_OUT"
+		(shape passive)
+		(at 275.59 175.26 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "5106809c-3444-54e1-abbf-5f5467283d82")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 275.59 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "LED_GREEN"
+		(shape passive)
+		(at 151.13 114.3 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "56e7c195-c331-47a6-a923-917f16cfe552")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 151.13 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "USB_DM_MCU"
+		(shape passive)
+		(at 355.6 234.95 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "5a291582-96f6-542f-8e53-210cd108d677")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 355.6 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "ADDR_SER"
+		(shape passive)
+		(at 121.92 53.34 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "5cab3b39-7ab9-52a9-a9cd-4cfbcc0292c5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 121.92 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "QSPI_CS_N"
+		(shape passive)
+		(at 257.81 85.09 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "5d0077a4-5d86-553f-97c9-09226ea2f101")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 257.81 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "QSPI_D3"
+		(shape passive)
+		(at 102.87 143.51 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "64b36ec2-ad44-5b50-a3ef-8f39cdcc3d5f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 102.87 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "MCU_D0"
+		(shape passive)
+		(at 68.58 50.8 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "66ae69e0-1941-5ca5-8186-44cc8be41682")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.58 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 102.87 148.59 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "6792c98b-dae1-5cec-b8f3-156f21f6a6ab")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 102.87 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 195.58 114.3 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "6795d17e-3472-498b-b6cc-15e4f47df53b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 195.58 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "MON_USB_FAULT_N"
+  (shape passive)
+  (at 121.92 81.28 0)
+  (effects
+    (font
+      (size 0.9 0.9)
+    )
+    (justify left)
+  )
+  (uuid "6b9021b3-5511-5a6e-b42c-f501c00f7cdd")
+  (property "Intersheetrefs" "${INTERSHEET_REFS}"
+    (at 121.92 81.28 0)
+    (hide yes)
+    (show_name no)
+    (do_not_autoplace yes)
+    (effects
+      (font
+        (size 0.9 0.9)
+      )
+    )
+  )
+)
+	(global_label "MON_RY_BY_N"
+  (shape passive)
+  (at 68.58 86.36 180)
+  (effects
+    (font
+      (size 0.9 0.9)
+    )
+    (justify right)
+  )
+  (uuid "6fb19a91-634d-5e03-8b75-dd425b7cfc9a")
+  (property "Intersheetrefs" "${INTERSHEET_REFS}"
+    (at 68.58 86.36 0)
+    (hide yes)
+    (show_name no)
+    (do_not_autoplace yes)
+    (effects
+      (font
+        (size 0.9 0.9)
+      )
+    )
+  )
+)
+	(global_label "MCU_DATA_OE_N"
+		(shape passive)
+		(at 68.58 73.66 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "7487da1e-1bef-5e5f-963c-37ddecd54d5b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.58 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "QSPI_CLK"
+		(shape passive)
+		(at 257.81 74.93 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "7a82f8d9-c626-5188-8769-ad1b6cb67f67")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 257.81 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "MON_SYS_READY"
+  (shape passive)
+  (at 121.92 73.66 0)
+  (effects
+    (font
+      (size 0.9 0.9)
+    )
+    (justify left)
+  )
+  (uuid "7afaa89f-ef9d-5d32-9b12-c58aa60f8b0d")
+  (property "Intersheetrefs" "${INTERSHEET_REFS}"
+    (at 121.92 73.66 0)
+    (hide yes)
+    (show_name no)
+    (do_not_autoplace yes)
+    (effects
+      (font
+        (size 0.9 0.9)
+      )
+    )
+  )
+)
+	(global_label "GND"
+		(shape passive)
+		(at 97.79 234.95 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "843ff06a-c1b4-525f-8d40-018b80f5fbfb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 97.79 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "QSPI_CS_N"
+		(shape passive)
+		(at 57.15 140.97 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "858efbdf-9d07-5082-a1fb-ec8bad4faca9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 57.15 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "MCU_D1"
+		(shape passive)
+		(at 68.58 53.34 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "8841ae0d-db1e-5705-a997-c081d41b5ddc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.58 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "MON_USB_PRESENT"
+  (shape passive)
+  (at 121.92 71.12 0)
+  (effects
+    (font
+      (size 0.9 0.9)
+    )
+    (justify left)
+  )
+  (uuid "88cd5c71-2172-5d64-b80b-8132e5097402")
+  (property "Intersheetrefs" "${INTERSHEET_REFS}"
+    (at 121.92 71.12 0)
+    (hide yes)
+    (show_name no)
+    (do_not_autoplace yes)
+    (effects
+      (font
+        (size 0.9 0.9)
+      )
+    )
+  )
+)
+	(global_label "VREG_1V1"
+		(shape passive)
+		(at 311.15 76.2 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "8a6ebead-a8cb-5d8e-8442-ab23fa319ddb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 311.15 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 257.81 52.07 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "8c486e6b-22e9-58b5-b973-20731753f431")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 257.81 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "SWDIO"
+		(shape passive)
+		(at 257.81 62.23 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "8d71e324-05b8-530d-8b3c-564b3b1c9edf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 257.81 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "LED_GREEN_A"
+		(shape passive)
+		(at 173.99 114.3 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "8f149775-f7d7-4b00-9a26-f323dfa5959b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 173.99 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "MON_HOST_PRESENT"
+  (shape passive)
+  (at 121.92 50.8 0)
+  (effects
+    (font
+      (size 0.9 0.9)
+    )
+    (justify left)
+  )
+  (uuid "9d795eeb-e8f0-5bef-b15b-bfeb5951d705")
+  (property "Intersheetrefs" "${INTERSHEET_REFS}"
+    (at 121.92 50.8 0)
+    (hide yes)
+    (show_name no)
+    (do_not_autoplace yes)
+    (effects
+      (font
+        (size 0.9 0.9)
+      )
+    )
+  )
+)
+	(global_label "LED_GREEN"
+		(shape passive)
+		(at 121.92 60.96 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "9d8ae7c2-3142-466b-b98d-74dc43fe05b0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 121.92 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 311.15 55.88 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "9e2a45aa-7d7a-5f1f-a607-315f36132ae4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 311.15 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 311.15 63.5 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "a10d2e0c-aad0-5044-a2c5-aa9cae251aab")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 311.15 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 242.57 146.05 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "a1b7776a-d4b3-58ef-b467-651caf7b421e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 242.57 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "ADDR_CLK"
+		(shape passive)
+		(at 121.92 55.88 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "a2520f5c-f18f-5451-ab47-fa33a8958976")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 121.92 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "QSPI_D0"
+		(shape passive)
+		(at 57.15 146.05 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "a49930d8-a37f-5d76-91cf-23639407063f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 57.15 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "BOOTSEL_N"
+		(shape passive)
+		(at 85.09 207.01 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "a52a0c47-2661-52a3-8bac-ca2ab7ace7f9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 85.09 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "BOOTSEL_N"
+		(shape passive)
+		(at 52.07 234.95 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "a5747947-c115-51dd-9548-801ebe6d3c0e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 52.07 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 311.15 71.12 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "ab6c17c8-4bb0-5d12-a5ad-daf5f0554d39")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 311.15 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "VREG_1V1"
+		(shape passive)
+		(at 311.15 81.28 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "aeab01eb-f71f-5dcb-9ba9-eb15c899c7ca")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 311.15 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "LED_RED"
+		(shape passive)
+		(at 121.92 63.5 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "b17af06b-3fff-41fe-9fb3-d711402ddf60")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 121.92 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 311.15 60.96 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "b5e441ad-8c4e-5c1c-922b-5f07913cd638")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 311.15 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "QSPI_CS_N"
+		(shape passive)
+		(at 64.77 207.01 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "b89bd56e-a351-59e1-aa80-6b4a0bfaf964")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 64.77 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 311.15 73.66 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "be371937-27b3-5479-86c8-e8f489dfcee9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 311.15 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 311.15 58.42 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "bf8f9105-fbe5-5afc-8ef0-cb2b3f1db2e7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 311.15 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "XIN"
+		(shape passive)
+		(at 257.81 54.61 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "c09703af-551b-5c03-9ee9-2f89b17cc3ae")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 257.81 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "XOUT"
+		(shape passive)
+		(at 257.81 57.15 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "c3e361a2-9be8-551e-b87a-081810263720")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 257.81 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "USB_DP_MCU"
+		(shape passive)
+		(at 240.03 234.95 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "c5e11365-3b8e-569e-a48f-8fb1624ac700")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 240.03 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "QSPI_D3"
+		(shape passive)
+		(at 257.81 72.39 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "c5f6b2c1-0660-55f0-9f95-001534aa9f40")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 257.81 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "USB_DM_MCU"
+		(shape passive)
+		(at 257.81 67.31 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "cfc95a10-b8b3-5b2e-b1db-458b10cfd2da")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 257.81 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 311.15 68.58 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "d3170345-b16c-5664-a9ef-23b65cd2245d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 311.15 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 311.15 66.04 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "d3242d68-91eb-53c4-bca3-18df1fd22474")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 311.15 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "XTAL_OUT"
+		(shape passive)
+		(at 335.28 207.01 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "d5b5b355-237e-5ee8-b4a4-913874245a70")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 335.28 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "MON_PROG_EN_N"
+  (shape passive)
+  (at 121.92 78.74 0)
+  (effects
+    (font
+      (size 0.9 0.9)
+    )
+    (justify left)
+  )
+  (uuid "d6da0580-c4c4-5e5a-9681-acdfac215e81")
+  (property "Intersheetrefs" "${INTERSHEET_REFS}"
+    (at 121.92 78.74 0)
+    (hide yes)
+    (show_name no)
+    (do_not_autoplace yes)
+    (effects
+      (font
+        (size 0.9 0.9)
+      )
+    )
+  )
+)
+	(global_label "GND"
+		(shape passive)
+		(at 355.6 207.01 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "d9d4cf4d-4736-5c7f-9986-a22eb848f323")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 355.6 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "MCU_RUN"
+		(shape passive)
+		(at 257.81 64.77 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "da09f3e6-8cb6-5736-ad42-10206a909841")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 257.81 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "MCU_DATA_DIR"
+		(shape passive)
+		(at 68.58 71.12 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "dd8e8bae-d1d5-5f5d-a0f8-6ca2b50eb6f0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.58 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "QSPI_CS_N"
+		(shape passive)
+		(at 85.09 185.42 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "dfcc9e05-161f-5df0-b68a-34fdc52305be")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 85.09 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 195.58 134.62 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "e1a9b402-3d98-427e-adcb-15f6b2b95c80")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 195.58 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "QSPI_CLK"
+		(shape passive)
+		(at 57.15 143.51 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "e72c62f6-e349-5dd8-92d0-00c61bf4c8f2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 57.15 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "QSPI_D1"
+		(shape passive)
+		(at 57.15 148.59 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "e8d02a57-5080-5834-a282-27f0ae53ec75")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 57.15 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "LED_RED"
+		(shape passive)
+		(at 151.13 134.62 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "f95778bc-331e-45e1-9b72-d1f52934ad77")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 151.13 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 240.03 207.01 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "ff5b9ffa-083a-579f-8803-ae8e21b7fad5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 240.03 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape passive)
+		(at 311.15 53.34 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "fffa1d60-df1b-52bc-91bb-895288e31062")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 311.15 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:R_1k")
+		(at 161.29 134.62 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "011fcd66-7fbd-4209-94f9-ce6a162e1db0")
+		(property "Reference" "R101"
+			(at 161.29 131.62 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 161.29 137.72 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:R_0603_1608Metric"
+			(at 161.29 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C21190.html"
+			(at 161.29 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "1k ohm, 1%, 0.1W, 1608 metric"
+			(at 161.29 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 161.29 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1001T5E"
+			(at 161.29 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 161.29 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C21190"
+			(at 161.29 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C21190"
+			(at 161.29 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 161.29 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 161.29 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "GPIO20 active HIGH; R101=1k; cathode to GND; board right edge"
+			(at 161.29 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part Class" "Basic"
+			(at 161.29 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "PCBA Type" "Economic and Standard"
+			(at 161.29 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "97c69385-1865-4d55-bedd-8517a47e788f")
+		)
+		(pin "2"
+			(uuid "68dd831f-fd19-4b88-83af-9ee2a7157db6")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/9e4726d8-47c3-537f-8d65-fe21647db3b1"
+					(reference "R101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:XTAL")
+		(at 265.43 144.78 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "156d8782-35e8-441d-8595-b1aad5713ec3")
+		(property "Reference" "X1"
+			(at 265.43 138.77 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "12MHz CL=10pF"
+			(at 265.43 150.99 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:Crystal_3225_4pad"
+			(at 265.43 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://abracon.com/Resonators/ABM8-272-T3.pdf"
+			(at 265.43 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "12 MHz, CL=10pF; original crystal retained"
+			(at 265.43 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Abracon"
+			(at 265.43 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "ABM8-272-T3"
+			(at 265.43 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C20625731"
+			(at 265.43 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C20625731"
+			(at 265.43 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C20625731"
+			(at 265.43 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 265.43 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 265.43 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" ""
+			(at 265.43 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c50f931f-d52b-5cd3-83d2-59fcd3e28721")
+		)
+		(pin "2"
+			(uuid "ec9daa65-1d96-505d-a0dd-7c08efa8d2e1")
+		)
+		(pin "3"
+			(uuid "872308d2-9694-525a-93ca-01e4772a70dd")
+		)
+		(pin "4"
+			(uuid "bdb84cff-77a3-5d38-885f-f990c1a680cc")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/9e4726d8-47c3-537f-8d65-fe21647db3b1"
+					(reference "X1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:R_27")
+		(at 229.87 234.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "15ae778a-bd0f-40d2-975b-32a45e415b3d")
+		(property "Reference" "R3"
+			(at 229.87 231.95 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "27"
+			(at 229.87 238.05 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:R_0603_1608Metric"
+			(at 229.87 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25190.html"
+			(at 229.87 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "27 ohm, 1%, 0.1W, 1608 metric"
+			(at 229.87 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 229.87 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "0603WAF270JT5E"
+			(at 229.87 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C25190"
+			(at 229.87 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C25190"
+			(at 229.87 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C25190"
+			(at 229.87 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 229.87 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 229.87 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" ""
+			(at 229.87 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "02d6969b-506f-5366-acbd-3b1972328091")
+		)
+		(pin "2"
+			(uuid "ac658bbd-fae6-50b0-8da8-849447c87406")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/9e4726d8-47c3-537f-8d65-fe21647db3b1"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:LED_RED")
+		(at 186.69 134.62 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1b7c8a64-9c22-4665-9162-16f9f8d926cd")
+		(property "Reference" "D6"
+			(at 186.69 131.62 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "Red"
+			(at 186.69 137.72 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:LED_0603_1608Metric"
+			(at 186.69 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C2286.html"
+			(at 186.69 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Red LED, 1608 metric / 0603, cathode pad 1, anode pad 2"
+			(at 186.69 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Hubei KENTO Elec"
+			(at 186.69 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "KT-0603R"
+			(at 186.69 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C2286"
+			(at 186.69 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C2286"
+			(at 186.69 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C2286"
+			(at 186.69 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 186.69 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "JLCPCB_STOCK_CHECKED_2026-10-31_RECHECK_AT_ORDER"
+			(at 186.69 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "GPIO20 active HIGH; R101=1k; cathode to GND; board right edge"
+			(at 186.69 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part Class" "Basic"
+			(at 186.69 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "PCBA Type" "Economic and Standard"
+			(at 186.69 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3663d7e1-3196-45ba-9867-2eefac65cab8")
+		)
+		(pin "2"
+			(uuid "4272f59f-037f-4e33-a40b-3a1654acfd93")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/9e4726d8-47c3-537f-8d65-fe21647db3b1"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:RP2040")
+		(at 95.25 68.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "306ee30f-9437-475e-b0a6-4bcc9c3904c9")
+		(property "Reference" "U3"
+			(at 95.25 46.06 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "RP2040"
+			(at 95.25 91.3 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:QFN-56-1EP_7x7_P0.4_EP3.2"
+			(at 95.25 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf"
+			(at 95.25 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "RP2040; GPIO unit and power/boot unit"
+			(at 95.25 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Raspberry Pi"
+			(at 95.25 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "RP2040"
+			(at 95.25 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C2040"
+			(at 95.25 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C2040"
+			(at 95.25 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C2040"
+			(at 95.25 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 95.25 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 95.25 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" ""
+			(at 95.25 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c898b4ba-b7ee-5c84-9c23-e80eaac20ad2")
+		)
+		(pin "3"
+			(uuid "089e2464-66f1-55e1-89be-48ef345d4297")
+		)
+		(pin "4"
+			(uuid "c3dc858d-0b22-5f92-ae89-1a13e6d7ed3f")
+		)
+		(pin "5"
+			(uuid "50b6f11a-533b-5dfe-a4d5-2b2fffcae37d")
+		)
+		(pin "6"
+			(uuid "cf520fdf-2c46-5713-bb9c-89be5a5a0655")
+		)
+		(pin "7"
+			(uuid "34fd5298-8fa9-5b91-8496-542e5c64de5c")
+		)
+		(pin "8"
+			(uuid "ab9a4821-a4bd-5bd0-bbdf-b66605b900d7")
+		)
+		(pin "9"
+			(uuid "cd533e2c-1134-5c9c-bb51-592cc5dfa93d")
+		)
+		(pin "11"
+			(uuid "cec7acca-cedf-52a5-b78a-5d0a6045a013")
+		)
+		(pin "12"
+			(uuid "d8256a02-c036-5fdd-b996-33e00a28d2b1")
+		)
+		(pin "13"
+			(uuid "cd8b1c48-6867-55ec-a026-39269d89736e")
+		)
+		(pin "14"
+			(uuid "794d1905-4b15-5132-b460-cdc568b01211")
+		)
+		(pin "15"
+			(uuid "b612e413-f086-5fa6-89a1-3cd24446f875")
+		)
+		(pin "16"
+			(uuid "4cf7cdb0-d609-5e47-a6d1-0ce89a601f15")
+		)
+		(pin "17"
+			(uuid "c2fa0978-3c31-5839-b563-3f4de5c1e6a5")
+		)
+		(pin "18"
+			(uuid "a7891e38-79be-5725-9039-a74025743a7d")
+		)
+		(pin "27"
+			(uuid "6519f031-06de-5bf6-8c8c-3b0ea0b72b64")
+		)
+		(pin "28"
+			(uuid "425be095-0cd2-5b77-b8ed-9eb1cd07ba33")
+		)
+		(pin "29"
+			(uuid "ff230237-a937-5f33-af06-14add42201eb")
+		)
+		(pin "30"
+			(uuid "21a76310-0392-5c46-8851-5f52c5c97d03")
+		)
+		(pin "31"
+			(uuid "ea6ab149-9634-552d-9261-32e86c734f1f")
+		)
+		(pin "32"
+			(uuid "e2285613-d14a-5c17-b7f8-97cd5450c7eb")
+		)
+		(pin "34"
+			(uuid "f6ed11f5-b266-5e7d-9950-afafe21a3355")
+		)
+		(pin "35"
+			(uuid "805990a1-056e-581e-aff6-0ae868d8e59c")
+		)
+		(pin "36"
+			(uuid "453948b8-60bc-5e4e-9b37-5f990ac36c4c")
+		)
+		(pin "37"
+			(uuid "fb871e6b-acba-5a4c-92ad-7d76f5bfa7f2")
+		)
+		(pin "38"
+			(uuid "79d16ce2-de7b-5fde-ad35-9b496d9b9159")
+		)
+		(pin "39"
+			(uuid "be5af116-2b00-5305-8289-8ec60c6a92c7")
+		)
+		(pin "40"
+			(uuid "ea0c221e-8eeb-5672-ae8d-e4e45a35da25")
+		)
+		(pin "41"
+			(uuid "1d75bd9a-6824-5156-8077-ecbbe676c327")
+		)
+		(pin "48"
+			(uuid "cb55998a-362c-4081-9dc5-6999b31350b7")
+		)
+		(pin "25"
+			(uuid "79552c2b-620a-4579-bd13-08d108ffa8f5")
+		)
+		(pin "43"
+			(uuid "18f6e2a9-40dc-405c-921a-1dd12ef38fdd")
+		)
+		(pin "47"
+			(uuid "80fce97f-9930-4083-9612-48c64b85dd30")
+		)
+		(pin "21"
+			(uuid "188e3a0a-8394-495b-b50d-f61ccc58ae38")
+		)
+		(pin "22"
+			(uuid "794e2a55-1b85-4d2a-8312-e14fc1aede6c")
+		)
+		(pin "54"
+			(uuid "fe66f693-e9ed-4dbd-942f-3add938548c1")
+		)
+		(pin "26"
+			(uuid "6d56dea7-3af8-4bfc-9cb7-05c3772c0e85")
+		)
+		(pin "57"
+			(uuid "e59d4378-d993-474e-aed8-df823d4699cb")
+		)
+		(pin "45"
+			(uuid "63c31612-e1a3-412a-a19a-24efb8d3669c")
+		)
+		(pin "56"
+			(uuid "482fdd4f-3542-42ab-aa97-d0234b3472e1")
+		)
+		(pin "19"
+			(uuid "731059be-b63d-4be6-803d-5d403fc8501f")
+		)
+		(pin "52"
+			(uuid "ec4f2f73-c30d-4460-8d54-bbe3cd76c92b")
+		)
+		(pin "23"
+			(uuid "9e413d6d-5fb9-4e17-8a51-9e2d495bc73d")
+		)
+		(pin "51"
+			(uuid "b6e6ab69-f621-4792-b013-02c58e2125d4")
+		)
+		(pin "44"
+			(uuid "70e6db66-6a37-4f60-9f84-31379ebe973a")
+		)
+		(pin "46"
+			(uuid "6efca9c7-2b2d-49b4-921a-537dd9e70414")
+		)
+		(pin "53"
+			(uuid "405293f5-aaf5-4d4c-8515-09f7cb7efa3c")
+		)
+		(pin "55"
+			(uuid "94d52328-e05b-489f-9c36-c6194aea5557")
+		)
+		(pin "24"
+			(uuid "40fc8a2b-04a0-4bc6-816f-f516df5f8370")
+		)
+		(pin "49"
+			(uuid "01244fac-2165-425a-a496-27a0b5bb928c")
+		)
+		(pin "10"
+			(uuid "8a6be7dd-5085-4851-8e75-58f97bbb4a8e")
+		)
+		(pin "1"
+			(uuid "f2bad726-0229-49f6-93a9-a1915470f33d")
+		)
+		(pin "20"
+			(uuid "9f8b72e4-7973-475a-88b0-86b99cdb6f5a")
+		)
+		(pin "50"
+			(uuid "a8f1f31f-62f9-4b74-955d-695b509ab056")
+		)
+		(pin "42"
+			(uuid "569697b6-7450-48d3-bec8-ddfa79be6fb9")
+		)
+		(pin "33"
+			(uuid "d9a3493d-2f6d-408a-a7de-597f6c434673")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/9e4726d8-47c3-537f-8d65-fe21647db3b1"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:RP2040")
+		(at 284.48 68.58 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3d977b58-0c59-53be-a052-429e946b17fb")
+		(property "Reference" "U3"
+			(at 284.48 47.33 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "RP2040"
+			(at 284.48 90.03 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:QFN-56-1EP_7x7_P0.4_EP3.2"
+			(at 284.48 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf"
+			(at 284.48 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "RP2040; GPIO unit and power/boot unit"
+			(at 284.48 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Raspberry Pi"
+			(at 284.48 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "RP2040"
+			(at 284.48 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C2040"
+			(at 284.48 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C2040"
+			(at 284.48 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C2040"
+			(at 284.48 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 284.48 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 284.48 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" ""
+			(at 284.48 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "19"
+			(uuid "c8daea61-1ce1-5db9-acc3-9305a2e5c974")
+		)
+		(pin "20"
+			(uuid "d5ac48aa-4220-54d2-9435-911b3ed2fbb2")
+		)
+		(pin "21"
+			(uuid "278e72a4-3fdf-5e54-b3ea-455e833d7118")
+		)
+		(pin "24"
+			(uuid "3e5a4b95-6c9f-5db3-b5c4-5d51e2f06cba")
+		)
+		(pin "25"
+			(uuid "67185fb2-6fa3-5919-9966-1507757987e5")
+		)
+		(pin "26"
+			(uuid "a93850a9-cdf7-5878-b4cb-576c937ec4da")
+		)
+		(pin "46"
+			(uuid "96c8b0fa-8460-5d9e-ad67-e808b51ff387")
+		)
+		(pin "47"
+			(uuid "10cab88c-4483-5d9c-838f-a3a417400858")
+		)
+		(pin "51"
+			(uuid "37b34bf9-9db2-5eb1-8651-a47794b47830")
+		)
+		(pin "52"
+			(uuid "f89fa409-4cb8-54b8-9e5a-9df6d6d3efda")
+		)
+		(pin "53"
+			(uuid "c48d796c-f544-554a-ac50-1454974b2ea0")
+		)
+		(pin "54"
+			(uuid "48949cc7-90da-5c6e-9891-80cb5428885a")
+		)
+		(pin "55"
+			(uuid "adc99038-6ee9-531e-9da1-13895b71d6fc")
+		)
+		(pin "56"
+			(uuid "4c6b8efc-3f1e-5d15-9022-9a7bcccca213")
+		)
+		(pin "1"
+			(uuid "29206886-5dd9-5d44-acbd-6a1c2288c5c1")
+		)
+		(pin "10"
+			(uuid "d660c3f6-b25c-514a-b080-0f71ae268ea4")
+		)
+		(pin "22"
+			(uuid "dbb313f0-dd04-59a5-8cb3-a2367646b4af")
+		)
+		(pin "33"
+			(uuid "fbc8c2fd-9d80-57e9-9094-bc90d049de56")
+		)
+		(pin "42"
+			(uuid "8b1ff9ba-670f-5752-a9e6-a1c023c7ed0f")
+		)
+		(pin "49"
+			(uuid "dcd56d82-1fa9-5d0e-aead-aa1dcb64b88d")
+		)
+		(pin "43"
+			(uuid "ed130c2e-3cba-5b66-b198-3e8b58b6d0e9")
+		)
+		(pin "48"
+			(uuid "52b1730f-6683-540d-95ca-3e8ad886eca3")
+		)
+		(pin "44"
+			(uuid "fcf8c3d0-e16c-54bb-bedf-21b31564f197")
+		)
+		(pin "45"
+			(uuid "0ce4e13d-bfad-5b06-8577-f7452d164e45")
+		)
+		(pin "23"
+			(uuid "0ec0b330-da55-55b4-b6be-3e2aeea0a1c7")
+		)
+		(pin "50"
+			(uuid "7b58500d-0ce6-5cab-8eb4-8942123841d9")
+		)
+		(pin "57"
+			(uuid "97712812-103f-5f6e-b3be-a140181d4aea")
+		)
+		(pin "2"
+			(uuid "cf41a913-1b82-4098-a9d0-6aaa7536e9ed")
+		)
+		(pin "3"
+			(uuid "e304c2bd-e385-4aa4-8e4f-dd7dc493b0d1")
+		)
+		(pin "4"
+			(uuid "2a375170-9f18-4122-9b2f-26b3332138ff")
+		)
+		(pin "5"
+			(uuid "02d44943-724d-48c2-ab8f-61b13e57d48a")
+		)
+		(pin "6"
+			(uuid "b915e87b-3962-45b8-98e4-62c825006ef0")
+		)
+		(pin "7"
+			(uuid "6193f2f7-946d-48aa-bf57-7e4bf7606fc7")
+		)
+		(pin "8"
+			(uuid "9fc3064f-f304-4731-b507-093924f2ba1f")
+		)
+		(pin "9"
+			(uuid "2e030824-9865-467c-b4a4-9f26d2838701")
+		)
+		(pin "11"
+			(uuid "2267a97e-6012-411e-aebc-4f836465d182")
+		)
+		(pin "12"
+			(uuid "61f06ae2-9f09-47db-8755-e6acde9c29e2")
+		)
+		(pin "13"
+			(uuid "10e58a6f-7973-413b-9dad-6723aa1364f3")
+		)
+		(pin "14"
+			(uuid "165bea75-7446-4301-8b84-e7f412610581")
+		)
+		(pin "15"
+			(uuid "e17d5e74-378d-4827-846f-5c6ccd556785")
+		)
+		(pin "16"
+			(uuid "737cf1e6-d3bf-4dfd-ac3e-a5eb8aefad0a")
+		)
+		(pin "17"
+			(uuid "7916f5c2-3c45-4388-a826-b053cb05d2f5")
+		)
+		(pin "18"
+			(uuid "44ff7515-ab80-4fb5-876f-ddd652b9b457")
+		)
+		(pin "27"
+			(uuid "612f1645-a0fc-4f92-a587-d0e1cde24196")
+		)
+		(pin "28"
+			(uuid "6fc7c00f-e9a4-4451-951c-165b40e01fd9")
+		)
+		(pin "29"
+			(uuid "893071a5-8bac-4f15-8e11-c09e66c82c14")
+		)
+		(pin "30"
+			(uuid "b9f398fa-e01b-4025-8ad0-e4de26e89ff3")
+		)
+		(pin "31"
+			(uuid "3e47f971-1ac9-478c-a354-7c35d3f24890")
+		)
+		(pin "32"
+			(uuid "5057aafc-e14f-43b1-8aaf-6e6283d2268d")
+		)
+		(pin "34"
+			(uuid "c14f6fbd-27cd-4e82-8f0a-2a93391f4229")
+		)
+		(pin "35"
+			(uuid "fa9b8581-6b56-491f-ab7c-63d90bf80c43")
+		)
+		(pin "36"
+			(uuid "d436fa13-c459-43fc-a7f4-33a421fe831f")
+		)
+		(pin "37"
+			(uuid "60837fc0-680f-40bf-8b80-1d0db9a84841")
+		)
+		(pin "38"
+			(uuid "51697853-87da-45d0-b30a-ca92652ef467")
+		)
+		(pin "39"
+			(uuid "e763215b-85f3-45a7-8682-c268d04021bd")
+		)
+		(pin "40"
+			(uuid "9e55c125-9024-446a-b845-388cc596dfbd")
+		)
+		(pin "41"
+			(uuid "13a6b522-92d3-4bb6-8e94-75db8fcfda4f")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/9e4726d8-47c3-537f-8d65-fe21647db3b1"
+					(reference "U3")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:R_27")
+		(at 345.44 234.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "418109c0-0893-4d17-aa71-9271f1a308d6")
+		(property "Reference" "R4"
+			(at 345.44 231.95 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "27"
+			(at 345.44 238.05 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:R_0603_1608Metric"
+			(at 345.44 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25190.html"
+			(at 345.44 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "27 ohm, 1%, 0.1W, 1608 metric"
+			(at 345.44 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 345.44 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "0603WAF270JT5E"
+			(at 345.44 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C25190"
+			(at 345.44 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C25190"
+			(at 345.44 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C25190"
+			(at 345.44 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 345.44 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 345.44 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" ""
+			(at 345.44 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d44d37f1-82ee-5127-9001-23f362293593")
+		)
+		(pin "2"
+			(uuid "4c5c4dae-f828-5875-aa30-4d33d8a11468")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/9e4726d8-47c3-537f-8d65-fe21647db3b1"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:C_15p")
+		(at 345.44 207.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "479e1e65-d80b-4b9b-8a84-fac59e75dc84")
+		(property "Reference" "C3"
+			(at 345.44 204.01 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "15p"
+			(at 345.44 210.11 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:C_0603_1608Metric"
+			(at 345.44 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C1644.html"
+			(at 345.44 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "15pF 50V C0G 5%, 1608 metric"
+			(at 345.44 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 345.44 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "CL10C150JB8NNNC"
+			(at 345.44 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C1644"
+			(at 345.44 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C1644"
+			(at 345.44 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C1644"
+			(at 345.44 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 345.44 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 345.44 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" ""
+			(at 345.44 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4ee478cb-fa48-5911-961d-9182ada1d8b7")
+		)
+		(pin "2"
+			(uuid "ec024971-98be-58b6-a34d-3bfb7cae36a3")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/9e4726d8-47c3-537f-8d65-fe21647db3b1"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:R_1k")
+		(at 265.43 175.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4876ff81-e06b-4808-86ab-d2694f682afb")
+		(property "Reference" "R5"
+			(at 265.43 172.26 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 265.43 178.36 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:R_0603_1608Metric"
+			(at 265.43 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C21190.html"
+			(at 265.43 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "1k ohm, 1%, 0.1W, 1608 metric"
+			(at 265.43 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 265.43 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1001T5E"
+			(at 265.43 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 265.43 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C21190"
+			(at 265.43 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C21190"
+			(at 265.43 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 265.43 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 265.43 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" ""
+			(at 265.43 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "51b6a7ad-413b-5e4f-847c-27a2afd7d8ca")
+		)
+		(pin "2"
+			(uuid "31813a88-b1cc-5b1a-99f6-265bbdeca6ca")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/9e4726d8-47c3-537f-8d65-fe21647db3b1"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:R_1k")
+		(at 161.29 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "64bf305a-7d14-4adb-af40-93613f04b506")
+		(property "Reference" "R100"
+			(at 161.29 111.3 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 161.29 117.4 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:R_0603_1608Metric"
+			(at 161.29 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C21190.html"
+			(at 161.29 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "1k ohm, 1%, 0.1W, 1608 metric"
+			(at 161.29 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 161.29 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1001T5E"
+			(at 161.29 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 161.29 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C21190"
+			(at 161.29 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C21190"
+			(at 161.29 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 161.29 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 161.29 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "GPIO19 active HIGH; R100=1k; cathode to GND; board right edge"
+			(at 161.29 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part Class" "Basic"
+			(at 161.29 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "PCBA Type" "Economic and Standard"
+			(at 161.29 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5800bb3f-b047-414c-acff-923dcfb9aa5d")
+		)
+		(pin "2"
+			(uuid "c067ed5e-8095-44dc-b868-28619b3709e0")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/9e4726d8-47c3-537f-8d65-fe21647db3b1"
+					(reference "R100")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:R_1k")
+		(at 74.93 207.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b7192114-2722-4b51-9c9e-cc959ab3b6e8")
+		(property "Reference" "R1"
+			(at 74.93 204.01 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 74.93 210.11 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:R_0603_1608Metric"
+			(at 74.93 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C21190.html"
+			(at 74.93 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "1k ohm, 1%, 0.1W, 1608 metric"
+			(at 74.93 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 74.93 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1001T5E"
+			(at 74.93 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 74.93 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C21190"
+			(at 74.93 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C21190"
+			(at 74.93 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 74.93 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 74.93 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" ""
+			(at 74.93 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "71309bbc-a4c5-569c-9554-b8f9d5cb2c16")
+		)
+		(pin "2"
+			(uuid "d53adc8d-5553-566c-8c71-9d10e62e7787")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/9e4726d8-47c3-537f-8d65-fe21647db3b1"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:LED_GREEN")
+		(at 186.69 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b9d958a0-1de3-41ae-b2ba-124b398e0069")
+		(property "Reference" "D5"
+			(at 186.69 111.3 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "Green"
+			(at 186.69 117.4 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:LED_0603_1608Metric"
+			(at 186.69 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C12624.html"
+			(at 186.69 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Green LED, 1608 metric / 0603, cathode pad 1, anode pad 2"
+			(at 186.69 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Hubei KENTO Elec"
+			(at 186.69 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "KT-0603G"
+			(at 186.69 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C12624"
+			(at 186.69 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C12624"
+			(at 186.69 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C12624"
+			(at 186.69 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 186.69 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "JLCPCB_STOCK_CHECKED_2026-10-31_RECHECK_AT_ORDER"
+			(at 186.69 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "GPIO19 active HIGH; R100=1k; cathode to GND; board right edge"
+			(at 186.69 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part Class" "Extended"
+			(at 186.69 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "PCBA Type" "Economic and Standard"
+			(at 186.69 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4a68ad81-1c81-49cc-983c-1734f4451398")
+		)
+		(pin "2"
+			(uuid "a291d51e-ca08-46b4-8f4f-718bf5477d3d")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/9e4726d8-47c3-537f-8d65-fe21647db3b1"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:HDR2")
+		(at 74.93 234.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "de983d15-0259-434b-8b10-5015681b3032")
+		(property "Reference" "J2"
+			(at 74.93 228.94 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "BOOTSEL"
+			(at 74.93 241.16 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 74.93 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "BOOTSEL; short during USB connection"
+			(at 74.93 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Samtec"
+			(at 74.93 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "TSW-102-07-G-S"
+			(at 74.93 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 74.93 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 74.93 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" ""
+			(at 74.93 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "HAND_THT"
+			(at 74.93 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "HAND_SUPPLIED"
+			(at 74.93 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" ""
+			(at 74.93 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "782d0f22-5f94-5a2d-a3b8-44f9792f37fc")
+		)
+		(pin "2"
+			(uuid "4c55f33e-cb87-5e6c-b8d6-c36d3386ba4c")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/9e4726d8-47c3-537f-8d65-fe21647db3b1"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:R_10k")
+		(at 74.93 185.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f4999051-88d8-4eb2-b706-0cb537287ae4")
+		(property "Reference" "R2"
+			(at 74.93 182.42 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 74.93 188.52 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:R_0603_1608Metric"
+			(at 74.93 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25804.html"
+			(at 74.93 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "10k ohm, 1%, 0.1W, 1608 metric"
+			(at 74.93 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 74.93 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1002T5E"
+			(at 74.93 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 74.93 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C25804"
+			(at 74.93 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C25804"
+			(at 74.93 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 74.93 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 74.93 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" ""
+			(at 74.93 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4c1352db-c79b-5959-acb6-1cc00b890ceb")
+		)
+		(pin "2"
+			(uuid "c70ec288-9700-5fc2-bb11-22d7817e4bdd")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/9e4726d8-47c3-537f-8d65-fe21647db3b1"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:QSPI")
+		(at 80.01 144.78 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f5ac711d-6a83-4ccd-84ec-011c24a151ba")
+		(property "Reference" "U2"
+			(at 80.01 136.23 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "W25Q128JVPIQ"
+			(at 80.01 153.53 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:WSON-8_6x5mm_P1.27mm_EP3.4x4.3mm_Floating"
+			(at 80.01 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.winbond.com/resource-files/W25Q128JV%20RevF%2003272018%20Plus.pdf"
+			(at 80.01 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 80.01 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Winbond"
+			(at 80.01 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "W25Q128JVPIQ"
+			(at 80.01 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C190862"
+			(at 80.01 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C190862"
+			(at 80.01 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C190862"
+			(at 80.01 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 80.01 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "LCSC_IN_STOCK_2026-10-30_RECHECK_AT_ORDER"
+			(at 80.01 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" "WSON-8 6x5mm; exposed pad floating per Winbond Rev F section 10.3; QE=1 as original IQ part."
+			(at 80.01 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3679118d-fda3-5bfc-9a0b-9faa939c8371")
+		)
+		(pin "6"
+			(uuid "c826280f-0472-5043-b725-6dc9e6722d2a")
+		)
+		(pin "5"
+			(uuid "99ab93f8-2f8b-50c8-b504-b87538fa6046")
+		)
+		(pin "2"
+			(uuid "12eb3f82-5712-56f5-87d3-acc61a613456")
+		)
+		(pin "3"
+			(uuid "15de62d2-ac20-5395-8349-14702a732318")
+		)
+		(pin "7"
+			(uuid "3f13747e-112f-5b39-b709-28896e460322")
+		)
+		(pin "8"
+			(uuid "a850c4e9-910a-5d03-9fa1-91a75e2d7cf2")
+		)
+		(pin "4"
+			(uuid "00cfb915-a72e-5c14-bfbc-4a6ac5928c23")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/9e4726d8-47c3-537f-8d65-fe21647db3b1"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Card:C_15p")
+		(at 229.87 207.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f994f0bb-932c-42cc-9650-e3abae6dc304")
+		(property "Reference" "C2"
+			(at 229.87 204.01 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "15p"
+			(at 229.87 210.11 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Card:C_0603_1608Metric"
+			(at 229.87 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C1644.html"
+			(at 229.87 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "15pF 50V C0G 5%, 1608 metric"
+			(at 229.87 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 229.87 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "CL10C150JB8NNNC"
+			(at 229.87 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "C1644"
+			(at 229.87 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C1644"
+			(at 229.87 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C1644"
+			(at 229.87 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Assembly" "PCBA"
+			(at 229.87 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Procurement" "REGISTERED_RECHECK_STOCK"
+			(at 229.87 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Design Note" ""
+			(at 229.87 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "33d1aede-12a2-55db-892f-567a8e322102")
+		)
+		(pin "2"
+			(uuid "b6fb8d38-cc1a-5949-9acf-69740a698c23")
+		)
+		(instances
+			(project "pcm-card"
+				(path "/51d4e0fb-db60-4775-a659-621d7488ba8b/9e4726d8-47c3-537f-8d65-fe21647db3b1"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+
+	(symbol
+    (lib_id "PCM_Card:R_100k")
+    (at 193.04 33.02 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "a47ac643-8a41-4cba-8b2e-7f84e20ea89e")
+    (property "Reference" "R102"
+      (at 193.04 30.02 0)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1.1 1.1)
+        )
+      )
+    )
+    (property "Value" "100k"
+      (at 193.04 36.12 0)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Footprint" "PCM_Card:R_0603_1608Metric"
+      (at 193.04 33.02 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Datasheet" "https://www.lcsc.com/product-detail/C25803.html"
+      (at 193.04 33.02 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Description" "100k ohm, 1%, 0.1W, 1608 metric"
+      (at 193.04 33.02 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 193.04 33.02 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "MPN" "0603WAF1003T5E"
+      (at 193.04 33.02 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "LCSC" "C25803"
+      (at 193.04 33.02 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "LCSC Part #" "C25803"
+      (at 193.04 33.02 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "JLCPCB Part #" "C25803"
+      (at 193.04 33.02 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Assembly" "PCBA"
+      (at 193.04 33.02 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Procurement" "REGISTERED_RECHECK_STOCK"
+      (at 193.04 33.02 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Design Note" "Monitor isolation; input only, disable GPIO pulls, enable Schmitt; hardware control stays on pin 1 side"
+      (at 193.04 33.02 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "JLCPCB Part Class" "Basic"
+      (at 193.04 33.02 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "PCBA Type" "Economic and Standard"
+      (at 193.04 33.02 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (instances
+      (project "pcm-card"
+        (path "/51d4e0fb-db60-4775-a659-621d7488ba8b/9e4726d8-47c3-537f-8d65-fe21647db3b1"
+          (reference "R102")
+          (unit 1)
+        )
+      )
+    )
+    (pin "1"
+      (uuid "a6764f35-cf03-4fd1-999a-944a400b12c9")
+    )
+    (pin "2"
+      (uuid "33740f08-884d-4457-bf2f-8771fa5d80b4")
+    )
+  )
+
+	(wire
+    (pts
+      (xy 187.96 33.02)
+      (xy 182.88 33.02)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "3f4c432f-b049-405f-ab5a-e8712b1c894e")
+  )
+
+	(global_label "FLASH_RY_BY_N"
+    (shape passive)
+    (at 182.88 33.02 180)
+    (effects
+      (font
+        (size 0.9 0.9)
+      )
+      (justify right)
+    )
+    (uuid "8f1c8199-643c-4ce8-a6f2-ed95b7fd8996")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 182.88 33.02 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 0.9 0.9)
+        )
+      )
+    )
+  )
+
+	(wire
+    (pts
+      (xy 198.12 33.02)
+      (xy 203.2 33.02)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "f8b3cd47-7b7d-46d8-ac1f-43e14d0ec7ae")
+  )
+
+	(global_label "MON_RY_BY_N"
+    (shape passive)
+    (at 203.2 33.02 0)
+    (effects
+      (font
+        (size 0.9 0.9)
+      )
+      (justify left)
+    )
+    (uuid "a4bb794e-fba0-4645-95c7-6ec8f0bec838")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 203.2 33.02 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 0.9 0.9)
+        )
+      )
+    )
+  )
+
+	(symbol
+    (lib_id "PCM_Card:R_10k")
+    (at 193.04 43.18 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "3724c63a-1cf0-4b58-ac7d-24fe368e4554")
+    (property "Reference" "R103"
+      (at 193.04 40.18 0)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1.1 1.1)
+        )
+      )
+    )
+    (property "Value" "10k"
+      (at 193.04 46.28 0)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Footprint" "PCM_Card:R_0603_1608Metric"
+      (at 193.04 43.18 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Datasheet" "https://www.lcsc.com/product-detail/C25804.html"
+      (at 193.04 43.18 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Description" "10k ohm, 1%, 0.1W, 1608 metric"
+      (at 193.04 43.18 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 193.04 43.18 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "MPN" "0603WAF1002T5E"
+      (at 193.04 43.18 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "LCSC" "C25804"
+      (at 193.04 43.18 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "LCSC Part #" "C25804"
+      (at 193.04 43.18 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "JLCPCB Part #" "C25804"
+      (at 193.04 43.18 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Assembly" "PCBA"
+      (at 193.04 43.18 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Procurement" "REGISTERED_RECHECK_STOCK"
+      (at 193.04 43.18 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Design Note" "Monitor isolation; input only, disable GPIO pulls, enable Schmitt; hardware control stays on pin 1 side"
+      (at 193.04 43.18 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "JLCPCB Part Class" "Basic"
+      (at 193.04 43.18 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "PCBA Type" "Economic and Standard"
+      (at 193.04 43.18 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (instances
+      (project "pcm-card"
+        (path "/51d4e0fb-db60-4775-a659-621d7488ba8b/9e4726d8-47c3-537f-8d65-fe21647db3b1"
+          (reference "R103")
+          (unit 1)
+        )
+      )
+    )
+    (pin "1"
+      (uuid "0f99d2ae-5776-4b5c-9e5c-c163c9286141")
+    )
+    (pin "2"
+      (uuid "8c9dd6d1-098f-4f69-a567-3348bcfa1453")
+    )
+  )
+
+	(wire
+    (pts
+      (xy 187.96 43.18)
+      (xy 182.88 43.18)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "855d5abc-6c67-434c-b097-2df999d6ee2c")
+  )
+
+	(global_label "HOST_PRESENT"
+    (shape passive)
+    (at 182.88 43.18 180)
+    (effects
+      (font
+        (size 0.9 0.9)
+      )
+      (justify right)
+    )
+    (uuid "ae66f92e-cd01-40c3-86bb-22d551636a90")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 182.88 43.18 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 0.9 0.9)
+        )
+      )
+    )
+  )
+
+	(wire
+    (pts
+      (xy 198.12 43.18)
+      (xy 203.2 43.18)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "52b10911-b3ab-4c82-b0e6-b37859c57f87")
+  )
+
+	(global_label "MON_HOST_PRESENT"
+    (shape passive)
+    (at 203.2 43.18 0)
+    (effects
+      (font
+        (size 0.9 0.9)
+      )
+      (justify left)
+    )
+    (uuid "ebba43aa-ccb2-4e50-b19f-88049ee88a69")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 203.2 43.18 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 0.9 0.9)
+        )
+      )
+    )
+  )
+
+	(symbol
+    (lib_id "PCM_Card:R_10k")
+    (at 193.04 53.34 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "21057fa0-5b8d-4596-8156-24860f42b804")
+    (property "Reference" "R104"
+      (at 193.04 50.34 0)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1.1 1.1)
+        )
+      )
+    )
+    (property "Value" "10k"
+      (at 193.04 56.44 0)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Footprint" "PCM_Card:R_0603_1608Metric"
+      (at 193.04 53.34 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Datasheet" "https://www.lcsc.com/product-detail/C25804.html"
+      (at 193.04 53.34 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Description" "10k ohm, 1%, 0.1W, 1608 metric"
+      (at 193.04 53.34 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 193.04 53.34 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "MPN" "0603WAF1002T5E"
+      (at 193.04 53.34 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "LCSC" "C25804"
+      (at 193.04 53.34 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "LCSC Part #" "C25804"
+      (at 193.04 53.34 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "JLCPCB Part #" "C25804"
+      (at 193.04 53.34 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Assembly" "PCBA"
+      (at 193.04 53.34 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Procurement" "REGISTERED_RECHECK_STOCK"
+      (at 193.04 53.34 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Design Note" "Monitor isolation; input only, disable GPIO pulls, enable Schmitt; hardware control stays on pin 1 side"
+      (at 193.04 53.34 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "JLCPCB Part Class" "Basic"
+      (at 193.04 53.34 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "PCBA Type" "Economic and Standard"
+      (at 193.04 53.34 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (instances
+      (project "pcm-card"
+        (path "/51d4e0fb-db60-4775-a659-621d7488ba8b/9e4726d8-47c3-537f-8d65-fe21647db3b1"
+          (reference "R104")
+          (unit 1)
+        )
+      )
+    )
+    (pin "1"
+      (uuid "ab892c22-f938-4137-b286-f09ad4db3f8e")
+    )
+    (pin "2"
+      (uuid "c4f2761e-b7cc-4b7c-9f2e-988a4b9e714e")
+    )
+  )
+
+	(wire
+    (pts
+      (xy 187.96 53.34)
+      (xy 182.88 53.34)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "39bb4e41-2ca3-48fc-9257-09ce6f465b11")
+  )
+
+	(global_label "USB_PRESENT"
+    (shape passive)
+    (at 182.88 53.34 180)
+    (effects
+      (font
+        (size 0.9 0.9)
+      )
+      (justify right)
+    )
+    (uuid "481652c5-6961-46b7-892f-3a7ea1df404a")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 182.88 53.34 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 0.9 0.9)
+        )
+      )
+    )
+  )
+
+	(wire
+    (pts
+      (xy 198.12 53.34)
+      (xy 203.2 53.34)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "0af7ae7d-fb24-48dc-b2e8-15f4cf707338")
+  )
+
+	(global_label "MON_USB_PRESENT"
+    (shape passive)
+    (at 203.2 53.34 0)
+    (effects
+      (font
+        (size 0.9 0.9)
+      )
+      (justify left)
+    )
+    (uuid "bca61ac6-f03d-421e-9ae3-d702a0ccdaba")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 203.2 53.34 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 0.9 0.9)
+        )
+      )
+    )
+  )
+
+	(symbol
+    (lib_id "PCM_Card:R_10k")
+    (at 193.04 63.5 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "1ba5b300-981a-435a-9e29-cab9cbffc330")
+    (property "Reference" "R105"
+      (at 193.04 60.5 0)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1.1 1.1)
+        )
+      )
+    )
+    (property "Value" "10k"
+      (at 193.04 66.6 0)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Footprint" "PCM_Card:R_0603_1608Metric"
+      (at 193.04 63.5 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Datasheet" "https://www.lcsc.com/product-detail/C25804.html"
+      (at 193.04 63.5 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Description" "10k ohm, 1%, 0.1W, 1608 metric"
+      (at 193.04 63.5 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 193.04 63.5 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "MPN" "0603WAF1002T5E"
+      (at 193.04 63.5 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "LCSC" "C25804"
+      (at 193.04 63.5 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "LCSC Part #" "C25804"
+      (at 193.04 63.5 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "JLCPCB Part #" "C25804"
+      (at 193.04 63.5 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Assembly" "PCBA"
+      (at 193.04 63.5 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Procurement" "REGISTERED_RECHECK_STOCK"
+      (at 193.04 63.5 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Design Note" "Monitor isolation; input only, disable GPIO pulls, enable Schmitt; hardware control stays on pin 1 side"
+      (at 193.04 63.5 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "JLCPCB Part Class" "Basic"
+      (at 193.04 63.5 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "PCBA Type" "Economic and Standard"
+      (at 193.04 63.5 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (instances
+      (project "pcm-card"
+        (path "/51d4e0fb-db60-4775-a659-621d7488ba8b/9e4726d8-47c3-537f-8d65-fe21647db3b1"
+          (reference "R105")
+          (unit 1)
+        )
+      )
+    )
+    (pin "1"
+      (uuid "4c6a09b3-7f93-4cf0-9f72-cbaa4f53f5b0")
+    )
+    (pin "2"
+      (uuid "93828fb3-edcf-4021-8bb1-6e233be3fb00")
+    )
+  )
+
+	(wire
+    (pts
+      (xy 187.96 63.5)
+      (xy 182.88 63.5)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "d47ca77b-a4f2-4025-a9c6-32431daae690")
+  )
+
+	(global_label "SYS_READY"
+    (shape passive)
+    (at 182.88 63.5 180)
+    (effects
+      (font
+        (size 0.9 0.9)
+      )
+      (justify right)
+    )
+    (uuid "09aa8722-826b-4a7c-ae4e-09e5c974db5d")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 182.88 63.5 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 0.9 0.9)
+        )
+      )
+    )
+  )
+
+	(wire
+    (pts
+      (xy 198.12 63.5)
+      (xy 203.2 63.5)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "8e43d7f2-fe4d-4b30-93e9-3be3cba930b4")
+  )
+
+	(global_label "MON_SYS_READY"
+    (shape passive)
+    (at 203.2 63.5 0)
+    (effects
+      (font
+        (size 0.9 0.9)
+      )
+      (justify left)
+    )
+    (uuid "2c6c8692-f2a1-4d49-bcb7-4e9eb06c7fc2")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 203.2 63.5 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 0.9 0.9)
+        )
+      )
+    )
+  )
+
+	(symbol
+    (lib_id "PCM_Card:R_10k")
+    (at 193.04 73.66 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "f8d1195f-8dfd-4240-8d00-71a63dbe3a2a")
+    (property "Reference" "R106"
+      (at 193.04 70.66 0)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1.1 1.1)
+        )
+      )
+    )
+    (property "Value" "10k"
+      (at 193.04 76.76 0)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Footprint" "PCM_Card:R_0603_1608Metric"
+      (at 193.04 73.66 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Datasheet" "https://www.lcsc.com/product-detail/C25804.html"
+      (at 193.04 73.66 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Description" "10k ohm, 1%, 0.1W, 1608 metric"
+      (at 193.04 73.66 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 193.04 73.66 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "MPN" "0603WAF1002T5E"
+      (at 193.04 73.66 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "LCSC" "C25804"
+      (at 193.04 73.66 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "LCSC Part #" "C25804"
+      (at 193.04 73.66 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "JLCPCB Part #" "C25804"
+      (at 193.04 73.66 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Assembly" "PCBA"
+      (at 193.04 73.66 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Procurement" "REGISTERED_RECHECK_STOCK"
+      (at 193.04 73.66 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Design Note" "Monitor isolation; input only, disable GPIO pulls, enable Schmitt; hardware control stays on pin 1 side"
+      (at 193.04 73.66 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "JLCPCB Part Class" "Basic"
+      (at 193.04 73.66 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "PCBA Type" "Economic and Standard"
+      (at 193.04 73.66 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (instances
+      (project "pcm-card"
+        (path "/51d4e0fb-db60-4775-a659-621d7488ba8b/9e4726d8-47c3-537f-8d65-fe21647db3b1"
+          (reference "R106")
+          (unit 1)
+        )
+      )
+    )
+    (pin "1"
+      (uuid "ed2c63cc-92f7-4a48-88e1-864db5bc08a6")
+    )
+    (pin "2"
+      (uuid "719ec6fb-06aa-4cd0-8e29-850e0750716d")
+    )
+  )
+
+	(wire
+    (pts
+      (xy 187.96 73.66)
+      (xy 182.88 73.66)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "2f13cd35-f488-414f-9fd7-70362dc01ae1")
+  )
+
+	(global_label "PROG_EN_N"
+    (shape passive)
+    (at 182.88 73.66 180)
+    (effects
+      (font
+        (size 0.9 0.9)
+      )
+      (justify right)
+    )
+    (uuid "85676518-67e2-4f76-86cb-26e07befef95")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 182.88 73.66 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 0.9 0.9)
+        )
+      )
+    )
+  )
+
+	(wire
+    (pts
+      (xy 198.12 73.66)
+      (xy 203.2 73.66)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "57eadb76-838f-4a4d-bb14-b24ae3f7b762")
+  )
+
+	(global_label "MON_PROG_EN_N"
+    (shape passive)
+    (at 203.2 73.66 0)
+    (effects
+      (font
+        (size 0.9 0.9)
+      )
+      (justify left)
+    )
+    (uuid "32b4c60d-2cd5-42d2-88b2-b4e7f972363e")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 203.2 73.66 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 0.9 0.9)
+        )
+      )
+    )
+  )
+
+	(symbol
+    (lib_id "PCM_Card:R_100k")
+    (at 193.04 83.82 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "9c317185-863d-49c8-9849-7c65136bb4e7")
+    (property "Reference" "R107"
+      (at 193.04 80.82 0)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1.1 1.1)
+        )
+      )
+    )
+    (property "Value" "100k"
+      (at 193.04 86.92 0)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Footprint" "PCM_Card:R_0603_1608Metric"
+      (at 193.04 83.82 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Datasheet" "https://www.lcsc.com/product-detail/C25803.html"
+      (at 193.04 83.82 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Description" "100k ohm, 1%, 0.1W, 1608 metric"
+      (at 193.04 83.82 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 193.04 83.82 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "MPN" "0603WAF1003T5E"
+      (at 193.04 83.82 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "LCSC" "C25803"
+      (at 193.04 83.82 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "LCSC Part #" "C25803"
+      (at 193.04 83.82 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "JLCPCB Part #" "C25803"
+      (at 193.04 83.82 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Assembly" "PCBA"
+      (at 193.04 83.82 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Procurement" "REGISTERED_RECHECK_STOCK"
+      (at 193.04 83.82 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Design Note" "Monitor isolation; input only, disable GPIO pulls, enable Schmitt; hardware control stays on pin 1 side"
+      (at 193.04 83.82 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "JLCPCB Part Class" "Basic"
+      (at 193.04 83.82 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "PCBA Type" "Economic and Standard"
+      (at 193.04 83.82 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (instances
+      (project "pcm-card"
+        (path "/51d4e0fb-db60-4775-a659-621d7488ba8b/9e4726d8-47c3-537f-8d65-fe21647db3b1"
+          (reference "R107")
+          (unit 1)
+        )
+      )
+    )
+    (pin "1"
+      (uuid "30369d0d-387d-48ff-b20e-3e011af437d8")
+    )
+    (pin "2"
+      (uuid "916c29f1-063f-494d-8efe-ed5d7e848870")
+    )
+  )
+
+	(wire
+    (pts
+      (xy 187.96 83.82)
+      (xy 182.88 83.82)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "347d92a8-3a05-49d5-9b5d-a9dccd9cc7f3")
+  )
+
+	(global_label "USB_FAULT_N"
+    (shape passive)
+    (at 182.88 83.82 180)
+    (effects
+      (font
+        (size 0.9 0.9)
+      )
+      (justify right)
+    )
+    (uuid "84f39973-471b-46f6-b6bc-c7cfa1f7dbbd")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 182.88 83.82 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 0.9 0.9)
+        )
+      )
+    )
+  )
+
+	(wire
+    (pts
+      (xy 198.12 83.82)
+      (xy 203.2 83.82)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "81678a35-5b85-4aef-86f3-a466e6d2219f")
+  )
+
+	(global_label "MON_USB_FAULT_N"
+    (shape passive)
+    (at 203.2 83.82 0)
+    (effects
+      (font
+        (size 0.9 0.9)
+      )
+      (justify left)
+    )
+    (uuid "e811a004-3c03-4002-ac71-b0765411f9b7")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 203.2 83.82 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace yes)
+      (effects
+        (font
+          (size 0.9 0.9)
+        )
+      )
+    )
+  )
+
+	(text "Monitor GPIOs: input, pulls OFF, Schmitt ON.\n100k on open-drain status; 10k on push-pull control."
+    (at 149.86 93.98 0)
+    (effects
+      (font
+        (size 1 1)
+      )
+      (justify left bottom)
+    )
+    (uuid "aa94bf45-3c24-4c67-8411-8f67f21e2bac")
+  )
+)

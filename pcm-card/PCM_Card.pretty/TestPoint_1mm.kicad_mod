@@ -1,0 +1,44 @@
+(footprint "TestPoint_1mm"
+  (version 20260206)
+  (generator "pcm_card_land_pattern_builder")
+  (layer "F.Cu")
+  (descr "Copper test point; no paste; no component")
+  (tags "PCM card A0 placement study")
+  (property "Reference" "REF**"
+    (at 0 -1.75 0)
+    (layer "F.SilkS")
+    (effects
+      (font
+        (size 0.8 0.8)
+        (thickness 0.12)
+      )
+    )
+  )
+  (property "Value" "TestPoint_1mm"
+    (at 0 1.75 0)
+    (layer "F.Fab")
+    (effects
+      (font
+        (size 0.8 0.8)
+        (thickness 0.12)
+      )
+    )
+  )
+  (fp_rect
+    (start -0.75 -0.75)
+    (end 0.75 0.75)
+    (stroke
+      (width 0.05)
+      (type solid)
+    )
+    (fill none)
+    (layer "F.CrtYd")
+  )
+  (attr exclude_from_pos_files exclude_from_bom)
+  (pad "1" smd circle
+    (at 0 0)
+    (size 1 1)
+    (layers "F.Cu" "F.Mask")
+  )
+  (embedded_fonts no)
+)
